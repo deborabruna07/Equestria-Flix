@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PonyVerse ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="pagina-inicial" class="tela-ativa">
+        <div class="conteudo-inicial">
+            <div class="logo-inicial">
+                <h1>✨ PonyVerse</h1>
+                <p>Friendship Central</p>
+            </div>
+            
+            <nav class="nav-icones">
+                <button class="nav-item" onclick="abrirPrincipal()">
+                    <div class="icone">📺</div>
+                    <span>Episódios</span>
+                </button>
+                
+                <button class="nav-item" onclick="alert('⭐ A magia está sendo preparada! Em breve você poderá salvar seus episódios favoritos aqui.')">
+                    <div class="icone">⭐</div>
+                    <span>Minha Lista</span>
+                </button>
+                
+                <button class="nav-item" onclick="alert('👥 O fórum de amizade de Ponyville abrirá em breve!')">
+                    <div class="icone">👥</div>
+                    <span>Comunidade</span>
+                </button>
+                
+                <button class="nav-item" onclick="alert('🪄 Magic Corner: Em breve você poderá criar a sua própria Cutie Mark aqui!')">
+                    <div class="icone">🪄</div>
+                    <span>Magic Corner</span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="ilustracao-fundo"></div>
+    </section>
+
+
+    <section id="pagina-principal" class="tela-oculta">
+        <header class="top-bar">
+            <button class="btn-icone" onclick="voltarInicial()">🏠 Início</button>
+            <div class="top-icons">
+                <span class="btn-icone">🔔</span> 
+                <span class="btn-icone" onclick="abrirPainelDireito()">💖 Meu Perfil</span> 
+            </div>
+        </header>
+
+        <div class="hero-banner">
+            <div class="banner-text">
+                <h2>A Magia da Amizade</h2>
+                <p>The Final Season!</p>
+            </div>
+        </div>
+
+        <div class="explore-section">
+            <h3>Explore Episodes</h3>
+            <div class="season-tabs" id="season-selector"></div>
+        </div>
+
+        <h3 id="titulo-temporada-atual" style="color: white; margin-bottom: 1rem;">Temporada 1</h3>
+        <div class="episode-grid" id="episode-grid"></div>
+    </section>
+
+    <aside id="painel-direito" class="painel-fechado">
+        <button class="btn-fechar" onclick="fecharPainelDireito()">✖ Fechar</button>
+        
+        <div class="widget profile-widget">
+            <h4>⭐ Meu Perfil Mágico</h4>
+            <div class="profile-info">
+                <div class="avatar"></div>
+                <p>Criar seu Pônei<br><small>Customize sua cutie mark</small></p>
+            </div>
+        </div>
+
+        <div class="widget tip-widget">
+            <h4>🌸 Daily Kindness Tip</h4>
+            <div class="tip-content">
+                Remember to be kind to everyone! 🌸
+            </div>
+        </div>
+
+        <div class="widget fanart-widget">
+            <h4>🎨 Fan Art Gallery</h4>
+            <div class="fanart-grid">
+                <div class="art-placeholder"></div>
+                <div class="art-placeholder"></div>
+                <div class="art-placeholder"></div>
+                <div class="art-placeholder"></div>
+            </div>
+        </div>
+    </aside>
+
+    <script src="app.js"></script>
+</body>
+</html>
