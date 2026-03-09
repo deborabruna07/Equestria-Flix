@@ -69,60 +69,67 @@ app.get('/api/video', (req: Request, res: Response) => {
 });
 
 // Rota 3: Sincronizar com TVmaze (Corrigida com o ID oficial)
+// Rota 3: Sincronizar com TMDB (Para ter tudo em Português pt-BR)
+// Rota 3: Sincronizar com TMDB (Para ter tudo em Português pt-BR)
 app.get('/api/sincronizar', async (req: Request, res: Response) => {
     try {
-        console.log('Buscando dados no TVmaze...');
+        console.log('Buscando magia no TMDB em Português...');
         
-        // CORREÇÃO: Usando o ID 2818 (My Little Pony: Friendship is Magic)
-        const tvmazeUrl = 'https://api.tvmaze.com/shows/2818?embed=episodes';
-        const resposta = await axios.get(tvmazeUrl);
-        const dados = resposta.data; 
-        
-        const episodiosRaw = dados._embedded.episodes;
+        // Sua chave colada aqui dentro das aspas (sem nenhum IF depois)
+        const TMDB_API_KEY = '05ab0d074920b94fa6389b3352d3cdae'; 
+
+        const tmdbShowId = 33765; // O código exato de My Little Pony no TMDB
         const temporadasMap = new Map();
+        
+        // ... (resto do código continua igual)
 
-        episodiosRaw.forEach((ep: any) => {
-            const numTemporada = ep.season;
-            const numEpisodio = ep.number;
+        // O TMDB exige que a gente busque uma temporada por vez. Como MLP tem 9 temporadas:
+        for (let numTemporada = 1; numTemporada <= 9; numTemporada++) {
+            // Repare no &language=pt-BR no final do link! É isso que traz o português.
+            const url = `https://api.themoviedb.org/3/tv/${tmdbShowId}/season/${numTemporada}?api_key=${TMDB_API_KEY}&language=pt-BR`;
+            
+            try {
+                const resposta = await axios.get(url);
+                const dadosTemporada = resposta.data;
 
-            if (!temporadasMap.has(numTemporada)) {
+                const episodiosDaTemporada = dadosTemporada.episodes.map((ep: any) => {
+                    const numEpisodio = ep.episode_number;
+                    const idStr = `S${String(numTemporada).padStart(2, '0')}E${String(numEpisodio).padStart(2, '0')}`;
+                    const nomeArquivoVideo = `mlp_${idStr.toLowerCase()}.mp4`;
+                    
+                    return {
+                        id: idStr,
+                        titulo: ep.name || `Episódio ${numEpisodio}`,
+                        descricao: ep.overview || 'A sinopse mágica deste episódio ainda não foi traduzida.',
+                        caminho_video: `/media/S${String(numTemporada).padStart(2, '0')}/${nomeArquivoVideo}`,
+                        assistido: false,
+                        // O TMDB já manda imagens lindíssimas! Nós montamos o link completo aqui:
+                        imagem: ep.still_path ? `https://image.tmdb.org/t/p/w500${ep.still_path}` : 'capa-padrao.jpg'
+                    };
+                });
+
                 temporadasMap.set(numTemporada, {
                     numero: numTemporada,
                     titulo: `Temporada ${numTemporada}`,
-                    episodios: []
+                    episodios: episodiosDaTemporada
                 });
+            } catch (err) {
+                console.log(`Aviso: Falha ao carregar a temporada ${numTemporada}.`);
             }
-
-            const idStr = `S${String(numTemporada).padStart(2, '0')}E${String(numEpisodio).padStart(2, '0')}`;
-            const nomeArquivoVideo = `mlp_${idStr.toLowerCase()}.mp4`;
-            const descricaoLimpa = ep.summary ? ep.summary.replace(/<[^>]*>?/gm, '') : 'Sinopse não disponível.';
-
-            temporadasMap.get(numTemporada).episodios.push({
-                id: idStr,
-                titulo: ep.name,
-                descricao: descricaoLimpa,
-                caminho_video: `/media/S${String(numTemporada).padStart(2, '0')}/${nomeArquivoVideo}`,
-                assistido: false,
-                tema_personagem: "Magia"
-            });
-        });
+        }
 
         const jsonFinal = { temporadas: Array.from(temporadasMap.values()) };
         const caminhoArquivo = path.join(__dirname, '../data/episodios.json');
         
         fs.writeFileSync(caminhoArquivo, JSON.stringify(jsonFinal, null, 2));
 
-        res.status(200).json({ 
-            mensagem: 'Catálogo sincronizado com sucesso!', 
-            total_episodios_baixados: episodiosRaw.length 
-        });
+        res.status(200).json({ mensagem: 'Catálogo sincronizado em Português com sucesso!' });
 
     } catch (error) {
-        console.error('Erro detalhado na sincronização:', error);
-        res.status(500).json({ erro: 'Falha ao buscar dados no TVmaze.' });
+        console.error('Erro na sincronização TMDB:', error);
+        res.status(500).json({ erro: 'Falha ao buscar dados no TMDB.' });
     }
 });
-
 app.listen(PORT, () => {
     console.log(`✨ Servidor de Equestria rodando na porta ${PORT} ✨`);
 });

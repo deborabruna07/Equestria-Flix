@@ -6,211 +6,211 @@
       "episodios": [
         {
           "id": "S01E01",
-          "titulo": "Friendship is Magic - Part 1",
-          "descricao": "After trying to warn Princess Celestia about the return of the wicked Night Mare Moon, Twilight Sparkle and Spike travel to Ponyville where they meet Pinkie Pie, Applejack, Rainbow Dash, Rarity and Fluttershy.",
+          "titulo": "A Amizade é Mágica, Parte 1",
+          "descricao": "Sob ordens da Princesa Celestia, Twilight Sparkle vai para a cidade de Ponyville supervisionar os preparativos para a Celebração do Solstício de Verão e fazer alguns amigos. Lá, Twilight conhece Pinkie Pie, Applejack, Rainbow Dash, Rarity e Fluttershy. Porém, ela também descobre uma profecia que fala do retorno de uma força maligna, banida há mil anos, que pretende dominar Equestria.",
           "caminho_video": "/media/S01/mlp_s01e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/lgaJ4yeM3d15ttLmHsCrHeYWJd7.jpg"
         },
         {
           "id": "S01E02",
-          "titulo": "Friendship is Magic - Part 2",
-          "descricao": "Twilight Sparkle and her new friends go on an adventure to stop Nightmare Moon's plan for never-ending nighttime. They must travel to the Castle of the Two Sisters and gather the Elements of Harmony.",
+          "titulo": "A Amizade é Mágica, Parte 2",
+          "descricao": "Cabe à Twilight e a suas novas amigas pôneis ajudar a Princesa, mas não vai ser fácil. Night Mare Moon desafia as pôneis com obstáculos individuais que devem superar para encontrar os Elementos da Harmonia, antes que seja tarde demais.",
           "caminho_video": "/media/S01/mlp_s01e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/AnPHQsDQIEooyXSujgNDTD0lBaN.jpg"
         },
         {
           "id": "S01E03",
-          "titulo": "The Ticket Master",
-          "descricao": "Twilight Sparkle decides on who to take to the pony gala, since she has an extra ticket. When the other ponies catch word, they pull out all the stops to convince her to take them.",
+          "titulo": "O bilhete extra",
+          "descricao": "Twilight Sparkle recebe dois convites para o Grande Baile Galopante. Porém, quando todas as suas amigas demonstram interesse pelo convite, Twilight enfrenta um dilema ao tentar decidir para quem ela dará o convite.",
           "caminho_video": "/media/S01/mlp_s01e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/i4KNmeYBcbdQTRKQTXTyL8ACGgA.jpg"
         },
         {
           "id": "S01E04",
-          "titulo": "Applebuck Season",
-          "descricao": "Applejack stubbornly vows to perform the orchard harvest herself, despite driving herself to disruptive exhaustion.",
+          "titulo": " Temporada de Coice",
+          "descricao": "É Temporada de coice em Ponyville e a Applejack, com falta de mão de obra está decidida a completar a colheita sozinha.",
           "caminho_video": "/media/S01/mlp_s01e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/i6nBfrZVjPmhG33UNowVrRqFeHh.jpg"
         },
         {
           "id": "S01E05",
-          "titulo": "Griffon the Brush-Off",
-          "descricao": "A griffon friend of Rainbow Dash comes to visit, but proves to be a cruel bully.",
+          "titulo": "O Grifo arrogante",
+          "descricao": "Pinkie Pie e Rainbow Dash fortalecem a sua amizade por fazerem brincadeiras com outros pôneis, mas quando a velha amiga da Rainbow, Gilda a Grifo, aparece para visitar, Pinkie Pie de repente se vê posta de lado.",
           "caminho_video": "/media/S01/mlp_s01e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/6upBBGUZygtUdL9avxWg5LnVUJg.jpg"
         },
         {
           "id": "S01E06",
-          "titulo": "Boast Busters",
-          "descricao": "When a smug magician comes to town, Twilight Sparkle resists her friends' calls to challenge her for fear of seeming like a show-off herself.",
+          "titulo": "Caçadores de Exibicionistas",
+          "descricao": "Um novo unicórnio cujo nome de palco é “A Grande e Poderosa Trixie‟ aparece em Ponyville, proclamando ser o melhor pônei e toda a Equestria; enquanto isso, Twilight Sparkle fica com medo de demonstrar a sua magia, achando que será chamada de exibida por suas amigas.",
           "caminho_video": "/media/S01/mlp_s01e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zhsFguTmqvzsfCTnDFl1htJefbH.jpg"
         },
         {
           "id": "S01E07",
-          "titulo": "Dragonshy",
-          "descricao": "Fluttershy must overcome her fears to convince a dragon to move out of town before its plume of black smoke covers all the land.",
+          "titulo": "Dracofobia",
+          "descricao": "A fumaça de um dragão adormecido escurece os céus de toda Equestria, e os pôneis são encarregados de convencer o dragão a sair.",
           "caminho_video": "/media/S01/mlp_s01e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/4hsgV0gkTT7DgxG1iinaUinp6T4.jpg"
         },
         {
           "id": "S01E08",
-          "titulo": "Look Before You Sleep",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Olhe Bem Antes de Ir Dormir",
+          "descricao": "Applejack e Rarity são forçadas a passar a noite na Biblioteca Carvalho Dourado devido a uma tempestade e Twilight Sparkle vê isso como uma oportunidade para fazer uma festa do pijama.",
           "caminho_video": "/media/S01/mlp_s01e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/1CbsZnhSqzqIKgUBXShCxxt8B6P.jpg"
         },
         {
           "id": "S01E09",
-          "titulo": "Bridle Gossip",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Rédea nas Fofocas",
+          "descricao": "Twilight Sparkle e suas amigas ficam com medo quando Zecora chega na cidade.",
           "caminho_video": "/media/S01/mlp_s01e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/v4On8qR1tTygT29bGAjln3YnsEg.jpg"
         },
         {
           "id": "S01E10",
-          "titulo": "Swarm of the Century",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "A Praga do Século",
+          "descricao": "Uma praga de criaturas chamadas Parasprites invade Ponyville, causando um caos e ameaçando arruinar a visita da Princesa Celestia.",
           "caminho_video": "/media/S01/mlp_s01e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/bl8DiS0PgKOZjzKLumAdRGtfTsP.jpg"
         },
         {
           "id": "S01E11",
-          "titulo": "Winter Wrap Up",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Passagem do Inverno",
+          "descricao": "O inverno chega ao fim, e Ponyville se prepara para uma limpeza anual para dar lugar à primavera.",
           "caminho_video": "/media/S01/mlp_s01e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/AcGbkLk8CARi0itz6BhiHMd1N07.jpg"
         },
         {
           "id": "S01E12",
-          "titulo": "Call of the Cutie",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Em Busca da Marca Especial",
+          "descricao": "Apple Bloom fica preocupada com a falta de uma bela marca e tenta conquistá-la antes de uma festa. Na festa, ela acaba fazendo amizade com Scootaloo e Sweetie Belle, e formam a Cruzada Por Uma Marca.",
           "caminho_video": "/media/S01/mlp_s01e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/z4TuhIAtgCAhITnR9rFbEUE1obR.jpg"
         },
         {
           "id": "S01E13",
-          "titulo": "Fall Weather Friends",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "A Corrida das Folhas",
+          "descricao": "O desportivismo de Applejack e Rainbow Dash é posto a prova quando elas enfrentam uma competição para ver quem é a melhor atleta de Ponyville.",
           "caminho_video": "/media/S01/mlp_s01e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/wE0tpPGsU05jzsylFyPB2KIgJmq.jpg"
         },
         {
           "id": "S01E14",
-          "titulo": "Suited for Success",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Feita para o Sucesso",
+          "descricao": "Rarity se oferece para fazer os vestidos de suas amigas para o Grande Baile Galopante, mas ela tem problemas ao tentar satisfazer todos os desejos delas.",
           "caminho_video": "/media/S01/mlp_s01e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/AhHfypdxWqaKb58zeYufTIjmtLA.jpg"
         },
         {
           "id": "S01E15",
-          "titulo": "Feeling Pinkie Keen",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Sentido Pinkie",
+          "descricao": "Twilight Sparkle descobre que Pinkie Pie tem uma capacidade incomum de sentir os acontecimentos em um futuro imediato, conhecido como “Sentido Pinkie”",
           "caminho_video": "/media/S01/mlp_s01e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/1M5UsB6ZK6xtp7SLOBZYTpXX0ii.jpg"
         },
         {
           "id": "S01E16",
-          "titulo": "Sonic Rainboom",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Arco-Íris Supersônico",
+          "descricao": "Rainbow Dash está preocupada com seu desempenho na competição do Melhor Jovem Voador, principalmente por não conseguir realizar o Arco-Íris Sônico durante os treinos.",
           "caminho_video": "/media/S01/mlp_s01e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ugi2AtHyovnZdhi4t5n29cSxusg.jpg"
         },
         {
           "id": "S01E17",
-          "titulo": "Stare Master",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Mestra do Olhar",
+          "descricao": "Fluttershy se oferece para cuidar das Descobridoras da Bela Marca, mas ela fica apavorada quando as Descobridoras se aventuram na Floresta da Liberdade.",
           "caminho_video": "/media/S01/mlp_s01e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/r387XIhzLi3ROtJybl5lB5cEfxU.jpg"
         },
         {
           "id": "S01E18",
-          "titulo": "The Show Stoppers",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "As Artistas",
+          "descricao": "as Descobridoras da Marca acreditam que um evento ira ajudá-las a descobrir os seus talentos e esperam que ao vencer um show de talentos consigam as suas belas marcas.",
           "caminho_video": "/media/S01/mlp_s01e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ak6cEIriDuXRuyoragP9RMUwSw4.jpg"
         },
         {
           "id": "S01E19",
-          "titulo": "A Dog and Pony Show",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Cães-Diamante",
+          "descricao": "Rarity procura joias com a ajuda de Spike. No entanto, um grupo de cães a sequestra e Spike e as outras pôneis vão atrás dos cães para salvá-la.",
           "caminho_video": "/media/S01/mlp_s01e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/4SAdfAzePIIBODsLqrZVSz8oX1e.jpg"
         },
         {
           "id": "S01E20",
-          "titulo": "Green Isn't Your Color",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Verde Não é Sua Cor",
+          "descricao": "Fluttershy acidentalmente se torna uma modelo e mesmo não gostando de toda a atenção que recebe, ela continua na profissão a pedido de Rarity.",
           "caminho_video": "/media/S01/mlp_s01e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/75s4tIAkaKfecfZHkk9tTK3EzAA.jpg"
         },
         {
           "id": "S01E21",
-          "titulo": "Over a Barrel",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Barril de Pólvora",
+          "descricao": "O elenco principal se separam e acabam no meio uma disputa entre os pôneis de uma cidade do oeste e uma tribo de Búfalos.",
           "caminho_video": "/media/S01/mlp_s01e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/bvRb3jnmjo2k5xA3HpmsopqWmTW.jpg"
         },
         {
           "id": "S01E22",
-          "titulo": "A Bird in the Hoof",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Um Pássaro no Casco",
+          "descricao": "Durante uma visita da Princesa Celestia, Fluttershy vê que o pássaro real está doente e decide leva-lo para sua casa e cuidar dele.",
           "caminho_video": "/media/S01/mlp_s01e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/diRtKgrQAdjL8CcBacIBU7o15PK.jpg"
         },
         {
           "id": "S01E23",
-          "titulo": "The Cutie Mark Chronicles",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "As Crônicas das Marcas",
+          "descricao": "As Pretendentes da Bela Marca procuram cada uma das personagens principais, a fim de descobrir como elas adquiriram as suas marcas.",
           "caminho_video": "/media/S01/mlp_s01e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/acpeqFm3HgAU2O4AfGdFehF0aOt.jpg"
         },
         {
           "id": "S01E24",
-          "titulo": "Owl's Well That Ends Well",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Tudo Acaba Bem com a Coruja Também",
+          "descricao": "Twilight Sparkle faz amizade com uma coruja que se torna seu segundo assistente, deixando Spike com ciúmes.",
           "caminho_video": "/media/S01/mlp_s01e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/52hPHY5TuWELnv4Hh6LX7MUXLpL.jpg"
         },
         {
           "id": "S01E25",
-          "titulo": "Party of One",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Festa de uma Só",
+          "descricao": "Pinkie Pie investiga as desculpas de seus amigos para não irem as suas festas.",
           "caminho_video": "/media/S01/mlp_s01e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/2t1gojfCNoZtzRrKU6gtkDt9ORR.jpg"
         },
         {
           "id": "S01E26",
-          "titulo": "The Best Night Ever",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "A Melhor Noite de Todas",
+          "descricao": "Twilight Sparkle e suas amigas vão ao Grande Baile Galopante esperando realizar os seus sonhos, porém as coisas não saem como elas esperavam.",
           "caminho_video": "/media/S01/mlp_s01e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/vlGjcicR6S2JI34FeP0NQCYhRS.jpg"
         }
       ]
     },
@@ -220,211 +220,211 @@
       "episodios": [
         {
           "id": "S02E01",
-          "titulo": "The Return of Harmony - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/k1ewwWhgssXRnp10v6JHDMxkn6r.jpg"
         },
         {
           "id": "S02E02",
-          "titulo": "The Return of Harmony - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/e3ENgSQhJoiJ5Em1UzMsvXHvOkt.jpg"
         },
         {
           "id": "S02E03",
-          "titulo": "Lesson Zero",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/k8QETpLgubAQO2Se5OoAOzgZaS.jpg"
         },
         {
           "id": "S02E04",
-          "titulo": "Luna Eclipsed",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/xq0fcvsG7b6GyYutGHHzTgiRZ2f.jpg"
         },
         {
           "id": "S02E05",
-          "titulo": "Sisterhooves Social",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zZTQoplnlG5zdOH5nTGjU2MykBv.jpg"
         },
         {
           "id": "S02E06",
-          "titulo": "The Cutie Pox",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ndN2OKcjwxTQgERripr4BBMk1uq.jpg"
         },
         {
           "id": "S02E07",
-          "titulo": "May the Best Pet Win!",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/3DsDOWitK7RyQwPLmCtSKjoiMxR.jpg"
         },
         {
           "id": "S02E08",
-          "titulo": "The Mysterious Mare Do Well",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/3RicYX9k9h0i4YXG1h1Nzvb8RtO.jpg"
         },
         {
           "id": "S02E09",
-          "titulo": "Sweet and Elite",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ezuWPI5MhsCDJ19ZrAxHQhBSIlA.jpg"
         },
         {
           "id": "S02E10",
-          "titulo": "Secret of My Excess",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/rJiaJLF8MQatEFskyHojj2eJcoN.jpg"
         },
         {
           "id": "S02E11",
-          "titulo": "Hearth's Warming Eve",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/p3cjSgbO92mrxj8EsClhCMwtA3W.jpg"
         },
         {
           "id": "S02E12",
-          "titulo": "Family Appreciation Day",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/mkqnMzBwfxJIRENYRmZSZleYrD9.jpg"
         },
         {
           "id": "S02E13",
-          "titulo": "Baby Cakes",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/1cBkWKJBjc6s0HqjGkwBvKAvITm.jpg"
         },
         {
           "id": "S02E14",
-          "titulo": "The Last Roundup",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cSkG7ewXoBDAJp3nNXfYDlcMZpE.jpg"
         },
         {
           "id": "S02E15",
-          "titulo": "The Super Speedy Cider Squeezy 6000",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/txktl8oosi4SbFt3g7i3rspHOFK.jpg"
         },
         {
           "id": "S02E16",
-          "titulo": "Read It and Weep",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/okZ0uwc5X4mtbkMt7ZCHEAlTcI5.jpg"
         },
         {
           "id": "S02E17",
-          "titulo": "Hearts and Hooves Day",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/awz1L55owPiwtp9ws7pdd8k7b2Y.jpg"
         },
         {
           "id": "S02E18",
-          "titulo": "A Friend in Deed",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/hLCGUM1zG4hFk47Sl1MRnZzdeR7.jpg"
         },
         {
           "id": "S02E19",
-          "titulo": "Putting Your Hoof Down",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/lVgNWiqurLH5keqNv9FY92IoErD.jpg"
         },
         {
           "id": "S02E20",
-          "titulo": "It's About Time",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eOjDqWKy7CgNz1YbSMA8zTwO2DH.jpg"
         },
         {
           "id": "S02E21",
-          "titulo": "Dragon Quest",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/tZULT3dQCkXMs6G2P82HmZxyEWy.jpg"
         },
         {
           "id": "S02E22",
-          "titulo": "Hurricane Fluttershy",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cLSq32V1ckf2FYkl5Mec2jjgW3V.jpg"
         },
         {
           "id": "S02E23",
-          "titulo": "Ponyville Confidential",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/vnwAb02uzZYU8TOK2HUb8g4zcza.jpg"
         },
         {
           "id": "S02E24",
-          "titulo": "MMMystery on the Friendship Express",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/4UBc1WLqlg93UUchqN41B0FrKcR.jpg"
         },
         {
           "id": "S02E25",
-          "titulo": "A Canterlot Wedding - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/e4D7FKgOxKfFGuWQy8zeVx233Xh.jpg"
         },
         {
           "id": "S02E26",
-          "titulo": "A Canterlot Wedding - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S02/mlp_s02e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/6KzDv46gju40fedmfJpwGaMYZMV.jpg"
         }
       ]
     },
@@ -434,107 +434,107 @@
       "episodios": [
         {
           "id": "S03E01",
-          "titulo": "The Crystal Empire - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eHL4IpXb33MyMLlWAvoC9xLeNg8.jpg"
         },
         {
           "id": "S03E02",
-          "titulo": "The Crystal Empire - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/e6j3D8OlPoVSgU9RnJydezrYwzE.jpg"
         },
         {
           "id": "S03E03",
-          "titulo": "Too Many Pinkie Pies",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/xbPtWm3aidye4qJbsCO6VfdMU7y.jpg"
         },
         {
           "id": "S03E04",
-          "titulo": "One Bad Apple",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/3KC76ykQxQFLDsU0kPxBHP4qbLN.jpg"
         },
         {
           "id": "S03E05",
-          "titulo": "Magic Duel",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/dVPofDGDy9DgXhJ4PToa510Oa0A.jpg"
         },
         {
           "id": "S03E06",
-          "titulo": "Sleepless in Ponyville",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/AmJI13KBj2M8Hu0xIUWsqKEfMuf.jpg"
         },
         {
           "id": "S03E07",
-          "titulo": "Wonderbolts Academy",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/h4IA0ZxiY00GEynCaSX90qxLqEj.jpg"
         },
         {
           "id": "S03E08",
-          "titulo": "Apple Family Reunion",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/gt29oolVjgy3DgW3tZfVLG3VFwv.jpg"
         },
         {
           "id": "S03E09",
-          "titulo": "Spike at Your Service",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/wzaIAMEkNXgPg3hJLYGnKgSMxLl.jpg"
         },
         {
           "id": "S03E10",
-          "titulo": "Keep Calm and Flutter On",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/xAuUM1NEmN9YQ6qTSVFCXEjaSFQ.jpg"
         },
         {
           "id": "S03E11",
-          "titulo": "Just for Sidekicks",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/5ilKB10FZDOCmS8xkzBNIzluZs4.jpg"
         },
         {
           "id": "S03E12",
-          "titulo": "Games Ponies Play",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/9yroj3zyHLn6I5X1VuvdsJLvd0k.jpg"
         },
         {
           "id": "S03E13",
-          "titulo": "Magical Mystery Cure",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S03/mlp_s03e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/623BYtTzSRa67tSyh71cq23MkUV.jpg"
         }
       ]
     },
@@ -544,211 +544,211 @@
       "episodios": [
         {
           "id": "S04E01",
-          "titulo": "Princess Twilight Sparkle - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/dgSn2bg6AhID5CYqDF3QWWc2liT.jpg"
         },
         {
           "id": "S04E02",
-          "titulo": "Princess Twilight Sparkle - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/nn17dH5NN9EwIUhqgTfkzblCaZG.jpg"
         },
         {
           "id": "S04E03",
-          "titulo": "Castle-mania",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ofz26bMCAnHxHaJGqXc9b1BsRpb.jpg"
         },
         {
           "id": "S04E04",
-          "titulo": "Daring Don't",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/n9Ip7PpcL3nlhRA4S9NDT0GaIm1.jpg"
         },
         {
           "id": "S04E05",
-          "titulo": "Flight to the Finish",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/1Wx25ERjcIFwIpNcwp3qU5cc2jN.jpg"
         },
         {
           "id": "S04E06",
-          "titulo": "Power Ponies",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/gdsHsS18aNcKgG0xW163km7fd2d.jpg"
         },
         {
           "id": "S04E07",
-          "titulo": "Bats!",
-          "descricao": "Vampire Fruit Bats take over Sweet Apple Acres and Applejack and her friends' efforts to get rid of them take an unexpected and frightening turn.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/8Hr743WM2f8xwJzwo2T5j0Q0Pgh.jpg"
         },
         {
           "id": "S04E08",
-          "titulo": "Rarity Takes Manehattan",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/dGYb2OI4ocMH9dYALolAAh8ScSM.jpg"
         },
         {
           "id": "S04E09",
-          "titulo": "Pinkie Apple Pie",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7nQvpYfNY4u3AgnXxKfn30qCqji.jpg"
         },
         {
           "id": "S04E10",
-          "titulo": "Rainbow Falls",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/pzEwTKETEHEJyiEiKfnFtoAYdnw.jpg"
         },
         {
           "id": "S04E11",
-          "titulo": "Three's a Crowd",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/2kGgDrWPOkzKKJYpUtNv3p4Wko9.jpg"
         },
         {
           "id": "S04E12",
-          "titulo": "Pinkie Pride",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cUFJzmTcBIcVBljSdj5rEX31cBz.jpg"
         },
         {
           "id": "S04E13",
-          "titulo": "Simple Ways",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/hADYH1ZX4ODjhGeawwXCAC3Q0Bd.jpg"
         },
         {
           "id": "S04E14",
-          "titulo": "Filli Vanilli",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/6hN1RC2RdeIWa37rKtTN5iiPPyK.jpg"
         },
         {
           "id": "S04E15",
-          "titulo": "Twilight Time",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/3Ondj6RnVF6kS4yB8j0G98ePxKx.jpg"
         },
         {
           "id": "S04E16",
-          "titulo": "It Ain't Easy Being Breezies",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/n0kdSxhLeM8Uzq4u6xUc4vtC1OW.jpg"
         },
         {
           "id": "S04E17",
-          "titulo": "Somepony to Watch Over Me",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/r1PhGOQzmEC2AvGDr2tOS6h1pLW.jpg"
         },
         {
           "id": "S04E18",
-          "titulo": "Maud Pie",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/iZ2Y0WO8taWeYkuVdM3Dmdvlnfy.jpg"
         },
         {
           "id": "S04E19",
-          "titulo": "For Whom the Sweetie Belle Toils",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/r8aCz47jxmgWmDPjqmuhQdRtDVp.jpg"
         },
         {
           "id": "S04E20",
-          "titulo": "Leap of Faith",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/wPPm3xLD3UQ7c2fq4XUGmbVqfwR.jpg"
         },
         {
           "id": "S04E21",
-          "titulo": "Testing, Testing, 1, 2, 3",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/5xSILQuWPRlRYgmEnpqZ7BreBlC.jpg"
         },
         {
           "id": "S04E22",
-          "titulo": "Trade Ya",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/yoAH0V9xELvkNi3N8mFFnWkvtqk.jpg"
         },
         {
           "id": "S04E23",
-          "titulo": "Inspiration Manifestation",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/qN7yyZLtqVlHXyhdoYQVBbIDe6L.jpg"
         },
         {
           "id": "S04E24",
-          "titulo": "Equestria Games",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cnCB4n4hG2bSKuKrsykiTGGNr2S.jpg"
         },
         {
           "id": "S04E25",
-          "titulo": "Twilight's Kingdom - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/lhrc3Yno3iQQRNgV94etF7kcs45.jpg"
         },
         {
           "id": "S04E26",
-          "titulo": "Twilight's Kingdom - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S04/mlp_s04e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/j9OXvZnVA2PvmvsZHHVwsGorTxT.jpg"
         }
       ]
     },
@@ -758,211 +758,211 @@
       "episodios": [
         {
           "id": "S05E01",
-          "titulo": "The Cutie Map - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/i2VD1oAJIXW8ygfoGwxGEhmadIz.jpg"
         },
         {
           "id": "S05E02",
-          "titulo": "The Cutie Map - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/dmkTBVgwIxXz33yPcfRDIondAts.jpg"
         },
         {
           "id": "S05E03",
-          "titulo": "Castle Sweet Castle",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/pvK6ZZnriYRctT1pYPeyHUBCJsb.jpg"
         },
         {
           "id": "S05E04",
-          "titulo": "Bloom and Gloom",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/isduh80cQqsTbnctzQA94NDZBDe.jpg"
         },
         {
           "id": "S05E05",
-          "titulo": "Tanks for the Memories",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/z3lcZlVg53CxBZV87kBrJ3Etpcu.jpg"
         },
         {
           "id": "S05E06",
-          "titulo": "Appleoosa's Most Wanted",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/rJ7aWY0cTEJCBmK0d40hgscRwSA.jpg"
         },
         {
           "id": "S05E07",
-          "titulo": "Make New Friends But Keep Discord",
-          "descricao": "When Discord learns that Fluttershy is taking a new friend to the Grand Galloping Gala instead of him, he goes to extreme lengths to prove that he isn't upset about it.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/6dJWyhliFhw474xPoFIzZeoEFGm.jpg"
         },
         {
           "id": "S05E08",
-          "titulo": "The Lost Treasure of Griffonstone",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/qGkJiiaUk2wWTsb6rtrrj51ZuJI.jpg"
         },
         {
           "id": "S05E09",
-          "titulo": "Slice of Life",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/5NDpzpxQeStbVOh0KclxFtpI4tj.jpg"
         },
         {
           "id": "S05E10",
-          "titulo": "Princess Spike",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7yZb0CL6HSbwefUpKUbfTzC6AcY.jpg"
         },
         {
           "id": "S05E11",
-          "titulo": "Party Pooped",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/g9KWYHA1aK3Fl830aLH6tqYB1iQ.jpg"
         },
         {
           "id": "S05E12",
-          "titulo": "Amending Fences",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/vBqIJ4waXGT0oE8UD5VMzKH5byt.jpg"
         },
         {
           "id": "S05E13",
-          "titulo": "Do Princesses Dream of Magic Sheep?",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/g9JP00BfPyd07tQor3Ku67T0jh0.jpg"
         },
         {
           "id": "S05E14",
-          "titulo": "Canterlot Boutique",
-          "descricao": "Rarity's dream of owning a boutique in Canterlot finally comes true, but it comes at a price Rarity may not be willing to pay.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/gStKq1XeVNMMAzHAok13T5bjj5k.jpg"
         },
         {
           "id": "S05E15",
-          "titulo": "Rarity Investigates!",
-          "descricao": "Rarity must prove that her friend is innocent when Rainbow Dash is accused of a crime that she did not commit.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eX8ERai3f4k4N0nzCdICG1iosoh.jpg"
         },
         {
           "id": "S05E16",
-          "titulo": "Made in Manehattan",
-          "descricao": "Applejack and Rarity are called to Manehattan to solve a friendship problem; they find themselves helping Coco Pommel with a major project in her neighborhood, but the three soon discover that they've bitten off more than they can chew.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/hAQnrUfUIcv8kdqlLVfTAamcXMn.jpg"
         },
         {
           "id": "S05E17",
-          "titulo": "Brotherhooves Social",
-          "descricao": "When Applejack is called away and has to miss participating in the Sisterhooves Social with Apple Bloom, Big Mac decides to fill in for her.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/4DGIBbUxITtupLcuQLv73IpWbEi.jpg"
         },
         {
           "id": "S05E18",
-          "titulo": "Crusaders of the Lost Mark",
-          "descricao": "When Pip Squeak decides to run for class president, the Cutie Mark Crusaders rally around their friend, but find themselves helping their long-time nemesis, Diamond Tiara, in an unexpected way.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/3hjqhVP8WC82blvgL9sxYgAoO7U.jpg"
         },
         {
           "id": "S05E19",
-          "titulo": "The One Where Pinkie Pie Knows",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/uRslt3m1FKhKVe4xiEVJw4o0I8G.jpg"
         },
         {
           "id": "S05E20",
-          "titulo": "Hearthbreakers",
-          "descricao": "Applejack is excited to celebrate Hearthswarming Eve with Pinkie Pie's family but soon discovers that the Pies have very different ways of enjoying the holiday at their Rock Farm.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/Atd1Niwa1bkdWrCWNnSvVSxPCi4.jpg"
         },
         {
           "id": "S05E21",
-          "titulo": "Scare Master",
-          "descricao": "Fluttershy decides to face her fears and take part in Nightmare Night with her friends.",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eTdVlFnO1hunNYlyM0xeKAUyqd9.jpg"
         },
         {
           "id": "S05E22",
-          "titulo": "What About Discord?",
-          "descricao": "Twilight returns from Canterlot to find her friends have developed a deep bond with Discord.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/yHg1Zp4dGGjENE5QgpS6OG1AVes.jpg"
         },
         {
           "id": "S05E23",
-          "titulo": "The Hooffields and Mccolts",
-          "descricao": "Princess Twilight and Fluttershy are called by the map to settle a dispute between two feuding families who can't even remember why they are fighting.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/jgMs92axjvDuqo1MfmK4xuwRxHV.jpg"
         },
         {
           "id": "S05E24",
-          "titulo": "The Mane Attraction",
-          "descricao": "An old friend of Applejack's has become a huge pop star and Applejack fears that the singer's manager does not have her best interests at heart.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/weVER3aW4eP2tHWpjqI7Evtz1mK.jpg"
         },
         {
           "id": "S05E25",
-          "titulo": "The Cutie Re-Mark - Part 1",
-          "descricao": "Starlight Glimmer returns to seek vengeance on Twilight and her friends and has acquired a spell that could change the past, present, and future of Equestria forever.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/c9Tv3Lu3WbOP7L2T00WvjfJiawo.jpg"
         },
         {
           "id": "S05E26",
-          "titulo": "The Cutie Re-Mark - Part 2",
-          "descricao": "Princess Twilight's efforts to stop Starlight from altering the past continue, but she fears that they may be in vain.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S05/mlp_s05e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/gvjeNXkTTeSbE4DsZ7D38iUP3sC.jpg"
         }
       ]
     },
@@ -972,211 +972,211 @@
       "episodios": [
         {
           "id": "S06E01",
-          "titulo": "The Crystalling - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/z75SLLkDTkP202saLbPRpVtCWkC.jpg"
         },
         {
           "id": "S06E02",
-          "titulo": "The Crystalling - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cEuvA713BLb52tDsi857alTa1PL.jpg"
         },
         {
           "id": "S06E03",
-          "titulo": "The Gift of Maud Pie",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/98cyeJjL8vmED9k3DGJBpNP1Rpe.jpg"
         },
         {
           "id": "S06E04",
-          "titulo": "On Your Marks",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/uBpWo5cm05VtRbtDJWUQgRXE5wF.jpg"
         },
         {
           "id": "S06E05",
-          "titulo": "Gauntlet of Fire",
-          "descricao": "Spike is forced to compete in a dangerous Gauntlet for the title of Dragon Lord in order to save his friends.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/2JELVF9Fc6yiZvVITZTRtpwAOAV.jpg"
         },
         {
           "id": "S06E06",
-          "titulo": "No Second Prances",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/atPGXCTE8P45AyHHowl0lgGrpex.jpg"
         },
         {
           "id": "S06E07",
-          "titulo": "Newbie Dash",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/i4zYZORZfV02TRBiPE4LvWm6qWi.jpg"
         },
         {
           "id": "S06E08",
-          "titulo": "A Hearth's Warming Tail",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/tfXHWXgCP6Cz5ZmzYUdfYyarkyd.jpg"
         },
         {
           "id": "S06E09",
-          "titulo": "The Saddle Row Review",
-          "descricao": "When Rarity opens her flagship store in Manehattan, a tell-all article threatens to expose how badly her friends almost ruined the Grand Opening.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/bQsCfDlAIHjcuysEz5oxj3r4lYK.jpg"
         },
         {
           "id": "S06E10",
-          "titulo": "Applejack's \"Day\" Off",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/gL5SR066GTA4SEUrKo9FVMt0fpD.jpg"
         },
         {
           "id": "S06E11",
-          "titulo": "Flutter Brutter",
-          "descricao": "When Fluttershy tries to convince her freeloading brother to move out of their parents' house, he moves in with her instead, forcing Fluttershy to stand up to him and help him get over his fear of failure.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zvED8D50v6Krw00ojb3NjpjTclW.jpg"
         },
         {
           "id": "S06E12",
-          "titulo": "Spice Up Your Life",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zDn6hRaJplEzH1YrVgbKEXUOLCB.jpg"
         },
         {
           "id": "S06E13",
-          "titulo": "Stranger Than Fan Fiction",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/qJsYoh2WZUbK5giT7FxITtT3UBO.jpg"
         },
         {
           "id": "S06E14",
-          "titulo": "The Cart Before the Ponies",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/pSNXea8nqAmPo8BIfmYEiPYkxx0.jpg"
         },
         {
           "id": "S06E15",
-          "titulo": "28 Pranks Later",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cyF23JQB8QsQm5ltnpOxc0GmmHp.jpg"
         },
         {
           "id": "S06E16",
-          "titulo": "The Times They Are a Changeling",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/2RRrxK5tAuEYntHYC4JKCSyj9ds.jpg"
         },
         {
           "id": "S06E17",
-          "titulo": "Dungeons & Discord",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/mDShfDxRAlZJwwhXYYOkmtjqpFQ.jpg"
         },
         {
           "id": "S06E18",
-          "titulo": "Buckball Season",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/alKexlJFxWO2lAQUiqatY0W1Zxp.jpg"
         },
         {
           "id": "S06E19",
-          "titulo": "The Fault in Our Cutie Marks",
-          "descricao": "Pinkie Pie and Fluttershy turn out to be Ponyville's best buckball players; Applejack and Rainbow Dash agree to coach them against Appleoosa",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ayEIXNfBFXgy1KVWyiHKMHQJ6EF.jpg"
         },
         {
           "id": "S06E20",
-          "titulo": "Viva Las Pegasus",
-          "descricao": "Applejack and Fluttershy follow the map to Las Pegasus where they discover suspicious going-ons at a resort called Gladmane's; they also find Film and Flam working at the resort.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zrEI6rCHZNaB7QpoLdaEYFmwjUe.jpg"
         },
         {
           "id": "S06E21",
-          "titulo": "Every Little Thing She Does",
-          "descricao": "Though Starlight Glimmer is excelling at her magical studies with Twilight Sparkle, she feels pressure to impress her teacher and takes on too many friendship problems at once.",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/urz8l8xtpZQtRF1qiQwOlkFF95B.jpg"
         },
         {
           "id": "S06E22",
-          "titulo": "P.P.O.V. (Pony Point of View)",
-          "descricao": "Twilight must find the truth after Applejack, Rarity and Pinkie Pie have three different versions of events from their boat trip and are upset with each other.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/hnN8OVPB2GLQ0cp36Nr2avVZEgU.jpg"
         },
         {
           "id": "S06E23",
-          "titulo": "Where the Apple Lies",
-          "descricao": "When Apple Bloom tells a white lie to cover up a mistake, Applejack shares the story of how she came to value honesty after telling a series of lies that almost destroyed the farm and landed the whole Apple family in the hospital.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/xBEMaOD2YWwrnKU6FBMUOt1jofy.jpg"
         },
         {
           "id": "S06E24",
-          "titulo": "Top Bolt",
-          "descricao": "The Cutie Map summons Twilight and Rainbow Dash to the Wonderbolt Academy to solve a friendship problem between academy hopefuls Sky Stinger and Vapor Trail.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/9eXVVwtdl5m8tyslUByObItGYt6.jpg"
         },
         {
           "id": "S06E25",
-          "titulo": "To Where and Back Again - Part 1",
-          "descricao": "Without the assistance of Twilight Sparkle and the Mane Six, Starlight Glimmer must work alone to assemble an unlikely team of heroes to defend Equestria from the return of one of its greatest threats.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/sqd19lPuPZ36cvxYHSQq2ZZVMac.jpg"
         },
         {
           "id": "S06E26",
-          "titulo": "To Where and Back Again - Part 2",
-          "descricao": "To rescue her friends and save Equestria, Starlight Glimmer leads an unlikely band of heroes against one of the ponies' oldest and greatest foes.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S06/mlp_s06e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/kx1eFMRpwl5xPhfr0SC1kexUT7w.jpg"
         }
       ]
     },
@@ -1186,211 +1186,211 @@
       "episodios": [
         {
           "id": "S07E01",
-          "titulo": "Celestial Advice",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/jSTLnWpRV6cf1bcdT2oF4fQ9aTW.jpg"
         },
         {
           "id": "S07E02",
-          "titulo": "All Bottled Up",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ct7QbOFzOk7UivJeUVbkTdQZZiZ.jpg"
         },
         {
           "id": "S07E03",
-          "titulo": "A Flurry of Emotions",
-          "descricao": "Twilight Sparkle tries to prove she is the best aunt ever when she adds baby-sitting her niece, Flurry Heart, to her already busy schedule.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/cYYFuTalL1qfTiPXUodMeV70mH8.jpg"
         },
         {
           "id": "S07E04",
-          "titulo": "Rock Solid Friendship",
-          "descricao": "Pinkie Pie does everything she can to make sure her sister, Maud, sees that Ponyville has more to offer than just rocks.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/fwwVEYxBqBH5IrCmxxKHQxbSdVX.jpg"
         },
         {
           "id": "S07E05",
-          "titulo": "Fluttershy Leans In",
-          "descricao": "Determined to make her career dreams come true with the help of some very special ponies, Fluttershy must find a way to stand up and fight for her ideas.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/PgtGjyDSBR1rsZNyi84FYk3aaW.jpg"
         },
         {
           "id": "S07E06",
-          "titulo": "Forever Filly",
-          "descricao": "Rarity tries to surprise Sweetie Belle with a day filled with all of her favorite activities, but quickly learns her little sister is no longer the little foal she used to be.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/suHAI8zcipqPJjRJC3jqHLH7Oou.jpg"
         },
         {
           "id": "S07E07",
-          "titulo": "Parental Glideance",
-          "descricao": "Rainbow Dash is pushed to the brink by her parents' unbridled enthusiasm after they learn she is a Wonderbolt.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/rflezh6q5aYgUCqPm1p30V4QWcw.jpg"
         },
         {
           "id": "S07E08",
-          "titulo": "Hard to Say Anything",
-          "descricao": "The CMC's figure out that Big Mac has his first crush and vow to help him win Sugar Belle's heart against the competition of Feather Bangs.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/il0FrsccYkMq4IM990pJGkhYXDd.jpg"
         },
         {
           "id": "S07E09",
-          "titulo": "Honest Apple",
-          "descricao": "When Rarity asks Applejack to be a judge in a fashion show, Applejack learns that an opinion, however honest, can still be hurtful.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/75KXk9yWIaa7YXfe2R07G5DCOC8.jpg"
         },
         {
           "id": "S07E10",
-          "titulo": "A Royal Problem",
-          "descricao": "Starlight Glimmer is sent to solve a friendship problem between Princess Celestia and Princess Luna; when it's clear that the problem is that the royal sisters don't appreciate one another, Starlight impulsively switches their cutie marks!",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/xTzRVbVSDk32ujxoQpdpaThPnUy.jpg"
         },
         {
           "id": "S07E11",
-          "titulo": "Not Asking for Trouble",
-          "descricao": "Pinkie Pie visits Prince Rutherford and the Yaks. While there, an avalanche falls on the entire rustic village of Yakyakistan. Pinkie Pie suggests that she go to get the other ponies to come help but the proud Prince and Yaks refuse.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/i3I2IsJgIWbZhKk3wPYA09k6OVq.jpg"
         },
         {
           "id": "S07E12",
-          "titulo": "Discordant Harmony",
-          "descricao": "When Discord invites Fluttershy to his realm for tea, he worries she won't be comfortable there and begins to change it and himself with disastrous results.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/m1EARKJDp9gCI1SX783kveElW63.jpg"
         },
         {
           "id": "S07E13",
-          "titulo": "The Perfect Pear",
-          "descricao": "The Apple Siblings learn about their parent's love story and find out that they're half Pear.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/fvuFHV7gZGXp3enZWQWCIdXqg02.jpg"
         },
         {
           "id": "S07E14",
-          "titulo": "Fame and Misfortune",
-          "descricao": "Twilight Sparkle's publishing of the friendship journal has unintended consequences when ponies start to argue over who wrote the best lessons.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/rVxkzLT7JgcuVYxQZISzgs0vRk.jpg"
         },
         {
           "id": "S07E15",
-          "titulo": "Triple Threat",
-          "descricao": "Spike accidentally invites Ember and Thorax to Ponyville on the same day. He's sure the two new leaders are not going to get along so he does all he can to keep them apart and cover the fact that the other is there.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/wkXvsJB43sF4CatfevisREXBS3s.jpg"
         },
         {
           "id": "S07E16",
-          "titulo": "Campfire Tales",
-          "descricao": "When their sister camping trip is ruined by Fly-ders, Applejack, Rarity, and Rainbow Dash tell Sweetie Belle, Apple Bloom, and Scootaloo the stories of their favorite legends; inspired by the tales, the girls make the most out of their new situation.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/2qX9i5XOfYZ5VtlmIfLPpqMzVos.jpg"
         },
         {
           "id": "S07E17",
-          "titulo": "To Change a Changeling",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/e46zXuvqBMWEYycvDOrToCPs80H.jpg"
         },
         {
           "id": "S07E18",
-          "titulo": "Daring Done?",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/vG7Xz6nzU1GFCq7w0HPtrBX995S.jpg"
         },
         {
           "id": "S07E19",
-          "titulo": "It Isn't the Mane Thing About You",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/fFdxbL382R96zFi7dQuQAE6HgEt.jpg"
         },
         {
           "id": "S07E20",
-          "titulo": "A Health of Information",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/mjpPQwT8Oct1Cnju7J4jrNIHzcI.jpg"
         },
         {
           "id": "S07E21",
-          "titulo": "Marks and Recreation",
-          "descricao": "Wanting to help as many blank flanks as possible, the Cutie Mark Crusaders start a Cutie Mark Day Camp, but are surprised when one of their campers doesn't want a cutie mark!",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/a9UpH4aOw4JkOdTkAAhfU7Ay8yL.jpg"
         },
         {
           "id": "S07E22",
-          "titulo": "Once Upon a Zeppelin",
-          "descricao": "Twilight is torn when she discovers the cruise she and her family are on is a themed vacation experience in which ponies have paid for the privilege of spending time with her, and she must please both her family and the cruise attendees.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/gMYRLzjqqUmqmXzPAfNXc0x47cT.jpg"
         },
         {
           "id": "S07E23",
-          "titulo": "Secrets and Pies",
-          "descricao": "When Pinkie Pie thinks she sees Rainbow Dash throw away one of her pies, she suspects the worst - that Rainbow Dash secretly hates her pies; Pinkie Pie attempts to catch Rainbow Dash in her web of lies.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zypSBmIA368FisMo06ktKPgEgvc.jpg"
         },
         {
           "id": "S07E24",
-          "titulo": "Uncommon Bond",
-          "descricao": "When Starlight gets a visit from Sunburst, she discovers that he has tons in common with her friends and starts to wonder if he still has anything in common with her.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7yp4EZIM5WlD14JfJPbXpkXr5Xo.jpg"
         },
         {
           "id": "S07E25",
-          "titulo": "Shadow Play - Part 1",
-          "descricao": "When Sunburst discovers the lost journal of Starswirl the Bearded, Twilight becomes obsessed with saving her magical idol from a thousand-year-old prison.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/fVDuEQa1oQUnhGcuWkJBuLTSWI.jpg"
         },
         {
           "id": "S07E26",
-          "titulo": "Shadow Play - Part 2",
-          "descricao": "With Starswirl and the other Pillars of Old Equestria back from limbo (where they've been trapped for a thousand years), Twilight and her friends must work together to defeat the Pony of Shadows.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S07/mlp_s07e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/XXaTO3enOdEjh4TH472hRN9YAS.jpg"
         }
       ]
     },
@@ -1400,211 +1400,211 @@
       "episodios": [
         {
           "id": "S08E01",
-          "titulo": "School Daze - Part 1",
-          "descricao": "When the Friendship Map grows bigger to reflect the world beyond Equestria, the Mane Six realize they'll need a way to spread the message of friendship far and wide. Luckily Twilight knows just what to do- open a School Of Friendship!",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eqxrRfBYyPwpfelEwDWKNhu9Ml9.jpg"
         },
         {
           "id": "S08E02",
-          "titulo": "School Daze - Part 2",
-          "descricao": "When the School of Friendship is closed by Chancellor Neighsay of the Equine Educational Association, Twilight Sparkle must reunite her students, inspire her friends and buck the rules to stand up for what she knows is right for every creature, pony or not.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/jAF1bXyZ6jmZpyRyAACBgnjNFY4.jpg"
         },
         {
           "id": "S08E03",
-          "titulo": "The Maud Couple",
-          "descricao": "Pinkie Pie's super-best-friend-sister bond is challenged when Maud gets a boyfriend that Pinkie Pie can't stand.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/qSSYz6QRTFcCiffOqGIn7J0031R.jpg"
         },
         {
           "id": "S08E04",
-          "titulo": "Fake It ‘Til You Make It",
-          "descricao": "When Fluttershy is the only pony available to look after the Manehattan boutique while Rarity is away, she takes on a series of characters to cope with the intimidating clientele and learns that she was already the best pony for the job just by being herself.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/3ixjg5zqs0fpMIZsD9JSVtVDsaH.jpg"
         },
         {
           "id": "S08E05",
-          "titulo": "Grannies Gone Wild",
-          "descricao": "Granny Smith and her friends head to Las Pegasus. Rainbow Dash tags along as a chaperone so she can ride the best rollercoaster ever before it closes.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/x4RDgfWRf2yIvN0pHeNiSrl3EtO.jpg"
         },
         {
           "id": "S08E06",
-          "titulo": "Surf and/or Turf",
-          "descricao": "With family members on Mount Aris and Sea Pony relatives in Seaquestria, the Cutie Mark Crusaders try to help a young Hippogriff figure out where he belongs.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/yXvGaoYN1MIAIbcooL84C5wIDEl.jpg"
         },
         {
           "id": "S08E07",
-          "titulo": "Horse Play",
-          "descricao": "Twilight Sparkle casts Princess Celestia in her play, only to discover Celestia's talents lie elsewhere.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ewL7DjvJKr6DutwpmxEdf4MjqwV.jpg"
         },
         {
           "id": "S08E08",
-          "titulo": "The Parent Map",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7GvJNPSCEtP37burNQ7XhxsSwXl.jpg"
         },
         {
           "id": "S08E09",
-          "titulo": "Non-Compete Clause",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Cláusula de Não-concorrência",
+          "descricao": "Applejack e Rainbow Dash levam os alunos da Escola de Amizade em uma saída de campo para aprenderem a trabalhar em equipe. Mas acidentalmente, a aula ao ar livre mostra como não trabalhar em grupo.",
           "caminho_video": "/media/S08/mlp_s08e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/pHqR9pwn91wB3agxi3QcDK1luAT.jpg"
         },
         {
           "id": "S08E10",
-          "titulo": "The Break Up Break Down",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/zvXdWJbKkyzNrmxSFimAKtQ82pv.jpg"
         },
         {
           "id": "S08E11",
-          "titulo": "Molt Down",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/y92zVGPgOlhNYNoKXjQCXiApxQ1.jpg"
         },
         {
           "id": "S08E12",
-          "titulo": "Marks for Effort",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/r74XOhFAOxYMaDO3Q0uYHvix2fH.jpg"
         },
         {
           "id": "S08E13",
-          "titulo": "The Mean 6",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/kRKRR9qNDQKramnAhc2deK8m4Y5.jpg"
         },
         {
           "id": "S08E14",
-          "titulo": "A Matter of Principals",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/bh2cIbkS76nOXSjAh9fFqrloaUB.jpg"
         },
         {
           "id": "S08E15",
-          "titulo": "The Hearth's Warming Club",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/fxlrwJifGSoqc3WQju1qqYo8g02.jpg"
         },
         {
           "id": "S08E16",
-          "titulo": "Friendship University",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/80IPcp4hSg75lGLsrvfiMK9PoWO.jpg"
         },
         {
           "id": "S08E17",
-          "titulo": "The End in Friend",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/8BEFUOUHibBi9uD8CsRHNR8ommP.jpg"
         },
         {
           "id": "S08E18",
-          "titulo": "Yakity-Sax",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eMghb40a0P4AezwbN6knpIwr9Fe.jpg"
         },
         {
           "id": "S08E19",
-          "titulo": "On the Road to Friendship",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/qROmNMgl5VzuxoseCJ6MVZSzLu2.jpg"
         },
         {
           "id": "S08E20",
-          "titulo": "The Washouts",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7jJfWy9xxdY3HlBHGZykMjVNJ8B.jpg"
         },
         {
           "id": "S08E21",
-          "titulo": "A Rockhoof and a Hard Place",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/vZJpJg6H7l2KZnFHjIJK6sHbN8B.jpg"
         },
         {
           "id": "S08E22",
-          "titulo": "What Lies Beneath",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/1vBp8eLFBTjMO7GaZB9R31ZeLeU.jpg"
         },
         {
           "id": "S08E23",
-          "titulo": "Sounds of Silence",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/6O0lcAd3BD5MnY7xvGSKrT8gzz6.jpg"
         },
         {
           "id": "S08E24",
-          "titulo": "Father Knows Beast",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/52eeMn5ZN5WRH0k29kI1Df717Hf.jpg"
         },
         {
           "id": "S08E25",
-          "titulo": "School Raze - Part 1",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/jVO1xQ6ZDqfJRfzHfYZllCW1Am7.jpg"
         },
         {
           "id": "S08E26",
-          "titulo": "School Raze - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S08/mlp_s08e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/l2G09bPDOLibZPyY29t4dXZPIOI.jpg"
         }
       ]
     },
@@ -1614,211 +1614,211 @@
       "episodios": [
         {
           "id": "S09E01",
-          "titulo": "The Beginning of the End - Part 1",
-          "descricao": "Princess Celestia and Princess Luna decide to retire and hand off the ruling of Equestria to Twilight Sparkle and her friends, which sends Twilight into a tailspin of self-doubt. Meanwhile, an ancient villain bands together a legion of nefarious characters to conquer all of Equestria, challenging Twilight Sparkle and the rest of the Mane 6 to step in and save the day.",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e01.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/fyDgzb1wchtEkXewkZKsA9WbIdq.jpg"
         },
         {
           "id": "S09E02",
-          "titulo": "The Beginning of the End - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e02.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/ZCMaKnF7bdH4xx43Ch69r6mcPT.jpg"
         },
         {
           "id": "S09E03",
-          "titulo": "Uprooted",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e03.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/i1hHSNv6RfMqeeC6GcIkulWbk4P.jpg"
         },
         {
           "id": "S09E04",
-          "titulo": "Twilight's Seven",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e04.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/sG7xiutlGmOdG6kqLyAOp5RO0Gg.jpg"
         },
         {
           "id": "S09E05",
-          "titulo": "The Point of No Return",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e05.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/4tfv2D6I75tEVHLE2dMCgCIcZad.jpg"
         },
         {
           "id": "S09E06",
-          "titulo": "Common Ground",
-          "descricao": "Rainbow Dash's old pal Quibble Pants needs help to bond with the daughter of his new special friend because, like Dash, she's a real sports pony.",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e06.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/qVXQPGT6csuKju25NJkmVNMd8WD.jpg"
         },
         {
           "id": "S09E07",
-          "titulo": "She's All Yak",
-          "descricao": "When Sandbar asks Yona to a pony dance, she goes to Rarity and her friends for a makeover in appearance and personality.",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e07.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/tA1PWJnRUzeuEhDvnIwdHeb3Z15.jpg"
         },
         {
           "id": "S09E08",
-          "titulo": "Frenemies",
-          "descricao": "Grogar sends his legion of doom on a mission to become allies, but his plan works too well and they almost become friends.",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e08.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/eQOtOZWXkTiJh5c3Xvbslx6brNh.jpg"
         },
         {
           "id": "S09E09",
-          "titulo": "Sweet and Smoky",
-          "descricao": "Smolder returns to the Dragonlands with Spike and Fluttershy to help cheer up her sensitive brother, but when they arrive they discover the dragon eggs aren't hatching.",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e09.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/A1gCHy5CnYN8h6uSg8BYXKiZ5AO.jpg"
         },
         {
           "id": "S09E10",
-          "titulo": "Going to Seed",
-          "descricao": "Applejack's plans for an orderly harvest go awry when Apple Bloom becomes obsessed with catching a magical creature she thinks can help them.",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e10.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7C6RBJ5xmzVyj5a9THELpCMVKFb.jpg"
         },
         {
           "id": "S09E11",
-          "titulo": "Student Counsel",
-          "descricao": "Starlight Glimmer relishes her role as school counselor and encourages the students to come to her anytime about anything, but she becomes overwhelmed and learns a lesson.",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e11.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/9W1tiasR138btPNvBj59Tlt0Uq2.jpg"
         },
         {
           "id": "S09E12",
-          "titulo": "The Last Crusade",
-          "descricao": "Unexpected visitors to Ponyville threaten to break up the Cutie Mark Crusaders forever.",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e12.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/2v2o6GtMyBsK6weCUOT0zKV0nWz.jpg"
         },
         {
           "id": "S09E13",
-          "titulo": "Between Dark and Dawn",
-          "descricao": "Luna and Celestia take a sister vacation while Twilight and her friends struggle to cover the princesses' many royal duties.",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e13.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/lxWvNuKEmHhv1AexCfWrVseF1mf.jpg"
         },
         {
           "id": "S09E14",
-          "titulo": "The Last Laugh",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e14.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/m66SnE4GwvGXrMo1ZV5jWtjzk9n.jpg"
         },
         {
           "id": "S09E15",
-          "titulo": "2,4,6, Greaaat",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e15.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/mWvpFY1MrkJ1cldmkGVwtpG2lSd.jpg"
         },
         {
           "id": "S09E16",
-          "titulo": "A Trivial Problem",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e16.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/yVNGTkVfTW49MZZlGEzy4MBtoJ9.jpg"
         },
         {
           "id": "S09E17",
-          "titulo": "The Summer Sun Setback",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e17.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/z1kxfmULa75bERxBZv6WxMds2cQ.jpg"
         },
         {
           "id": "S09E18",
-          "titulo": "She Talks to Angel",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e18.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/m1cBHiLmNeltPQz3zNnUrpuYiJ7.jpg"
         },
         {
           "id": "S09E19",
-          "titulo": "Dragon Dropped",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e19.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/mzHoLmZg0aC06fII36AouJLfw87.jpg"
         },
         {
           "id": "S09E20",
-          "titulo": "A Horse Shoe-in",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e20.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/vY4uDGS9gkQrgpOPX5x5SNYgujf.jpg"
         },
         {
           "id": "S09E21",
-          "titulo": "Daring Doubt",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e21.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/7keZ5skimb0xDiDpRRw2lGAkK5V.jpg"
         },
         {
           "id": "S09E22",
-          "titulo": "Growing Up is Hard to Do",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e22.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/pDRReTXnz2Rr3MHpBIZ6uzmoES6.jpg"
         },
         {
           "id": "S09E23",
-          "titulo": "The Big Mac Question",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e23.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/s6X6ZqzYkEk5vsgkCck6CHG7iWE.jpg"
         },
         {
           "id": "S09E24",
-          "titulo": "The Ending of the End - Part 1",
-          "descricao": "A villainous alliance unleashes their unified might on Equestria and it's up to the Mane Six to save the kingdom.",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e24.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/6zDGQKCNTS0MvhFO8zIl2xktb5l.jpg"
         },
         {
           "id": "S09E25",
-          "titulo": "The Ending of the End - Part 2",
-          "descricao": "Sinopse não disponível.",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e25.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/oZRJgvXax3fvZQj5MzzJqtYBu3k.jpg"
         },
         {
           "id": "S09E26",
-          "titulo": "The Last Problem",
-          "descricao": "Years later in the future, Princess Twilight is visited by a student with a friendship problem. As she attempts to solve it, she looks back on the times she and the Mane Six spent together.",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
           "caminho_video": "/media/S09/mlp_s09e26.mp4",
           "assistido": false,
-          "tema_personagem": "Magia"
+          "imagem": "https://image.tmdb.org/t/p/w500/iw9bFajZsqurVF7dROBaDth6xPC.jpg"
         }
       ]
     }
