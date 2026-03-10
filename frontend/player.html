@@ -119,21 +119,11 @@
             font-size: 0.95rem;
             letter-spacing: 0.5px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;      /* Centraliza verticalmente */
             justify-content: center;   /* ✨ Centraliza horizontalmente o conjunto ícone + texto */
     
             padding: 0.8rem 0;        /* ✨ Importante: deixe o segundo valor (lateral) como 0 */
             width: 100%;              /* Garante que o flex: 1 funcione bem */
             max-width: 180px;         /* O tamanho que você escolheu */
-    
-            gap: 0.5rem;              /* Espaço entre o ícone e o texto */
-    
-    /* Outros estilos que você já tem */
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
         }
         /* O Efeito Mágico no Hover (Fica colorido e brilha ao passar o mouse) */
         .btn-action:hover {
@@ -147,12 +137,26 @@
             border-color: #ff007f;
             box-shadow: 0 8px 25px rgba(255, 0, 127, 0.4); 
         }
+
+        .btn-action.favorite.active {
+            background: #ff007f !important;
+            border-color: #ff007f !important;
+            box-shadow: 0 8px 25px rgba(255, 0, 127, 0.4);
+            color: white !important;
+        }
         
         /* 👁️ Botão Assistido */
         .btn-action.watched:hover {
             background: #6f12bb; /* Roxo */
             border-color: #8c00ff;
             box-shadow: 0 8px 25px rgba(174, 104, 231, 0.4);
+        }
+
+        .btn-action.watched.active {
+            background: #6f12bb !important;
+            border-color: #8c00ff !important;
+            box-shadow: 0 8px 25px rgba(174, 104, 231, 0.4);
+            color: white !important;
         }
 
         /* 🔗 Botão Compartilhar */
@@ -182,45 +186,106 @@
             <p class="episode-synopsis" id="ep-desc">Buscando os detalhes deste episódio...</p>
             
             <div class="action-buttons">
-                <button class="btn-action favorite" onclick="alert('Que legal! Este episódio foi favoritado na sua conta. ❤')">❤  Favoritar</button>
-                <button class="btn-action watched" onclick="alert('Eba! Episódio marcado como assistido. ☀')">𖦹  Já Assisti</button>
-                <button class="btn-action share" onclick="alert('Compartilhar a magia da amizade em breve!')">➤  Compartilhar</button>
+                <button class="btn-action favorite" onclick="alternarFavorito()">❤  Favoritar</button>
+                <button class="btn-action watched" onclick="alternarAssistido()">𖦹  Já Assisti</button>
+                <button class="btn-action share" onclick="abrirCompartilhar()">➤  Compartilhar</button>
             </div>
         </div>
     </main>
 
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const caminhoVideo = urlParams.get('caminho');
-        const tituloEpisodio = urlParams.get('titulo');
+<script>
+    // 1. Definição Global das variáveis da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const epID = urlParams.get('titulo'); 
+    const caminhoVideo = urlParams.get('caminho');
 
-        document.getElementById('ep-title').textContent = tituloEpisodio;
+    // --- FUNÇÃO BUSCAR SINOPSE (Recuperada e Corrigida) ---
+    async function buscarSinopse() {
+        try {
+            const resposta = await fetch('http://localhost:3000/api/episodios');
+            const dados = await resposta.json();
+            
+            let sinopseEncontrada = "A sinopse deste episódio não foi encontrada.";
+
+            if (dados.temporadas) {
+                for (const temporada of dados.temporadas) {
+                    const ep = temporada.episodios.find(e => e.caminho_video === caminhoVideo);
+                    if (ep) {
+                        sinopseEncontrada = ep.descricao;
+                        break;
+                    }
+                }
+            }
+            document.getElementById('ep-desc').textContent = sinopseEncontrada;
+        } catch (error) {
+            document.getElementById('ep-desc').textContent = "Não foi possível carregar a sinopse no momento.";
+        }
+    }
+
+    // --- FUNÇÃO FAVORITAR ATUALIZADA ---
+    function alternarFavorito() {
+        let favoritos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
+        const btn = document.querySelector('.btn-action.favorite');
+
+        if (favoritos.includes(epID)) {
+            favoritos = favoritos.filter(id => id !== epID);
+            btn.innerHTML = "❤  Favoritar";
+            btn.classList.remove('active');
+        } else {
+            favoritos.push(epID);
+            btn.innerHTML = "❤︎  Na Minha Lista";
+            btn.classList.add('active');
+        }
+        localStorage.setItem('ponies_favoritos', JSON.stringify(favoritos));
+    }
+
+    // --- FUNÇÃO ASSISTIDO ATUALIZADA ---
+    function alternarAssistido() {
+        let assistidos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
+        const btn = document.querySelector('.btn-action.watched');
+
+        if (assistidos.includes(epID)) {
+            assistidos = assistidos.filter(id => id !== epID);
+            btn.innerHTML = "𖦹  Já Assisti";
+            btn.classList.remove('active');
+        } else {
+            assistidos.push(epID);
+            btn.innerHTML = "✔  Assistido";
+            btn.classList.add('active');
+        }
+        localStorage.setItem('ponies_assistidos', JSON.stringify(assistidos));
+    }
+
+    // --- FUNÇÃO COMPARTILHAR ---
+    function abrirCompartilhar() {
+        const comunidadeStatus = "🚧 Em construção pela Twilight Sparkle...";
+        alert(`A Comunidade PonyVerse está chegando! \n\nVocê está prestes a compartilhar: "${epID}"\nStatus: ${comunidadeStatus}`);
+    }
+
+    // ✨ INICIALIZAÇÃO AO CARREGAR A PÁGINA
+    window.onload = function() {
+        // Preenche o player
+        document.getElementById('ep-title').textContent = epID;
         document.getElementById('video-source').src = caminhoVideo;
         document.getElementById('video-player').load();
 
-        async function buscarSinopse() {
-            try {
-                const resposta = await fetch('http://localhost:3000/api/episodios');
-                const dados = await resposta.json();
-                
-                let sinopseEncontrada = "A sinopse deste episódio não foi encontrada.";
+        // Verifica estados salvos
+        const favoritos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
+        const assistidos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
 
-                if (dados.temporadas) {
-                    for (const temporada of dados.temporadas) {
-                        const ep = temporada.episodios.find(e => e.caminho_video === caminhoVideo);
-                        if (ep) {
-                            sinopseEncontrada = ep.descricao;
-                            break;
-                        }
-                    }
-                }
-                document.getElementById('ep-desc').textContent = sinopseEncontrada;
-            } catch (error) {
-                document.getElementById('ep-desc').textContent = "Não foi possível carregar a sinopse no momento.";
-            }
+        if (favoritos.includes(epID)) {
+            const btn = document.querySelector('.btn-action.favorite');
+            btn.innerHTML = "❤︎  Na Minha Lista";
+            btn.classList.add('active');
         }
-
-        buscarSinopse();
-    </script>
+        if (assistidos.includes(epID)) {
+            const btn = document.querySelector('.btn-action.watched');
+            btn.innerHTML = "✔  Assistido";
+            btn.classList.add('active');
+        }
+        
+        buscarSinopse(); 
+    }
+</script>
 </body>
 </html>

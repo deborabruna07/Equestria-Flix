@@ -48,10 +48,11 @@ body::before {
    PÁGINA INICIAL (A Mágica Acontece Aqui)
    ========================================== */
 #pagina-inicial {
+    width: 100vw; 
     height: 100vh;
     
     /* Puxa a imagem da mesma pasta. Mude 'fundo.jpg' para o nome do seu arquivo */
-    background-image: url('fundo.png');
+    background-image: url('background-page.png');
     background-size: cover; /* Faz a imagem esticar para cobrir a tela inteira sem distorcer */
     background-position: center; /* Mantém a imagem centralizada */
     background-repeat: no-repeat; /* Evita que a imagem se repita como um mosaico */
@@ -71,59 +72,140 @@ body::before {
     align-items: center;
 }
 
-.logo-inicial { text-align: center; margin-bottom: 3rem; }
-.logo-inicial h1 {
-    color: #4A235A;
-    font-size: 4.5rem;
-    font-weight: 900;
-    text-shadow: 3px 3px 0px white, 5px 5px 15px rgba(0,0,0,0.1);
-    letter-spacing: 2px;
-}
-.logo-inicial p {
-    color: #ff6b81;
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    background: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.nav-icones { display: flex; gap: 3rem; }
-.nav-item {
-    background: transparent;
-    border: none;
+.logo-inicial {
+    position: absolute; /* Altera para absoluto */
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s;
+    text-align: center;
+    margin-bottom: 0; /* Mantém um espaço de respiro até os botões */
 }
-.nav-item:hover { transform: translateY(-10px); filter: brightness(1.1); }
 
-.nav-item .icone {
-    font-size: 2.5rem;
-    background: rgba(255, 255, 255, 0.8);
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border: 4px solid white;
+.img-logo-oficial {
+    max-width: 650px; /* Altere este número se a imagem ficar muito grande ou pequena */
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0.5rem auto;
+    
+    /* Brilho suave no fundo da imagem */
+    filter: drop-shadow(0 4px 15px rgba(174, 104, 231, 0.4));
+    
+    /* 🪄 Chama a animação 'flutuarMagico' para rodar infinitamente */
+    animation: flutuarMagico 4s ease-in-out infinite;
 }
+
+/* ✨ KEYFRAMES: Criando o movimento de subir e descer ✨ */
+@keyframes flutuarMagico {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); } /* Faz a imagem subir 12 pixels */
+    100% { transform: translateY(0px); }  /* Faz a imagem voltar ao ponto inicial */
+}
+
+/* ✨ NAVIGATION CONTAINER ✨ */
+.nav-icones {
+    position: absolute; /* Agora os botões também flutuam na camada certa */
+    top: 45%;
+    display: flex;
+    gap: 3rem; /* Good space between floating icons */
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* ✨ THE COMPLETE NAV ITEM (Image + Label) ✨ */
+.nav-item {
+    background: transparent; /* Remove button background */
+    border: none; /* Remove standard button borders */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Overall interaction: slight playful float when hovering over item */
+.nav-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Old standard icon style reset - needed if HTML wasn't perfectly cleaned */
+.nav-item .icone { display: none !important; }
+
+/* Agora isso só vai afetar as imagens, o texto fica parado! */
+.img-ep { width: 130px; }
+.img-lista { width: 110px; }
+.img-comu { width: 135px; }
+.img-magia { width: 130px; }
+
+/* Mantenha a regra geral para garantir que a altura se ajuste sozinha */
+.img-nav-icone {
+    height: auto; 
+    object-fit: contain;
+    margin-bottom: 0.8rem; /* Space above text pill */
+    transition: all 0.3s ease;
+    
+    /* Standard subtle drop shadow to pop against background art */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    
+    /* 🪄 ANIMATION: Raw images now apply a continuous magic animation, like the logo! */
+    animation: navIconFloat 5s ease-in-out infinite;
+}
+
+/* Hover effects applied to the image raw icon */
+.nav-item:hover .img-nav-icone {
+    transform: scale(1.1) rotate(5deg); /* Slight playful tilt on hover */
+    /* Intense purple magic glow */
+    filter: drop-shadow(0 0 15px rgba(174, 104, 231, 0.8));
+}
+
+/* Offset animation timing so they don't all float in unison */
+.nav-item:nth-child(2) .img-nav-icone { animation-delay: 0.5s; }
+.nav-item:nth-child(3) .img-nav-icone { animation-delay: 1s; }
+.nav-item:nth-child(4) .img-nav-icone { animation-delay: 1.5s; }
+
+/* ✨ Continuous floating keyframes for nav icons ✨ */
+@keyframes navIconFloat {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); } /* Subtle up and slight turn */
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* ✨ ESTILO DO TEXTO DO BOTÃO (Elegante e Super Visível) ✨ */
 .nav-item span {
-    color: #4A235A;
-    font-weight: 800;
-    font-size: 1.1rem;
-    background: rgba(255,255,255,0.6);
-    padding: 4px 12px;
-    border-radius: 15px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    
+    color: #ffffff; /* Texto branco puro para suavidade */
+    font-weight: 800; /* Grossinho para legibilidade */
+    font-size: 1.1rem; /* Tamanho proporcional para leitura */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    
+    /* ✨ A MÁGICA: Sombras Rofas Escuras Múltiplas para Contraste ✨ */
+    /* Usando apenas a paleta de cores PonyVerse para identidade visual */
+    text-shadow: 
+        0 1px 0 #4A235A, /* Contorno de sombra nítido para contraste */
+        0 -1px 0 #4A235A,
+        1px 0 0 #4A235A,
+        -1px 0 0 #4A235A,
+        0 3px 6px rgba(0,0,0,0.4), /* Sombra profunda para "descolar" do fundo */
+        0 0 10px rgba(174, 104, 231, 0.3); /* Brilho roxo muito suave */
+        
+    transition: all 0.3s ease;
+    margin-top: 1rem; /* Espaço maior entre imagem e texto */
+}
+
+/* Efeito Hover: O brilho mágico roxo que você gosta, mas mais sutil */
+.nav-item:hover span {
+    color: #ffffff;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), /* Brilho branco suave */
+        0 0 20px rgba(174, 104, 231, 0.7); /* Brilho roxo elegante */
+    transform: translateY(-2px); /* Pequeno pulinho mágico */
 }
 
 .ilustracao-fundo {
@@ -190,7 +272,64 @@ body::before {
 .explore-section h3 { margin-bottom: 1rem; color: white; }
 .season-tabs { display: flex; gap: 0.5rem; margin-bottom: 2rem; overflow-x: auto; padding-bottom: 10px; }
 .btn-season { background: var(--bg-panel); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 0.8rem 1.5rem; border-radius: 15px; cursor: pointer; font-weight: bold; white-space: nowrap; }
-.btn-season:hover, .btn-season.active { background: #c856fd; }
+.btn-season:hover, .btn-season.active { background: #a940ffce; }
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    border-radius: 20px;
+    overflow: hidden; /* Mantém o que está fora escondido */
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%; /* Mude de 300% para 100% aqui */
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-banner {
+    /* ✨ ESTA É A LINHA MÁGICA ✨ */
+    flex: 0 0 100%; 
+    
+    height: 400px;
+    background-size: cover;
+    background-position: center 20%;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.4) !important; 
+    border-color: white !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.1); 
+}
+
+.carousel-btn.prev { left: 20px; }
+.carousel-btn.next { right: 20px; }
 
 /* --- GRADE E CARDS DE EPISÓDIOS --- */
 .episode-grid { 
@@ -289,6 +428,7 @@ body::before {
     margin-bottom: 1rem; 
     display: -webkit-box; 
     -webkit-line-clamp: 3; 
+    line-clamp: 3;
     -webkit-box-orient: vertical; 
     overflow: hidden; 
 }
@@ -307,6 +447,26 @@ body::before {
 
 .btn-assistir:hover { 
     background: var(--pink-accent); 
+}
+
+/* ✨ SELO DE EPISÓDIO ASSISTIDO ✨ */
+.badge-assistido {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(111, 18, 187, 0.9); /* Roxo elegante */
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 /* ==========================================

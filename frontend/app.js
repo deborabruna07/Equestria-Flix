@@ -10,8 +10,19 @@ function abrirPrincipal() {
 }
 
 function voltarInicial() {
-    document.getElementById('pagina-principal').classList.replace('tela-ativa', 'tela-oculta');
-    document.getElementById('pagina-inicial').classList.replace('tela-oculta', 'tela-ativa');
+    // Tira a ativa da principal e coloca oculta
+    const principal = document.getElementById('pagina-principal');
+    const inicial = document.getElementById('pagina-inicial');
+    
+    principal.classList.remove('tela-ativa');
+    principal.classList.add('tela-oculta');
+    
+    // Mostra a inicial
+    inicial.classList.remove('tela-oculta');
+    inicial.classList.add('tela-ativa');
+    
+    // Limpa a URL para não bugar no F5
+    window.history.pushState({}, document.title, window.location.pathname);
 }
 
 // ==========================================
@@ -74,22 +85,24 @@ function renderizarGrade(temporada) {
 
     if (!temporada.episodios) return;
 
+    // ✨ Busca a lista de assistidos no momento em que vai desenhar a tela
+    const assistidosSalvos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
+
     temporada.episodios.forEach(episodio => {
         const card = document.createElement('div');
         card.className = 'card-episodio';
-        
-        // Adiciona o clique no card inteiro de forma segura
         card.onclick = () => assistir(episodio.caminho_video, episodio.titulo);
         
-        // Evita erros se o ID não tiver o formato esperado
         const numeroEp = episodio.id.includes('E') ? episodio.id.split('E')[1] : episodio.id;
-        
-        // Se a imagem não vier do banco, usa uma padrão provisória
         const imagemCapa = episodio.imagem ? episodio.imagem : 'capa-padrao.jpg';
+
+        // ✨ Verifica se este episódio está na lista de assistidos
+        const foiAssistido = assistidosSalvos.includes(episodio.titulo);
+        const seloAssistido = foiAssistido ? '<div class="badge-assistido">✔ Assistido</div>' : '';
 
         card.innerHTML = `
             <div class="thumb-container">
-                <img src="${imagemCapa}" alt="Capa" class="capa-episodio">
+                ${seloAssistido} <img src="${imagemCapa}" alt="Capa" class="capa-episodio">
                 <div class="overlay-play">
                     <div class="play-icon">▶</div>
                 </div>
@@ -119,9 +132,102 @@ function assistir(caminhoVideo, tituloEpisodio) {
 window.addEventListener('load', () => {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('view') === 'catalogo') {
-        abrirPrincipal(); // Chama a função que você já tem para mostrar o catálogo
+        abrirPrincipal();
     }
 });
+
+let indexAtual = 0;
+
+function mudarBanner(direcao) {
+    const track = document.getElementById('track');
+    const banners = document.querySelectorAll('.hero-banner');
+    const totalBanners = banners.length;
+
+    indexAtual += direcao;
+
+    if (indexAtual >= totalBanners) indexAtual = 0;
+    if (indexAtual < 0) indexAtual = totalBanners - 1;
+
+    // Move exatamente o equivalente a 1 banner (100%)
+    const deslocamento = indexAtual * -100;
+    track.style.transform = `translateX(${deslocamento}%)`;
+}
+
+// Opcional: Auto-play a cada 6 segundos
+setInterval(() => mudarBanner(1), 6000);
+
+// ==========================================
+// 5. SISTEMA DE PÁGINA DE FAVORITOS
+// ==========================================
+async function abrirFavoritos() {
+    // 1. Fecha o painel lateral
+    document.getElementById('painel-direito').classList.remove('aberto');
+    
+    // 2. Esconde O CATÁLOGO INTEIRO DE UMA VEZ
+    document.getElementById('conteudo-catalogo').style.display = 'none';
+    
+    // 3. Mostra SÓ OS FAVORITOS
+    const secaoFav = document.getElementById('secao-favoritos');
+    secaoFav.classList.remove('tela-oculta');
+    secaoFav.style.display = 'block';
+
+    // 4. Busca a lista no LocalStorage
+    const favoritosSalvos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
+    const grid = document.getElementById('grid-favoritos');
+    grid.innerHTML = ""; 
+
+    if (favoritosSalvos.length === 0) {
+        grid.innerHTML = "<div style='grid-column: 1/-1; text-align: center; padding: 4rem;'><h3 style='color: white; font-size: 1.5rem;'>Sua lista está vazia. Adicione episódios com o coração! 💔</h3></div>";
+        return;
+    }
+    try {
+        const resposta = await fetch('http://localhost:3000/api/episodios');
+        const dados = await resposta.json();
+        
+        // ✨ Busca a lista de assistidos também para a tela de favoritos
+        const assistidosSalvos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
+        
+        dados.temporadas.forEach(temporada => {
+            temporada.episodios.forEach(ep => {
+                if (favoritosSalvos.includes(ep.titulo)) {
+                    const card = document.createElement('div');
+                    card.className = 'card-episodio';
+                    card.onclick = () => window.location.href = `player.html?caminho=${encodeURIComponent(ep.caminho_video)}&titulo=${encodeURIComponent(ep.titulo)}`;
+                    
+                    // ✨ Verifica assistido aqui também
+                    const foiAssistido = assistidosSalvos.includes(ep.titulo);
+                    const seloAssistido = foiAssistido ? '<div class="badge-assistido">✔ Assistido</div>' : '';
+
+                    card.innerHTML = `
+                        <div class="thumb-container">
+                            ${seloAssistido} <img src="${ep.imagem || 'fundo.png'}" class="capa-episodio" alt="${ep.titulo}">
+                            <div class="overlay-play">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="info-episodio">
+                            <h4>${ep.titulo}</h4>
+                            <p>${ep.descricao ? ep.descricao.substring(0, 100) + '...' : 'Sem sinopse disponível.'}</p>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                }
+            });
+        });
+    } catch (erro) {
+        grid.innerHTML = "<p style='color: white; text-align: center; grid-column: 1/-1;'>Erro ao carregar a magia da amizade (falha na API).</p>";
+    }
+}
+
+function voltarAoCatalogo() {
+    // Esconde a página exclusiva de favoritos
+    const secaoFav = document.getElementById('secao-favoritos');
+    secaoFav.classList.add('tela-oculta');
+    secaoFav.style.display = 'none';
+    
+    // Mostra todo o catálogo normal de volta
+    document.getElementById('conteudo-catalogo').style.display = 'block';
+}
 
 // Inicia o sistema
 carregarEpisodios();
