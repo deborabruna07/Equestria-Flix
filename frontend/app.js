@@ -126,6 +126,8 @@ function assistir(caminhoVideo, tituloEpisodio) {
     }
     const url = `player.html?caminho=${encodeURIComponent(caminhoVideo)}&titulo=${encodeURIComponent(tituloEpisodio)}`;
     window.location.href = url;
+    const musica = document.getElementById('musica-fundo');
+    if (musica) musica.pause();
 }
 
 // Verifica se voltamos do player querendo ver o catálogo direto
@@ -228,6 +230,55 @@ function voltarAoCatalogo() {
     // Mostra todo o catálogo normal de volta
     document.getElementById('conteudo-catalogo').style.display = 'block';
 }
+
+// ✨ FUNÇÃO PARA CONTROLAR A MÚSICA (Trocando a Imagem) ✨
+function toggleMusica() {
+    const musica = document.getElementById('musica-fundo');
+    const icone = document.getElementById('icone-som-img'); // Pegamos a tag da imagem
+
+    if (musica.paused) {
+        musica.play();
+        // ✨ Coloque aqui o nome da sua imagem de SOM LIGADO ✨
+        icone.src = 'som-on.png'; 
+        
+        // (Opcional) Adiciona a classe para dar o brilho rosa que fizemos no CSS
+        document.getElementById('btn-musica').classList.add('tocando'); 
+    } else {
+        musica.pause();
+        // ✨ Coloque aqui o nome da sua imagem de SOM DESLIGADO ✨
+        icone.src = 'som-off.png'; 
+        
+        // Remove o brilho rosa
+        document.getElementById('btn-musica').classList.remove('tocando'); 
+    }
+}
+// ✨ TENTATIVA DE AUTOPLAY INTELIGENTE (Substitui o ajuste de volume antigo) ✨
+window.addEventListener('load', () => {
+    const musica = document.getElementById('musica-fundo');
+    const icone = document.getElementById('icone-som-img');
+    const btn = document.getElementById('btn-musica');
+
+    if (musica) {
+        musica.volume = 0.1; // Mantive o seu volume em 0.1 (10%) que você escolheu!
+
+        // O navegador retorna uma "Promessa" ao tentar tocar o áudio
+        let playPromise = musica.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                // Sucesso! O navegador deixou tocar sozinho.
+                icone.src = 'som-on.png'; // Usando a sua imagem de ligado
+                btn.classList.add('tocando');
+            }).catch(error => {
+                // Bloqueado! O navegador barrou o som automático.
+                console.log("O navegador bloqueou o áudio automático. Aguardando interação.");
+                // Corrige o ícone para desligado, já que não está tocando
+                icone.src = 'som-off.png'; // Usando a sua imagem de desligado
+                btn.classList.remove('tocando');
+            });
+        }
+    }
+});
 
 // Inicia o sistema
 carregarEpisodios();

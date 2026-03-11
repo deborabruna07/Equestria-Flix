@@ -170,7 +170,7 @@
 <body>
 
     <header class="header-player">
-    <a href="index.html?view=catalogo" class="btn-voltar" style="text-decoration: none;">◀  Voltar para o Catálogo</a>
+    <a href="index.html?view=catalogo" class="btn-voltar" style="text-decoration: none;">◀ Voltar para o Catálogo</a>
 </header>
 
     <main class="player-container">
@@ -199,7 +199,7 @@
     const epID = urlParams.get('titulo'); 
     const caminhoVideo = urlParams.get('caminho');
 
-    // --- FUNÇÃO BUSCAR SINOPSE (Recuperada e Corrigida) ---
+    // --- FUNÇÃO BUSCAR SINOPSE ---
     async function buscarSinopse() {
         try {
             const resposta = await fetch('http://localhost:3000/api/episodios');
@@ -222,11 +222,10 @@
         }
     }
 
-    // --- FUNÇÃO FAVORITAR ATUALIZADA ---
+    // --- FUNÇÕES DE INTERAÇÃO (Favoritos/Assistidos) ---
     function alternarFavorito() {
         let favoritos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
         const btn = document.querySelector('.btn-action.favorite');
-
         if (favoritos.includes(epID)) {
             favoritos = favoritos.filter(id => id !== epID);
             btn.innerHTML = "❤  Favoritar";
@@ -239,11 +238,9 @@
         localStorage.setItem('ponies_favoritos', JSON.stringify(favoritos));
     }
 
-    // --- FUNÇÃO ASSISTIDO ATUALIZADA ---
     function alternarAssistido() {
         let assistidos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
         const btn = document.querySelector('.btn-action.watched');
-
         if (assistidos.includes(epID)) {
             assistidos = assistidos.filter(id => id !== epID);
             btn.innerHTML = "𖦹  Já Assisti";
@@ -256,20 +253,35 @@
         localStorage.setItem('ponies_assistidos', JSON.stringify(assistidos));
     }
 
-    // --- FUNÇÃO COMPARTILHAR ---
     function abrirCompartilhar() {
-        const comunidadeStatus = "🚧 Em construção pela Twilight Sparkle...";
-        alert(`A Comunidade PonyVerse está chegando! \n\nVocê está prestes a compartilhar: "${epID}"\nStatus: ${comunidadeStatus}`);
+        alert(`Partilhando: "${epID}"\nA Comunidade PonyVerse está quase a chegar!`);
     }
 
-    // ✨ INICIALIZAÇÃO AO CARREGAR A PÁGINA
-    window.onload = function() {
-        // Preenche o player
-        document.getElementById('ep-title').textContent = epID;
-        document.getElementById('video-source').src = caminhoVideo;
-        document.getElementById('video-player').load();
+    // ✨ INICIALIZAÇÃO CORRIGIDA ✨
+    window.addEventListener('load', function() {
+        const videoPlayer = document.getElementById('video-player');
+        const titleElement = document.getElementById('ep-title');
 
-        // Verifica estados salvos
+        if (epID) titleElement.textContent = epID;
+
+        if (caminhoVideo) {
+            // ✨ A MÁGICA ACONTECE AQUI ✨
+            let caminhoCorrigido = caminhoVideo;
+            
+            // Forçamos o navegador a buscar o vídeo no servidor Node (3000)
+            if (caminhoVideo.startsWith('/media')) {
+                caminhoCorrigido = "http://localhost:3000" + caminhoVideo;
+            } else if (caminhoVideo.startsWith('media')) {
+                caminhoCorrigido = "http://localhost:3000/" + caminhoVideo;
+            }
+
+            console.log("Tentando carregar o vídeo de:", caminhoCorrigido); // Para checarmos se deu certo
+
+            videoPlayer.src = caminhoCorrigido; 
+            videoPlayer.load(); 
+        }
+
+        // Verifica estados salvos (Favoritos/Assistidos)
         const favoritos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
         const assistidos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
 
@@ -285,7 +297,7 @@
         }
         
         buscarSinopse(); 
-    }
+    });
 </script>
 </body>
 </html>
