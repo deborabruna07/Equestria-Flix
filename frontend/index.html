@@ -45,11 +45,8 @@
         <header class="top-bar">
             <button class="btn-icone" onclick="voltarInicial()">Início</button>
             <div class="top-icons">
-                <a href="#" class="icon-notification" aria-label="Notificações">
-                    <img src="sino-icon.png" alt="Notificações" id="notif-bell">
-                </a>
-
-                <button class="btn-icone" onclick="abrirPainelDireito()">Meu Perfil</button> 
+                <span class="btn-icone">🔔</span> 
+                <span class="btn-icone" onclick="abrirPainelDireito()"> Meu Perfil</span> 
             </div>
         </header>
 
@@ -64,14 +61,14 @@
                     </div>
                     <div class="hero-banner" style="background-image: url('531150.jpg');">
                         <div class="banner-text">
-                            <h2>Faça novos amigos</h2>
-                            <p>Junte-se a comunidade</p>
+                            <h2>Novas Aventuras</h2>
+                            <p>Temporada 2 Disponível</p>
                         </div>
                     </div>
                     <div class="hero-banner" style="background-image: url('5311545.jpg');">
                         <div class="banner-text">
-                            <h2>Descubra a sua marca</h2>
-                            <p>Personalize o seu pônei! </p>
+                            <h2>PonyVerse Originals</h2>
+                            <p>Filmes e Especiais</p>
                         </div>
                     </div>
                 </div>
@@ -91,7 +88,7 @@
 
         <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem;">
             <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
-                <button onclick="voltarAoCatalogo()" class="btn-icone"> Voltar ao Catálogo</button>
+                <button onclick="voltarAoCatalogo()" class="btn-icone">◀ Voltar ao Catálogo</button>
                 <h2 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Minha Lista  ❤︎</h2>
             </div>
             
@@ -135,12 +132,5 @@
     </aside>
 
     <script src="app.js"></script>
-<audio id="musica-fundo" loop autoplay>
-    <source src="tema-ponyverse.mp3" type="audio/mpeg">
-</audio>
-
-<button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
-    <img src="som-ligado.png" alt="Som" id="icone-som-img">
-</button>
 </body>
 </html>

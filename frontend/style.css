@@ -135,8 +135,8 @@ body::before {
 
 /* Agora isso só vai afetar as imagens, o texto fica parado! */
 .img-ep { width: 130px; }
-.img-lista { width: 108px; }
-.img-comu { width: 150px; }
+.img-lista { width: 110px; }
+.img-comu { width: 135px; }
 .img-magia { width: 130px; }
 
 /* Mantenha a regra geral para garantir que a altura se ajuste sozinha */
@@ -172,39 +172,40 @@ body::before {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/* ✨ ESTILO DO TEXTO COM LUZ ROSA ✨ */
+/* ✨ ESTILO DO TEXTO DO BOTÃO (Elegante e Super Visível) ✨ */
 .nav-item span {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0;
     
-    color: #ffffff; 
-    font-weight: 800;
-    font-size: 1.1rem;
+    color: #ffffff; /* Texto branco puro para suavidade */
+    font-weight: 800; /* Grossinho para legibilidade */
+    font-size: 1.1rem; /* Tamanho proporcional para leitura */
     letter-spacing: 0.8px;
     text-transform: uppercase;
     
-    /* ✨ A LUZ ROSA: Criamos camadas de brilho ✨ */
+    /* ✨ A MÁGICA: Sombras Rofas Escuras Múltiplas para Contraste ✨ */
+    /* Usando apenas a paleta de cores PonyVerse para identidade visual */
     text-shadow: 
-        0 0 10px rgba(255, 0, 179, 0.7), /* Brilho rosa próximo */
-        0 0 20px rgba(255, 0, 179, 0.4), /* Luz expandida */
-        2px 2px 4px rgba(0, 0, 0, 0.5);   /* Sombra preta no fundo para dar leitura */
+        0 1px 0 #4A235A, /* Contorno de sombra nítido para contraste */
+        0 -1px 0 #4A235A,
+        1px 0 0 #4A235A,
+        -1px 0 0 #4A235A,
+        0 3px 6px rgba(0,0,0,0.4), /* Sombra profunda para "descolar" do fundo */
+        0 0 10px rgba(174, 104, 231, 0.3); /* Brilho roxo muito suave */
         
     transition: all 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 1rem; /* Espaço maior entre imagem e texto */
 }
 
-/* ✨ LUZ INTENSA QUANDO PASSA O MOUSE ✨ */
+/* Efeito Hover: O brilho mágico roxo que você gosta, mas mais sutil */
 .nav-item:hover span {
     color: #ffffff;
-    /* Aqui aumentamos o "glow" para parecer que a luz ficou mais forte */
     text-shadow: 
-        0 0 15px rgba(255, 0, 179, 1),    /* Brilho rosa forte */
-        0 0 30px rgba(255, 0, 179, 0.8),  /* Luz rosa gigante */
-        0 0 45px rgba(255, 0, 179, 0.6);  /* Aura mágica */
-    
-    transform: scale(1.05); /* Um pequeno aumento para destacar */
+        0 0 10px rgba(255, 255, 255, 0.8), /* Brilho branco suave */
+        0 0 20px rgba(174, 104, 231, 0.7); /* Brilho roxo elegante */
+    transform: translateY(-2px); /* Pequeno pulinho mágico */
 }
 
 .ilustracao-fundo {
@@ -220,85 +221,35 @@ body::before {
     z-index: 1;
 }
 
-/* ✨ ÍCONE DE MÚSICA SOLTO E FLUTUANTE ✨ */
-.btn-musica-flutuante {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: transparent !important; /* Sem fundo */
-    border: none !important;            /* Sem borda */
-    padding: 0;
-    cursor: pointer;
-    z-index: 9999;
-    outline: none;
-    transition: transform 0.3s ease;
-}
-
-/* O tamanho e o brilho da imagem em si */
-#icone-som-img {
-    width: 90px;  /* Ajuste este valor para deixar do tamanho ideal */
-    height: 90px;
-    object-fit: contain;
-    /* Brilho roxo suave padrão (desligado) */
-    filter: drop-shadow(0 4px 6px rgba(174, 104, 231, 0.6)); 
-    transition: all 0.3s ease;
-}
-
-/* Efeitinho de aumentar ao passar o mouse */
-.btn-musica-flutuante:hover {
-    transform: scale(1.1);
-}
-
-/* ✨ MÁGICA: Quando a música estiver tocando ✨ */
-.btn-musica-flutuante.tocando #icone-som-img {
-    /* Muda o brilho para rosa choque quando ligado */
-    filter: drop-shadow(0 0 15px rgba(255, 0, 127, 0.8)); 
-    animation: pulsarSom 2s infinite alternate;
-}
-
-@keyframes pulsarSom {
-    from { transform: scale(1); }
-    to { transform: scale(1.1); }
-}
 /* ==========================================
    PÁGINA PRINCIPAL E PAINEL DIREITO
    ========================================== */
 #pagina-principal { min-height: 100vh; padding: 2rem; max-width: 1200px; margin: 0 auto; }
 
-/* ✨ A SOLUÇÃO DO ESTICAMENTO ✨ */
-.top-bar { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; /* ✨ Adicione esta linha! Ela impede os botões de esticarem ✨ */
-    margin-bottom: 2rem; 
-}
+.top-bar { display: flex; justify-content: space-between; margin-bottom: 2rem; }
 .btn-icone {
     background: rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(10px);
     color: white !important;
-    border: 2px solid rgba(255, 255, 255, 0.6) !important;
-    padding: 0.6rem 1.3rem !important;
-    border-radius: 15px !important;
+    border: 2px solid rgba(255, 255, 255, 0.438) !important;
+    padding: 0.6rem 1.5rem !important; /* Tamanho levemente menor para o topo */
+    border-radius: 12px !important;
     font-weight: bold !important;
-    font-size: 1.0rem !important;
+    font-size: 0.98rem !important;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     cursor: pointer;
     text-decoration: none;
 }
+
 .btn-icone:hover {
     background: rgba(255, 255, 255, 0.4) !important;
-    border-color: white !important;
-    transform: translateY(-2px);
+    transform: translateY(-3px); /* Pulinho para cima, estilo catálogo */
 }
-.top-icons { 
-    display: flex; 
-    align-items: center; /* Garante que o Perfil não estique junto com o sino */
-    gap: 1.5rem; 
-}
+.top-icons { display: flex; gap: 1rem; }
 
 .hero-banner {
     height: 400px;
@@ -402,7 +353,7 @@ body::before {
 .card-episodio:hover { 
     transform: translateY(-8px); 
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    border: 2px solid #ff9aff; /* Bordinha rosa mágica no hover */
+    border: 2px solid #ff9a9e; /* Bordinha rosa mágica no hover */
 }
 
 /* Área da Imagem com Efeito Hover */
@@ -516,92 +467,6 @@ body::before {
     display: flex;
     align-items: center;
     gap: 0.3rem;
-}
-
-/* ✨ Estilo do container de ícones do topo ✨ */
-.top-icons {
-    display: flex;
-    align-items: center; /* Alinhamento vertical central */
-    gap: 1.5rem; /* ✨ Adiciona um bom espaçamento entre o sino e o perfil ✨ */
-}
-
-/* ✨ ESTILO DO BOTÃO RESTAURADO (Sem o quadrado fantasma) ✨ */
-/* ✨ BLINDAGEM MÁXIMA PARA O BOTÃO (Fim do quadrado fantasma) ✨ */
-/* ✨ BOTÃO VIDRO FOSCO (Resetado e à prova de bugs) ✨ */
-.btn-icone {
-    /* 1. Arranca qualquer visual padrão de botão do Windows/Chrome */
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    outline: none !important;
-    
-    /* 2. O seu efeito de vidro */
-    background-color: rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    /* 3. Formato e texto */
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
-    color: white !important;
-    border-radius: 12px !important;
-    padding: 0.6rem 1.5rem !important;
-    font-weight: bold !important;
-    font-size: 0.98rem !important;
-    
-    /* ✨ 4. REMOVEMOS A SOMBRA TEMPORARIAMENTE PARA TESTAR ✨ */
-    box-shadow: none !important; 
-    
-    transition: all 0.3s ease;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.btn-icone:hover {
-    background-color: rgba(255, 255, 255, 0.3) !important;
-    transform: translateY(-3px);
-}
-/* ✨ O novo estilo para o sino de notificação "SOLTO" ✨ */
-.icon-notification {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 0; /* Importante para não ter borda */
-    border: none; /* Importante para não ter borda */
-    background: transparent; /* Importante para não ter fundo */
-}
-
-#notif-bell {
-    width: 100px; /* ✨ Tamanho do sino maior e "solto" ✨ */
-    height: 100px;
-    object-fit: contain;
-    /* ✨ Dá um brilho mágico roxo para destacar do fundo ✨ */
-    filter: drop-shadow(0 4px 6px rgba(174, 104, 231, 0.6));
-    transition: all 0.3s ease;
-}
-
-/* ✨ A MÁGICA: A animação de wobble no hover ✨ */
-.icon-notification:hover {
-    transform: scale(1.1); /* Um pequeno zoom no hover */
-}
-.icon-notification:hover #notif-bell {
-    /* Aplica a animação infinitamente enquanto o mouse estiver sobre o elemento */
-    animation: wobble 0.8s ease-in-out infinite;
-}
-
-/* ✨ KEYFRAMES DA ANIMAÇÃO WOBBLE ✨ */
-@keyframes wobble {
-    0% { transform: rotate(0deg); }
-    15% { transform: rotate(-15deg); } /* Gira para a esquerda */
-    30% { transform: rotate(10deg); } /* Gira para a direita */
-    45% { transform: rotate(-7deg); } /* Gira menos para a esquerda */
-    60% { transform: rotate(5deg); } /* Gira menos para a direita */
-    75% { transform: rotate(-3deg); } /* Gira bem pouco para a esquerda */
-    100% { transform: rotate(0deg); }
 }
 
 /* ==========================================

@@ -1,0 +1,1826 @@
+{
+  "temporadas": [
+    {
+      "numero": 1,
+      "titulo": "Temporada 1",
+      "episodios": [
+        {
+          "id": "S01E01",
+          "titulo": "A Amizade é Mágica, Parte 1",
+          "descricao": "Sob ordens da Princesa Celestia, Twilight Sparkle vai para a cidade de Ponyville supervisionar os preparativos para a Celebração do Solstício de Verão e fazer alguns amigos. Lá, Twilight conhece Pinkie Pie, Applejack, Rainbow Dash, Rarity e Fluttershy. Porém, ela também descobre uma profecia que fala do retorno de uma força maligna, banida há mil anos, que pretende dominar Equestria.",
+          "caminho_video": "/media/S01/mlp_s01e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/lgaJ4yeM3d15ttLmHsCrHeYWJd7.jpg"
+        },
+        {
+          "id": "S01E02",
+          "titulo": "A Amizade é Mágica, Parte 2",
+          "descricao": "Cabe à Twilight e a suas novas amigas pôneis ajudar a Princesa, mas não vai ser fácil. Night Mare Moon desafia as pôneis com obstáculos individuais que devem superar para encontrar os Elementos da Harmonia, antes que seja tarde demais.",
+          "caminho_video": "/media/S01/mlp_s01e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/AnPHQsDQIEooyXSujgNDTD0lBaN.jpg"
+        },
+        {
+          "id": "S01E03",
+          "titulo": "O bilhete extra",
+          "descricao": "Twilight Sparkle recebe dois convites para o Grande Baile Galopante. Porém, quando todas as suas amigas demonstram interesse pelo convite, Twilight enfrenta um dilema ao tentar decidir para quem ela dará o convite.",
+          "caminho_video": "/media/S01/mlp_s01e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/i4KNmeYBcbdQTRKQTXTyL8ACGgA.jpg"
+        },
+        {
+          "id": "S01E04",
+          "titulo": " Temporada de Coice",
+          "descricao": "É Temporada de coice em Ponyville e a Applejack, com falta de mão de obra está decidida a completar a colheita sozinha.",
+          "caminho_video": "/media/S01/mlp_s01e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/i6nBfrZVjPmhG33UNowVrRqFeHh.jpg"
+        },
+        {
+          "id": "S01E05",
+          "titulo": "O Grifo arrogante",
+          "descricao": "Pinkie Pie e Rainbow Dash fortalecem a sua amizade por fazerem brincadeiras com outros pôneis, mas quando a velha amiga da Rainbow, Gilda a Grifo, aparece para visitar, Pinkie Pie de repente se vê posta de lado.",
+          "caminho_video": "/media/S01/mlp_s01e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/6upBBGUZygtUdL9avxWg5LnVUJg.jpg"
+        },
+        {
+          "id": "S01E06",
+          "titulo": "Caçadores de Exibicionistas",
+          "descricao": "Um novo unicórnio cujo nome de palco é “A Grande e Poderosa Trixie‟ aparece em Ponyville, proclamando ser o melhor pônei e toda a Equestria; enquanto isso, Twilight Sparkle fica com medo de demonstrar a sua magia, achando que será chamada de exibida por suas amigas.",
+          "caminho_video": "/media/S01/mlp_s01e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zhsFguTmqvzsfCTnDFl1htJefbH.jpg"
+        },
+        {
+          "id": "S01E07",
+          "titulo": "Dracofobia",
+          "descricao": "A fumaça de um dragão adormecido escurece os céus de toda Equestria, e os pôneis são encarregados de convencer o dragão a sair.",
+          "caminho_video": "/media/S01/mlp_s01e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/4hsgV0gkTT7DgxG1iinaUinp6T4.jpg"
+        },
+        {
+          "id": "S01E08",
+          "titulo": "Olhe Bem Antes de Ir Dormir",
+          "descricao": "Applejack e Rarity são forçadas a passar a noite na Biblioteca Carvalho Dourado devido a uma tempestade e Twilight Sparkle vê isso como uma oportunidade para fazer uma festa do pijama.",
+          "caminho_video": "/media/S01/mlp_s01e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/1CbsZnhSqzqIKgUBXShCxxt8B6P.jpg"
+        },
+        {
+          "id": "S01E09",
+          "titulo": "Rédea nas Fofocas",
+          "descricao": "Twilight Sparkle e suas amigas ficam com medo quando Zecora chega na cidade.",
+          "caminho_video": "/media/S01/mlp_s01e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/v4On8qR1tTygT29bGAjln3YnsEg.jpg"
+        },
+        {
+          "id": "S01E10",
+          "titulo": "A Praga do Século",
+          "descricao": "Uma praga de criaturas chamadas Parasprites invade Ponyville, causando um caos e ameaçando arruinar a visita da Princesa Celestia.",
+          "caminho_video": "/media/S01/mlp_s01e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/bl8DiS0PgKOZjzKLumAdRGtfTsP.jpg"
+        },
+        {
+          "id": "S01E11",
+          "titulo": "Passagem do Inverno",
+          "descricao": "O inverno chega ao fim, e Ponyville se prepara para uma limpeza anual para dar lugar à primavera.",
+          "caminho_video": "/media/S01/mlp_s01e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/AcGbkLk8CARi0itz6BhiHMd1N07.jpg"
+        },
+        {
+          "id": "S01E12",
+          "titulo": "Em Busca da Marca Especial",
+          "descricao": "Apple Bloom fica preocupada com a falta de uma bela marca e tenta conquistá-la antes de uma festa. Na festa, ela acaba fazendo amizade com Scootaloo e Sweetie Belle, e formam a Cruzada Por Uma Marca.",
+          "caminho_video": "/media/S01/mlp_s01e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/z4TuhIAtgCAhITnR9rFbEUE1obR.jpg"
+        },
+        {
+          "id": "S01E13",
+          "titulo": "A Corrida das Folhas",
+          "descricao": "O desportivismo de Applejack e Rainbow Dash é posto a prova quando elas enfrentam uma competição para ver quem é a melhor atleta de Ponyville.",
+          "caminho_video": "/media/S01/mlp_s01e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/wE0tpPGsU05jzsylFyPB2KIgJmq.jpg"
+        },
+        {
+          "id": "S01E14",
+          "titulo": "Feita para o Sucesso",
+          "descricao": "Rarity se oferece para fazer os vestidos de suas amigas para o Grande Baile Galopante, mas ela tem problemas ao tentar satisfazer todos os desejos delas.",
+          "caminho_video": "/media/S01/mlp_s01e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/AhHfypdxWqaKb58zeYufTIjmtLA.jpg"
+        },
+        {
+          "id": "S01E15",
+          "titulo": "Sentido Pinkie",
+          "descricao": "Twilight Sparkle descobre que Pinkie Pie tem uma capacidade incomum de sentir os acontecimentos em um futuro imediato, conhecido como “Sentido Pinkie”",
+          "caminho_video": "/media/S01/mlp_s01e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/1M5UsB6ZK6xtp7SLOBZYTpXX0ii.jpg"
+        },
+        {
+          "id": "S01E16",
+          "titulo": "Arco-Íris Supersônico",
+          "descricao": "Rainbow Dash está preocupada com seu desempenho na competição do Melhor Jovem Voador, principalmente por não conseguir realizar o Arco-Íris Sônico durante os treinos.",
+          "caminho_video": "/media/S01/mlp_s01e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ugi2AtHyovnZdhi4t5n29cSxusg.jpg"
+        },
+        {
+          "id": "S01E17",
+          "titulo": "Mestra do Olhar",
+          "descricao": "Fluttershy se oferece para cuidar das Descobridoras da Bela Marca, mas ela fica apavorada quando as Descobridoras se aventuram na Floresta da Liberdade.",
+          "caminho_video": "/media/S01/mlp_s01e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/r387XIhzLi3ROtJybl5lB5cEfxU.jpg"
+        },
+        {
+          "id": "S01E18",
+          "titulo": "As Artistas",
+          "descricao": "as Descobridoras da Marca acreditam que um evento ira ajudá-las a descobrir os seus talentos e esperam que ao vencer um show de talentos consigam as suas belas marcas.",
+          "caminho_video": "/media/S01/mlp_s01e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ak6cEIriDuXRuyoragP9RMUwSw4.jpg"
+        },
+        {
+          "id": "S01E19",
+          "titulo": "Cães-Diamante",
+          "descricao": "Rarity procura joias com a ajuda de Spike. No entanto, um grupo de cães a sequestra e Spike e as outras pôneis vão atrás dos cães para salvá-la.",
+          "caminho_video": "/media/S01/mlp_s01e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/4SAdfAzePIIBODsLqrZVSz8oX1e.jpg"
+        },
+        {
+          "id": "S01E20",
+          "titulo": "Verde Não é Sua Cor",
+          "descricao": "Fluttershy acidentalmente se torna uma modelo e mesmo não gostando de toda a atenção que recebe, ela continua na profissão a pedido de Rarity.",
+          "caminho_video": "/media/S01/mlp_s01e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/75s4tIAkaKfecfZHkk9tTK3EzAA.jpg"
+        },
+        {
+          "id": "S01E21",
+          "titulo": "Barril de Pólvora",
+          "descricao": "O elenco principal se separam e acabam no meio uma disputa entre os pôneis de uma cidade do oeste e uma tribo de Búfalos.",
+          "caminho_video": "/media/S01/mlp_s01e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/bvRb3jnmjo2k5xA3HpmsopqWmTW.jpg"
+        },
+        {
+          "id": "S01E22",
+          "titulo": "Um Pássaro no Casco",
+          "descricao": "Durante uma visita da Princesa Celestia, Fluttershy vê que o pássaro real está doente e decide leva-lo para sua casa e cuidar dele.",
+          "caminho_video": "/media/S01/mlp_s01e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/diRtKgrQAdjL8CcBacIBU7o15PK.jpg"
+        },
+        {
+          "id": "S01E23",
+          "titulo": "As Crônicas das Marcas",
+          "descricao": "As Pretendentes da Bela Marca procuram cada uma das personagens principais, a fim de descobrir como elas adquiriram as suas marcas.",
+          "caminho_video": "/media/S01/mlp_s01e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/acpeqFm3HgAU2O4AfGdFehF0aOt.jpg"
+        },
+        {
+          "id": "S01E24",
+          "titulo": "Tudo Acaba Bem com a Coruja Também",
+          "descricao": "Twilight Sparkle faz amizade com uma coruja que se torna seu segundo assistente, deixando Spike com ciúmes.",
+          "caminho_video": "/media/S01/mlp_s01e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/52hPHY5TuWELnv4Hh6LX7MUXLpL.jpg"
+        },
+        {
+          "id": "S01E25",
+          "titulo": "Festa de uma Só",
+          "descricao": "Pinkie Pie investiga as desculpas de seus amigos para não irem as suas festas.",
+          "caminho_video": "/media/S01/mlp_s01e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/2t1gojfCNoZtzRrKU6gtkDt9ORR.jpg"
+        },
+        {
+          "id": "S01E26",
+          "titulo": "A Melhor Noite de Todas",
+          "descricao": "Twilight Sparkle e suas amigas vão ao Grande Baile Galopante esperando realizar os seus sonhos, porém as coisas não saem como elas esperavam.",
+          "caminho_video": "/media/S01/mlp_s01e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/vlGjcicR6S2JI34FeP0NQCYhRS.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "titulo": "Temporada 2",
+      "episodios": [
+        {
+          "id": "S02E01",
+          "titulo": "Retorno à Harmonia - Parte 1",
+          "descricao": "A Princesa Celestia manda as pôneis recuperarem os Elementos da Harmonia e derrotarem Discórdia, mas o draconequus acaba manipulando as pôneis com seus jogos mentais.",
+          "caminho_video": "/media/S02/mlp_s02e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/k1ewwWhgssXRnp10v6JHDMxkn6r.jpg"
+        },
+        {
+          "id": "S02E02",
+          "titulo": "Retorno à Harmonia – Parte 2",
+          "descricao": "Twilight Sparkle deve encontrar os Elementos da Harmonia, e uma maneira de restaurar seus amigos, para derrotar Discórdia. É a segunda metade do episódio de duas partes.",
+          "caminho_video": "/media/S02/mlp_s02e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/e3ENgSQhJoiJ5Em1UzMsvXHvOkt.jpg"
+        },
+        {
+          "id": "S02E03",
+          "titulo": "Lição Zero",
+          "descricao": "Twilight Sparkle entra em pânico quando não consegue escrever sua carta semanal para a Princesa Celestia contendo uma lição sobre a amizade.",
+          "caminho_video": "/media/S02/mlp_s02e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/k8QETpLgubAQO2Se5OoAOzgZaS.jpg"
+        },
+        {
+          "id": "S02E04",
+          "titulo": "Eclipse da Luna",
+          "descricao": "Durante uma festa de Halloween, chamada Noite do Pesadelo, que gira em torno das lendas de Nightmare Moon, Twilight Sparkle ajuda a Princesa Luna a mudar sua fama de assustadora e ser aceita pelos outros pôneis.",
+          "caminho_video": "/media/S02/mlp_s02e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/xq0fcvsG7b6GyYutGHHzTgiRZ2f.jpg"
+        },
+        {
+          "id": "S02E05",
+          "titulo": "Encontro das Irmãs de Casco",
+          "descricao": "Rarity e Sweetie Belle têm uma crise em seu relacionamento. A crise, eventualmente, é resolvida no evento conhecido como Encontro das Irmãs de Casco.",
+          "caminho_video": "/media/S02/mlp_s02e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zZTQoplnlG5zdOH5nTGjU2MykBv.jpg"
+        },
+        {
+          "id": "S02E06",
+          "titulo": "Marcapora",
+          "descricao": "O episódio gira em torno da doença que aflige Apple Bloom, que faz com que muitas belas marcas apareçam por todo o corpo, fazendo-a constantemente utilizar as habilidades que elas simbolizam. ",
+          "caminho_video": "/media/S02/mlp_s02e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ndN2OKcjwxTQgERripr4BBMk1uq.jpg"
+        },
+        {
+          "id": "S02E07",
+          "titulo": "Que Ganhe o Melhor Animal de Estimação!",
+          "descricao": "Rainbow Dash organiza uma competição para determinar qual é o melhor animal de estimação para ela após perceber que ela é a única dentre as suas amigas que não tem um animal de estimação.",
+          "caminho_video": "/media/S02/mlp_s02e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/3DsDOWitK7RyQwPLmCtSKjoiMxR.jpg"
+        },
+        {
+          "id": "S02E08",
+          "titulo": "A Misteriosa Égua do Bem",
+          "descricao": "Rainbow Dash se torna a heroína de Ponyville, porém quando outra égua ameaça tomar o seu lugar, Rainbow faz de tudo para manter o título.",
+          "caminho_video": "/media/S02/mlp_s02e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/3RicYX9k9h0i4YXG1h1Nzvb8RtO.jpg"
+        },
+        {
+          "id": "S02E09",
+          "titulo": "A Simplicidade e a Elite",
+          "descricao": "Rarity se torna uma pônei muito popular em Canterlot, mas quando suas amigas transferem a festa de aniversário de Twilight Sparkle para o Castelo ela tem que escolher entre as suas amigas ou os contatos que ela fez na cidade.",
+          "caminho_video": "/media/S02/mlp_s02e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ezuWPI5MhsCDJ19ZrAxHQhBSIlA.jpg"
+        },
+        {
+          "id": "S02E10",
+          "titulo": "O Segredo do meu Excesso",
+          "descricao": "Spike fica ganancioso, fazendo com que ele cresça gradualmente para um tamanho monstruoso. O título é uma paródia ao do filme O Segredo do meu Sucesso de 1987.",
+          "caminho_video": "/media/S02/mlp_s02e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/rJiaJLF8MQatEFskyHojj2eJcoN.jpg"
+        },
+        {
+          "id": "S02E11",
+          "titulo": "Noite da Lareira Calorosa",
+          "descricao": "Twilight Sparkle, suas amigas e Spike participam de uma peça em Canterlot sobre a fundação de Equestria.",
+          "caminho_video": "/media/S02/mlp_s02e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/p3cjSgbO92mrxj8EsClhCMwtA3W.jpg"
+        },
+        {
+          "id": "S02E12",
+          "titulo": "Dia de Valorização da Família",
+          "descricao": "Apple Bloom fica envergonhada pelos atos da Vovó Smith e tenta impedi-la de falar na escola no Dia de Valorização da Família. Este é o primeiro episódio onde somente uma das personagens principais (Applejack) aparece.",
+          "caminho_video": "/media/S02/mlp_s02e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/mkqnMzBwfxJIRENYRmZSZleYrD9.jpg"
+        },
+        {
+          "id": "S02E13",
+          "titulo": "Os Bebês Cake",
+          "descricao": "Pinkie Pie está animada com o nascimento dos bebês Cake e devido ao desespero de uma entrega do Sr. e Sra. Cake, Pinkie Pie assume a tarefa de ser babá dos gêmeos por um dia, mas está incrívelmente despreparada para o desafio, pois percebe que ser babá é mais difícil do que brincar com eles.",
+          "caminho_video": "/media/S02/mlp_s02e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/1cBkWKJBjc6s0HqjGkwBvKAvITm.jpg"
+        },
+        {
+          "id": "S02E14",
+          "titulo": "O Último Rodeio",
+          "descricao": "Após Applejack enviar uma carta a suas amigas e sua família que diz que ela não voltará para Ponyville após competir no Rodeio de Equestria em Canterlot, suas amigas decidem encontrá-la e entender seus motivos.",
+          "caminho_video": "/media/S02/mlp_s02e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cSkG7ewXoBDAJp3nNXfYDlcMZpE.jpg"
+        },
+        {
+          "id": "S02E15",
+          "titulo": "O Espremedor de Cidra Superveloz 6.000",
+          "descricao": "Os irmãos Flim e Flam desafiam a Família Apple a uma competição de fabricação de cidra.",
+          "caminho_video": "/media/S02/mlp_s02e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/txktl8oosi4SbFt3g7i3rspHOFK.jpg"
+        },
+        {
+          "id": "S02E16",
+          "titulo": "Leia e Chore",
+          "descricao": "Enquanto Rainbow Dash fica de cama no hospital, após machucar sua asa, ela descobre a alegria da leitura, mas esconde de suas amigas por achar que ler é coisa para “cabeção”.",
+          "caminho_video": "/media/S02/mlp_s02e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/okZ0uwc5X4mtbkMt7ZCHEAlTcI5.jpg"
+        },
+        {
+          "id": "S02E17",
+          "titulo": "Dia do Coração",
+          "descricao": "as Pretendentes da Bela Marca fazem uma poção para a Srta. Cheerilee e Big McIntosh na esperança de que eles fiquem juntos, mas elas logo descobrem que a poção não era e que elas pensavam ser.",
+          "caminho_video": "/media/S02/mlp_s02e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/awz1L55owPiwtp9ws7pdd8k7b2Y.jpg"
+        },
+        {
+          "id": "S02E18",
+          "titulo": "Finalmente um Amigo",
+          "descricao": "Quando uma mula nova, Asno Azedo Simplório, se muda para Ponyville, Pinkie Pie tenta fazer amizade com ele, mas suas tentativas acabam falhando.",
+          "caminho_video": "/media/S02/mlp_s02e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/hLCGUM1zG4hFk47Sl1MRnZzdeR7.jpg"
+        },
+        {
+          "id": "S02E19",
+          "titulo": "Fazendo Pata Firme",
+          "descricao": "Fluttershy participa de um seminário de positividade para deixar de ser um capacho, porém o seminário faz com que ela fique muito agressiva.",
+          "caminho_video": "/media/S02/mlp_s02e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/lVgNWiqurLH5keqNv9FY92IoErD.jpg"
+        },
+        {
+          "id": "S02E20",
+          "titulo": "Já estava na hora!",
+          "descricao": "Depois de receber um aviso de si própria do futuro, Twilight Sparkle surta ao tentar evitar um desastre catastrófico não especificado.",
+          "caminho_video": "/media/S02/mlp_s02e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eOjDqWKy7CgNz1YbSMA8zTwO2DH.jpg"
+        },
+        {
+          "id": "S02E21",
+          "titulo": "A Busca do Dragão",
+          "descricao": "Após ser zombado pelas pôneis, Spike se junta a migração dos dragões para descobrir a sua verdadeira identidade.",
+          "caminho_video": "/media/S02/mlp_s02e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/tZULT3dQCkXMs6G2P82HmZxyEWy.jpg"
+        },
+        {
+          "id": "S02E22",
+          "titulo": "A Fluttershy Furacão",
+          "descricao": "Fluttershy tenta superar o seu medo de humilhação para poder ajudar Rainbow Dash e os outros Pégasos a levar a água da estação das chuvas até Cloudsdale.",
+          "caminho_video": "/media/S02/mlp_s02e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cLSq32V1ckf2FYkl5Mec2jjgW3V.jpg"
+        },
+        {
+          "id": "S02E23",
+          "titulo": "Ponyville Confidencial",
+          "descricao": "As Pretendentes da Bela Marca tentam ganhar as suas belas marcas escrevendo uma coluna de fofoca em um jornal, mas as suas histórias causam dor e constrangimento para os outros pôneis.",
+          "caminho_video": "/media/S02/mlp_s02e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/vnwAb02uzZYU8TOK2HUb8g4zcza.jpg"
+        },
+        {
+          "id": "S02E24",
+          "titulo": "Mistério no Expresso da Amizade",
+          "descricao": " Pinkie Pie começa uma investigação depois que o bolo que ela estava levando até Canterlot é parcialmente devorado. O título é uma referencia ao livro de 1934 Assassinato no Expresso do Oriente.",
+          "caminho_video": "/media/S02/mlp_s02e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/4UBc1WLqlg93UUchqN41B0FrKcR.jpg"
+        },
+        {
+          "id": "S02E25",
+          "titulo": "Casamento em Canterlot – Parte 1",
+          "descricao": "Twilight Sparkle fica confusa com seus sentimentos quando descobre que seu irmão, Shining Armor, se casará com a sobrinha da Princesa Celestia, Princesa Cadance.",
+          "caminho_video": "/media/S02/mlp_s02e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/e4D7FKgOxKfFGuWQy8zeVx233Xh.jpg"
+        },
+        {
+          "id": "S02E26",
+          "titulo": "Casamento em Canterlot – Parte 2",
+          "descricao": "Shining Armor e a Princesa Cadance estão prestes a se casar, mas a Rainha Chrysalis tem um plano para arruinar a felicidade do casal e o futuro de Equestria.",
+          "caminho_video": "/media/S02/mlp_s02e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/6KzDv46gju40fedmfJpwGaMYZMV.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "titulo": "Temporada 3",
+      "episodios": [
+        {
+          "id": "S03E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eHL4IpXb33MyMLlWAvoC9xLeNg8.jpg"
+        },
+        {
+          "id": "S03E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/e6j3D8OlPoVSgU9RnJydezrYwzE.jpg"
+        },
+        {
+          "id": "S03E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/xbPtWm3aidye4qJbsCO6VfdMU7y.jpg"
+        },
+        {
+          "id": "S03E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/3KC76ykQxQFLDsU0kPxBHP4qbLN.jpg"
+        },
+        {
+          "id": "S03E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/dVPofDGDy9DgXhJ4PToa510Oa0A.jpg"
+        },
+        {
+          "id": "S03E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/AmJI13KBj2M8Hu0xIUWsqKEfMuf.jpg"
+        },
+        {
+          "id": "S03E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/h4IA0ZxiY00GEynCaSX90qxLqEj.jpg"
+        },
+        {
+          "id": "S03E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/gt29oolVjgy3DgW3tZfVLG3VFwv.jpg"
+        },
+        {
+          "id": "S03E09",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/wzaIAMEkNXgPg3hJLYGnKgSMxLl.jpg"
+        },
+        {
+          "id": "S03E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/xAuUM1NEmN9YQ6qTSVFCXEjaSFQ.jpg"
+        },
+        {
+          "id": "S03E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/5ilKB10FZDOCmS8xkzBNIzluZs4.jpg"
+        },
+        {
+          "id": "S03E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/9yroj3zyHLn6I5X1VuvdsJLvd0k.jpg"
+        },
+        {
+          "id": "S03E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S03/mlp_s03e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/623BYtTzSRa67tSyh71cq23MkUV.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "titulo": "Temporada 4",
+      "episodios": [
+        {
+          "id": "S04E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/dgSn2bg6AhID5CYqDF3QWWc2liT.jpg"
+        },
+        {
+          "id": "S04E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/nn17dH5NN9EwIUhqgTfkzblCaZG.jpg"
+        },
+        {
+          "id": "S04E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ofz26bMCAnHxHaJGqXc9b1BsRpb.jpg"
+        },
+        {
+          "id": "S04E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/n9Ip7PpcL3nlhRA4S9NDT0GaIm1.jpg"
+        },
+        {
+          "id": "S04E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/1Wx25ERjcIFwIpNcwp3qU5cc2jN.jpg"
+        },
+        {
+          "id": "S04E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/gdsHsS18aNcKgG0xW163km7fd2d.jpg"
+        },
+        {
+          "id": "S04E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/8Hr743WM2f8xwJzwo2T5j0Q0Pgh.jpg"
+        },
+        {
+          "id": "S04E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/dGYb2OI4ocMH9dYALolAAh8ScSM.jpg"
+        },
+        {
+          "id": "S04E09",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7nQvpYfNY4u3AgnXxKfn30qCqji.jpg"
+        },
+        {
+          "id": "S04E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/pzEwTKETEHEJyiEiKfnFtoAYdnw.jpg"
+        },
+        {
+          "id": "S04E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/2kGgDrWPOkzKKJYpUtNv3p4Wko9.jpg"
+        },
+        {
+          "id": "S04E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cUFJzmTcBIcVBljSdj5rEX31cBz.jpg"
+        },
+        {
+          "id": "S04E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/hADYH1ZX4ODjhGeawwXCAC3Q0Bd.jpg"
+        },
+        {
+          "id": "S04E14",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/6hN1RC2RdeIWa37rKtTN5iiPPyK.jpg"
+        },
+        {
+          "id": "S04E15",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/3Ondj6RnVF6kS4yB8j0G98ePxKx.jpg"
+        },
+        {
+          "id": "S04E16",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/n0kdSxhLeM8Uzq4u6xUc4vtC1OW.jpg"
+        },
+        {
+          "id": "S04E17",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/r1PhGOQzmEC2AvGDr2tOS6h1pLW.jpg"
+        },
+        {
+          "id": "S04E18",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/iZ2Y0WO8taWeYkuVdM3Dmdvlnfy.jpg"
+        },
+        {
+          "id": "S04E19",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/r8aCz47jxmgWmDPjqmuhQdRtDVp.jpg"
+        },
+        {
+          "id": "S04E20",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/wPPm3xLD3UQ7c2fq4XUGmbVqfwR.jpg"
+        },
+        {
+          "id": "S04E21",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/5xSILQuWPRlRYgmEnpqZ7BreBlC.jpg"
+        },
+        {
+          "id": "S04E22",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/yoAH0V9xELvkNi3N8mFFnWkvtqk.jpg"
+        },
+        {
+          "id": "S04E23",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/qN7yyZLtqVlHXyhdoYQVBbIDe6L.jpg"
+        },
+        {
+          "id": "S04E24",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cnCB4n4hG2bSKuKrsykiTGGNr2S.jpg"
+        },
+        {
+          "id": "S04E25",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/lhrc3Yno3iQQRNgV94etF7kcs45.jpg"
+        },
+        {
+          "id": "S04E26",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S04/mlp_s04e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/j9OXvZnVA2PvmvsZHHVwsGorTxT.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "titulo": "Temporada 5",
+      "episodios": [
+        {
+          "id": "S05E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/i2VD1oAJIXW8ygfoGwxGEhmadIz.jpg"
+        },
+        {
+          "id": "S05E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/dmkTBVgwIxXz33yPcfRDIondAts.jpg"
+        },
+        {
+          "id": "S05E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/pvK6ZZnriYRctT1pYPeyHUBCJsb.jpg"
+        },
+        {
+          "id": "S05E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/isduh80cQqsTbnctzQA94NDZBDe.jpg"
+        },
+        {
+          "id": "S05E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/z3lcZlVg53CxBZV87kBrJ3Etpcu.jpg"
+        },
+        {
+          "id": "S05E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/rJ7aWY0cTEJCBmK0d40hgscRwSA.jpg"
+        },
+        {
+          "id": "S05E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/6dJWyhliFhw474xPoFIzZeoEFGm.jpg"
+        },
+        {
+          "id": "S05E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/qGkJiiaUk2wWTsb6rtrrj51ZuJI.jpg"
+        },
+        {
+          "id": "S05E09",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/5NDpzpxQeStbVOh0KclxFtpI4tj.jpg"
+        },
+        {
+          "id": "S05E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7yZb0CL6HSbwefUpKUbfTzC6AcY.jpg"
+        },
+        {
+          "id": "S05E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/g9KWYHA1aK3Fl830aLH6tqYB1iQ.jpg"
+        },
+        {
+          "id": "S05E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/vBqIJ4waXGT0oE8UD5VMzKH5byt.jpg"
+        },
+        {
+          "id": "S05E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/g9JP00BfPyd07tQor3Ku67T0jh0.jpg"
+        },
+        {
+          "id": "S05E14",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/gStKq1XeVNMMAzHAok13T5bjj5k.jpg"
+        },
+        {
+          "id": "S05E15",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eX8ERai3f4k4N0nzCdICG1iosoh.jpg"
+        },
+        {
+          "id": "S05E16",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/hAQnrUfUIcv8kdqlLVfTAamcXMn.jpg"
+        },
+        {
+          "id": "S05E17",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/4DGIBbUxITtupLcuQLv73IpWbEi.jpg"
+        },
+        {
+          "id": "S05E18",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/3hjqhVP8WC82blvgL9sxYgAoO7U.jpg"
+        },
+        {
+          "id": "S05E19",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/uRslt3m1FKhKVe4xiEVJw4o0I8G.jpg"
+        },
+        {
+          "id": "S05E20",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/Atd1Niwa1bkdWrCWNnSvVSxPCi4.jpg"
+        },
+        {
+          "id": "S05E21",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eTdVlFnO1hunNYlyM0xeKAUyqd9.jpg"
+        },
+        {
+          "id": "S05E22",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/yHg1Zp4dGGjENE5QgpS6OG1AVes.jpg"
+        },
+        {
+          "id": "S05E23",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/jgMs92axjvDuqo1MfmK4xuwRxHV.jpg"
+        },
+        {
+          "id": "S05E24",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/weVER3aW4eP2tHWpjqI7Evtz1mK.jpg"
+        },
+        {
+          "id": "S05E25",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/c9Tv3Lu3WbOP7L2T00WvjfJiawo.jpg"
+        },
+        {
+          "id": "S05E26",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S05/mlp_s05e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/gvjeNXkTTeSbE4DsZ7D38iUP3sC.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "titulo": "Temporada 6",
+      "episodios": [
+        {
+          "id": "S06E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/z75SLLkDTkP202saLbPRpVtCWkC.jpg"
+        },
+        {
+          "id": "S06E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cEuvA713BLb52tDsi857alTa1PL.jpg"
+        },
+        {
+          "id": "S06E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/98cyeJjL8vmED9k3DGJBpNP1Rpe.jpg"
+        },
+        {
+          "id": "S06E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/uBpWo5cm05VtRbtDJWUQgRXE5wF.jpg"
+        },
+        {
+          "id": "S06E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/2JELVF9Fc6yiZvVITZTRtpwAOAV.jpg"
+        },
+        {
+          "id": "S06E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/atPGXCTE8P45AyHHowl0lgGrpex.jpg"
+        },
+        {
+          "id": "S06E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/i4zYZORZfV02TRBiPE4LvWm6qWi.jpg"
+        },
+        {
+          "id": "S06E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/tfXHWXgCP6Cz5ZmzYUdfYyarkyd.jpg"
+        },
+        {
+          "id": "S06E09",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/bQsCfDlAIHjcuysEz5oxj3r4lYK.jpg"
+        },
+        {
+          "id": "S06E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/gL5SR066GTA4SEUrKo9FVMt0fpD.jpg"
+        },
+        {
+          "id": "S06E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zvED8D50v6Krw00ojb3NjpjTclW.jpg"
+        },
+        {
+          "id": "S06E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zDn6hRaJplEzH1YrVgbKEXUOLCB.jpg"
+        },
+        {
+          "id": "S06E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/qJsYoh2WZUbK5giT7FxITtT3UBO.jpg"
+        },
+        {
+          "id": "S06E14",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/pSNXea8nqAmPo8BIfmYEiPYkxx0.jpg"
+        },
+        {
+          "id": "S06E15",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cyF23JQB8QsQm5ltnpOxc0GmmHp.jpg"
+        },
+        {
+          "id": "S06E16",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/2RRrxK5tAuEYntHYC4JKCSyj9ds.jpg"
+        },
+        {
+          "id": "S06E17",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/mDShfDxRAlZJwwhXYYOkmtjqpFQ.jpg"
+        },
+        {
+          "id": "S06E18",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/alKexlJFxWO2lAQUiqatY0W1Zxp.jpg"
+        },
+        {
+          "id": "S06E19",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ayEIXNfBFXgy1KVWyiHKMHQJ6EF.jpg"
+        },
+        {
+          "id": "S06E20",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zrEI6rCHZNaB7QpoLdaEYFmwjUe.jpg"
+        },
+        {
+          "id": "S06E21",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/urz8l8xtpZQtRF1qiQwOlkFF95B.jpg"
+        },
+        {
+          "id": "S06E22",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/hnN8OVPB2GLQ0cp36Nr2avVZEgU.jpg"
+        },
+        {
+          "id": "S06E23",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/xBEMaOD2YWwrnKU6FBMUOt1jofy.jpg"
+        },
+        {
+          "id": "S06E24",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/9eXVVwtdl5m8tyslUByObItGYt6.jpg"
+        },
+        {
+          "id": "S06E25",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/sqd19lPuPZ36cvxYHSQq2ZZVMac.jpg"
+        },
+        {
+          "id": "S06E26",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S06/mlp_s06e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/kx1eFMRpwl5xPhfr0SC1kexUT7w.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "titulo": "Temporada 7",
+      "episodios": [
+        {
+          "id": "S07E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/jSTLnWpRV6cf1bcdT2oF4fQ9aTW.jpg"
+        },
+        {
+          "id": "S07E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ct7QbOFzOk7UivJeUVbkTdQZZiZ.jpg"
+        },
+        {
+          "id": "S07E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/cYYFuTalL1qfTiPXUodMeV70mH8.jpg"
+        },
+        {
+          "id": "S07E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/fwwVEYxBqBH5IrCmxxKHQxbSdVX.jpg"
+        },
+        {
+          "id": "S07E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/PgtGjyDSBR1rsZNyi84FYk3aaW.jpg"
+        },
+        {
+          "id": "S07E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/suHAI8zcipqPJjRJC3jqHLH7Oou.jpg"
+        },
+        {
+          "id": "S07E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/rflezh6q5aYgUCqPm1p30V4QWcw.jpg"
+        },
+        {
+          "id": "S07E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/il0FrsccYkMq4IM990pJGkhYXDd.jpg"
+        },
+        {
+          "id": "S07E09",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/75KXk9yWIaa7YXfe2R07G5DCOC8.jpg"
+        },
+        {
+          "id": "S07E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/xTzRVbVSDk32ujxoQpdpaThPnUy.jpg"
+        },
+        {
+          "id": "S07E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/i3I2IsJgIWbZhKk3wPYA09k6OVq.jpg"
+        },
+        {
+          "id": "S07E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/m1EARKJDp9gCI1SX783kveElW63.jpg"
+        },
+        {
+          "id": "S07E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/fvuFHV7gZGXp3enZWQWCIdXqg02.jpg"
+        },
+        {
+          "id": "S07E14",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/rVxkzLT7JgcuVYxQZISzgs0vRk.jpg"
+        },
+        {
+          "id": "S07E15",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/wkXvsJB43sF4CatfevisREXBS3s.jpg"
+        },
+        {
+          "id": "S07E16",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/2qX9i5XOfYZ5VtlmIfLPpqMzVos.jpg"
+        },
+        {
+          "id": "S07E17",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/e46zXuvqBMWEYycvDOrToCPs80H.jpg"
+        },
+        {
+          "id": "S07E18",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/vG7Xz6nzU1GFCq7w0HPtrBX995S.jpg"
+        },
+        {
+          "id": "S07E19",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/fFdxbL382R96zFi7dQuQAE6HgEt.jpg"
+        },
+        {
+          "id": "S07E20",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/mjpPQwT8Oct1Cnju7J4jrNIHzcI.jpg"
+        },
+        {
+          "id": "S07E21",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/a9UpH4aOw4JkOdTkAAhfU7Ay8yL.jpg"
+        },
+        {
+          "id": "S07E22",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/gMYRLzjqqUmqmXzPAfNXc0x47cT.jpg"
+        },
+        {
+          "id": "S07E23",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zypSBmIA368FisMo06ktKPgEgvc.jpg"
+        },
+        {
+          "id": "S07E24",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7yp4EZIM5WlD14JfJPbXpkXr5Xo.jpg"
+        },
+        {
+          "id": "S07E25",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/fVDuEQa1oQUnhGcuWkJBuLTSWI.jpg"
+        },
+        {
+          "id": "S07E26",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S07/mlp_s07e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/XXaTO3enOdEjh4TH472hRN9YAS.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "titulo": "Temporada 8",
+      "episodios": [
+        {
+          "id": "S08E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eqxrRfBYyPwpfelEwDWKNhu9Ml9.jpg"
+        },
+        {
+          "id": "S08E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/jAF1bXyZ6jmZpyRyAACBgnjNFY4.jpg"
+        },
+        {
+          "id": "S08E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/qSSYz6QRTFcCiffOqGIn7J0031R.jpg"
+        },
+        {
+          "id": "S08E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/3ixjg5zqs0fpMIZsD9JSVtVDsaH.jpg"
+        },
+        {
+          "id": "S08E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/x4RDgfWRf2yIvN0pHeNiSrl3EtO.jpg"
+        },
+        {
+          "id": "S08E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/yXvGaoYN1MIAIbcooL84C5wIDEl.jpg"
+        },
+        {
+          "id": "S08E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ewL7DjvJKr6DutwpmxEdf4MjqwV.jpg"
+        },
+        {
+          "id": "S08E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7GvJNPSCEtP37burNQ7XhxsSwXl.jpg"
+        },
+        {
+          "id": "S08E09",
+          "titulo": "Cláusula de Não-concorrência",
+          "descricao": "Applejack e Rainbow Dash levam os alunos da Escola de Amizade em uma saída de campo para aprenderem a trabalhar em equipe. Mas acidentalmente, a aula ao ar livre mostra como não trabalhar em grupo.",
+          "caminho_video": "/media/S08/mlp_s08e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/pHqR9pwn91wB3agxi3QcDK1luAT.jpg"
+        },
+        {
+          "id": "S08E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/zvXdWJbKkyzNrmxSFimAKtQ82pv.jpg"
+        },
+        {
+          "id": "S08E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/y92zVGPgOlhNYNoKXjQCXiApxQ1.jpg"
+        },
+        {
+          "id": "S08E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/r74XOhFAOxYMaDO3Q0uYHvix2fH.jpg"
+        },
+        {
+          "id": "S08E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/kRKRR9qNDQKramnAhc2deK8m4Y5.jpg"
+        },
+        {
+          "id": "S08E14",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/bh2cIbkS76nOXSjAh9fFqrloaUB.jpg"
+        },
+        {
+          "id": "S08E15",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/fxlrwJifGSoqc3WQju1qqYo8g02.jpg"
+        },
+        {
+          "id": "S08E16",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/80IPcp4hSg75lGLsrvfiMK9PoWO.jpg"
+        },
+        {
+          "id": "S08E17",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/8BEFUOUHibBi9uD8CsRHNR8ommP.jpg"
+        },
+        {
+          "id": "S08E18",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eMghb40a0P4AezwbN6knpIwr9Fe.jpg"
+        },
+        {
+          "id": "S08E19",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/qROmNMgl5VzuxoseCJ6MVZSzLu2.jpg"
+        },
+        {
+          "id": "S08E20",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7jJfWy9xxdY3HlBHGZykMjVNJ8B.jpg"
+        },
+        {
+          "id": "S08E21",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/vZJpJg6H7l2KZnFHjIJK6sHbN8B.jpg"
+        },
+        {
+          "id": "S08E22",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/1vBp8eLFBTjMO7GaZB9R31ZeLeU.jpg"
+        },
+        {
+          "id": "S08E23",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/6O0lcAd3BD5MnY7xvGSKrT8gzz6.jpg"
+        },
+        {
+          "id": "S08E24",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/52eeMn5ZN5WRH0k29kI1Df717Hf.jpg"
+        },
+        {
+          "id": "S08E25",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/jVO1xQ6ZDqfJRfzHfYZllCW1Am7.jpg"
+        },
+        {
+          "id": "S08E26",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S08/mlp_s08e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/l2G09bPDOLibZPyY29t4dXZPIOI.jpg"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "titulo": "Temporada 9",
+      "episodios": [
+        {
+          "id": "S09E01",
+          "titulo": "Episódio 1",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e01.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/fyDgzb1wchtEkXewkZKsA9WbIdq.jpg"
+        },
+        {
+          "id": "S09E02",
+          "titulo": "Episódio 2",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e02.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/ZCMaKnF7bdH4xx43Ch69r6mcPT.jpg"
+        },
+        {
+          "id": "S09E03",
+          "titulo": "Episódio 3",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e03.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/i1hHSNv6RfMqeeC6GcIkulWbk4P.jpg"
+        },
+        {
+          "id": "S09E04",
+          "titulo": "Episódio 4",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e04.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/sG7xiutlGmOdG6kqLyAOp5RO0Gg.jpg"
+        },
+        {
+          "id": "S09E05",
+          "titulo": "Episódio 5",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e05.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/4tfv2D6I75tEVHLE2dMCgCIcZad.jpg"
+        },
+        {
+          "id": "S09E06",
+          "titulo": "Episódio 6",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e06.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/qVXQPGT6csuKju25NJkmVNMd8WD.jpg"
+        },
+        {
+          "id": "S09E07",
+          "titulo": "Episódio 7",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e07.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/tA1PWJnRUzeuEhDvnIwdHeb3Z15.jpg"
+        },
+        {
+          "id": "S09E08",
+          "titulo": "Episódio 8",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e08.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/eQOtOZWXkTiJh5c3Xvbslx6brNh.jpg"
+        },
+        {
+          "id": "S09E09",
+          "titulo": "Episódio 9",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e09.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/A1gCHy5CnYN8h6uSg8BYXKiZ5AO.jpg"
+        },
+        {
+          "id": "S09E10",
+          "titulo": "Episódio 10",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e10.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7C6RBJ5xmzVyj5a9THELpCMVKFb.jpg"
+        },
+        {
+          "id": "S09E11",
+          "titulo": "Episódio 11",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e11.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/9W1tiasR138btPNvBj59Tlt0Uq2.jpg"
+        },
+        {
+          "id": "S09E12",
+          "titulo": "Episódio 12",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e12.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/2v2o6GtMyBsK6weCUOT0zKV0nWz.jpg"
+        },
+        {
+          "id": "S09E13",
+          "titulo": "Episódio 13",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e13.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/lxWvNuKEmHhv1AexCfWrVseF1mf.jpg"
+        },
+        {
+          "id": "S09E14",
+          "titulo": "Episódio 14",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e14.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/m66SnE4GwvGXrMo1ZV5jWtjzk9n.jpg"
+        },
+        {
+          "id": "S09E15",
+          "titulo": "Episódio 15",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e15.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/mWvpFY1MrkJ1cldmkGVwtpG2lSd.jpg"
+        },
+        {
+          "id": "S09E16",
+          "titulo": "Episódio 16",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e16.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/yVNGTkVfTW49MZZlGEzy4MBtoJ9.jpg"
+        },
+        {
+          "id": "S09E17",
+          "titulo": "Episódio 17",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e17.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/z1kxfmULa75bERxBZv6WxMds2cQ.jpg"
+        },
+        {
+          "id": "S09E18",
+          "titulo": "Episódio 18",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e18.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/m1cBHiLmNeltPQz3zNnUrpuYiJ7.jpg"
+        },
+        {
+          "id": "S09E19",
+          "titulo": "Episódio 19",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e19.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/mzHoLmZg0aC06fII36AouJLfw87.jpg"
+        },
+        {
+          "id": "S09E20",
+          "titulo": "Episódio 20",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e20.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/vY4uDGS9gkQrgpOPX5x5SNYgujf.jpg"
+        },
+        {
+          "id": "S09E21",
+          "titulo": "Episódio 21",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e21.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/7keZ5skimb0xDiDpRRw2lGAkK5V.jpg"
+        },
+        {
+          "id": "S09E22",
+          "titulo": "Episódio 22",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e22.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/pDRReTXnz2Rr3MHpBIZ6uzmoES6.jpg"
+        },
+        {
+          "id": "S09E23",
+          "titulo": "Episódio 23",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e23.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/s6X6ZqzYkEk5vsgkCck6CHG7iWE.jpg"
+        },
+        {
+          "id": "S09E24",
+          "titulo": "Episódio 24",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e24.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/6zDGQKCNTS0MvhFO8zIl2xktb5l.jpg"
+        },
+        {
+          "id": "S09E25",
+          "titulo": "Episódio 25",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e25.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/oZRJgvXax3fvZQj5MzzJqtYBu3k.jpg"
+        },
+        {
+          "id": "S09E26",
+          "titulo": "Episódio 26",
+          "descricao": "A sinopse mágica deste episódio ainda não foi traduzida.",
+          "caminho_video": "/media/S09/mlp_s09e26.mp4",
+          "assistido": false,
+          "imagem": "https://image.tmdb.org/t/p/w500/iw9bFajZsqurVF7dROBaDth6xPC.jpg"
+        }
+      ]
+    }
+  ]
+}
