@@ -10,6 +10,7 @@ const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
+app.use('/media', express.static(path.join(__dirname, '../media')));
 
 // Rota 1: Buscar o catálogo
 app.get('/api/episodios', (req: Request, res: Response) => {

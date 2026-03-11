@@ -91,15 +91,15 @@
             margin-bottom: 2rem;
         }
 
-        /* ✨ BOTÕES PREMIUM STYLE (Foco apenas no Player) ✨ */
         .action-buttons {
             display: flex;
-            gap: 1.5rem;
+            gap: 3.5rem; /* Espaço entre os botões */
             border-top: 1px solid rgba(116, 40, 167, 0.08); 
             padding-top: 2rem;
             justify-content: center; 
-            max-width: 600px; /* ✨ Limita o tamanho do grupo todo */
-            margin: 0 auto;   /* ✨ Centraliza o grupo no card */
+            align-items: flex-end; 
+            max-width: 800px; /* Largura máxima para dar espaço */
+            margin: 0 auto;  
         }
 
         .btn-action {
@@ -109,7 +109,7 @@
             color: #ffffff !important; 
             
             padding: 0.9rem 2.5rem; 
-            border-radius: 8px; /* Cantos levemente arredondados, visual mais profissional */
+            border-radius: 8px; 
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -119,11 +119,11 @@
             font-size: 0.95rem;
             letter-spacing: 0.5px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            justify-content: center;   /* ✨ Centraliza horizontalmente o conjunto ícone + texto */
+            justify-content: center;  
     
-            padding: 0.8rem 0;        /* ✨ Importante: deixe o segundo valor (lateral) como 0 */
-            width: 100%;              /* Garante que o flex: 1 funcione bem */
-            max-width: 180px;         /* O tamanho que você escolheu */
+            padding: 0.8rem 0;        
+            width: 100%;              
+            max-width: 180px;         
         }
         /* O Efeito Mágico no Hover (Fica colorido e brilha ao passar o mouse) */
         .btn-action:hover {
@@ -131,46 +131,27 @@
             color: #ffffff !important;
         }
 
-        /* 💖 Botão Favoritar */
-        .btn-action.favorite:hover {
-            background: #ff007f; /* Magenta vibrante */
-            border-color: #ff007f;
-            box-shadow: 0 8px 25px rgba(255, 0, 127, 0.4); 
-        }
-
-        .btn-action.favorite.active {
-            background: #ff007f !important;
-            border-color: #ff007f !important;
-            box-shadow: 0 8px 25px rgba(255, 0, 127, 0.4);
-            color: white !important;
-        }
-        
-        /* 👁️ Botão Assistido */
-        .btn-action.watched:hover {
-            background: #6f12bb; /* Roxo */
-            border-color: #8c00ff;
-            box-shadow: 0 8px 25px rgba(174, 104, 231, 0.4);
-        }
-
-        .btn-action.watched.active {
-            background: #6f12bb !important;
-            border-color: #8c00ff !important;
-            box-shadow: 0 8px 25px rgba(174, 104, 231, 0.4);
-            color: white !important;
-        }
-
-        /* 🔗 Botão Compartilhar */
-        .btn-action.share:hover {
-            background: #4facfe; /* Azul */
-            border-color: #4facfe;
-            box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
-        }
     </style>
 </head>
 <body>
 
+    <div id="popup-favorito" class="popup-magico">
+        <span class="icone-popup">❤︎</span>
+        Este episódio agora está na sua lista de favoritos!
+    </div>
+
+    <div id="popup-assistido" class="popup-magico">
+        <span class="icone-popup">☀</span>
+        Este episódio foi marcado como assistido!
+    </div>
+
+    <div id="popup-compartilhar" class="popup-magico">
+        <span class="icone-popup">✉</span>
+        Link do episódio copiado para compartilhar!
+    </div>
+
     <header class="header-player">
-    <a href="index.html?view=catalogo" class="btn-voltar" style="text-decoration: none;">◀  Voltar para o Catálogo</a>
+    <a href="index.html?view=catalogo" class="btn-voltar" style="text-decoration: none;">Voltar para o Catálogo</a>
 </header>
 
     <main class="player-container">
@@ -186,9 +167,20 @@
             <p class="episode-synopsis" id="ep-desc">Buscando os detalhes deste episódio...</p>
             
             <div class="action-buttons">
-                <button class="btn-action favorite" onclick="alternarFavorito()">❤  Favoritar</button>
-                <button class="btn-action watched" onclick="alternarAssistido()">𖦹  Já Assisti</button>
-                <button class="btn-action share" onclick="abrirCompartilhar()">➤  Compartilhar</button>
+                <a href="javascript:void(0)" class="btn-imagem-solta" onclick="alternarFavorito()">
+                    <img src="fluttershy-fav-2.png" id="img-favorito" class="fav-off" alt="Favoritar">
+                    <span class="texto-btn-img" id="texto-favorito">Favoritar</span>
+                </a>
+    
+                <a href="javascript:void(0)" class="btn-imagem-solta" onclick="alternarAssistido()">
+                    <img src="pinkie-assistido-off.png" id="img-assistido" class="ast-off" alt="Assistido">
+                    <span class="texto-btn-img" id="texto-assistido">Marcar Assistido</span>
+                </a>
+    
+                <a href="javascript:void(0)" class="btn-imagem-solta" onclick="alternarCompartilhar()">
+                    <img src="mlp-compartilhar.png" id="img-compartilhar" class="comp-off" alt="Compartilhar">
+                    <span class="texto-btn-img" id="texto-compartilhar">Compartilhar</span>
+                </a>
             </div>
         </div>
     </main>
@@ -199,7 +191,7 @@
     const epID = urlParams.get('titulo'); 
     const caminhoVideo = urlParams.get('caminho');
 
-    // --- FUNÇÃO BUSCAR SINOPSE (Recuperada e Corrigida) ---
+    // --- FUNÇÃO BUSCAR SINOPSE ---
     async function buscarSinopse() {
         try {
             const resposta = await fetch('http://localhost:3000/api/episodios');
@@ -222,70 +214,181 @@
         }
     }
 
-    // --- FUNÇÃO FAVORITAR ATUALIZADA ---
+    // ✨ FUNÇÕES DE MOSTRAR POPUPS ✨
+    function mostrarPopupFavorito() {
+        const popup = document.getElementById('popup-favorito');
+        popup.classList.add('mostrar');
+        setTimeout(() => { popup.classList.remove('mostrar'); }, 3000);
+    }
+
+    function mostrarPopupAssistido() {
+        const popup = document.getElementById('popup-assistido');
+        popup.classList.add('mostrar');
+        setTimeout(() => { popup.classList.remove('mostrar'); }, 3000);
+    }
+
+    // Novo Popup de Compartilhar
+    function mostrarPopupCompartilhar() {
+        const popup = document.getElementById('popup-compartilhar');
+        popup.classList.add('mostrar');
+        setTimeout(() => { popup.classList.remove('mostrar'); }, 3000);
+    }
+
+
+    // --- FUNÇÕES DE INTERAÇÃO (Favoritos/Assistidos/Compartilhar) ---
     function alternarFavorito() {
         let favoritos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
-        const btn = document.querySelector('.btn-action.favorite');
-
+        const imgFav = document.getElementById('img-favorito');
+        const textoFav = document.getElementById('texto-favorito'); 
+        
         if (favoritos.includes(epID)) {
             favoritos = favoritos.filter(id => id !== epID);
-            btn.innerHTML = "❤  Favoritar";
-            btn.classList.remove('active');
+            imgFav.src = "fluttershy-fav-2.png"; // Imagem desligada
+            imgFav.className = "fav-off"; 
+            if(textoFav) {
+                textoFav.textContent = "Favoritar"; // Volta o texto
+                textoFav.classList.remove('texto-brilhando'); // Remove o brilho
+            }
         } else {
             favoritos.push(epID);
-            btn.innerHTML = "❤︎  Na Minha Lista";
-            btn.classList.add('active');
+            imgFav.src = "fluttershy-fav-on.png"; // Imagem ligada
+            imgFav.className = "fav-on"; 
+            if(textoFav) {
+                textoFav.textContent = "Favoritado  ❤︎"; // Muda o texto
+                textoFav.classList.add('texto-brilhando'); // Adiciona brilho
+            }
+            mostrarPopupFavorito(); // Chama o Popup
         }
         localStorage.setItem('ponies_favoritos', JSON.stringify(favoritos));
     }
 
-    // --- FUNÇÃO ASSISTIDO ATUALIZADA ---
     function alternarAssistido() {
         let assistidos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
-        const btn = document.querySelector('.btn-action.watched');
-
+        const imgAssistido = document.getElementById('img-assistido');
+        const textoAssistido = document.getElementById('texto-assistido');
+        
         if (assistidos.includes(epID)) {
             assistidos = assistidos.filter(id => id !== epID);
-            btn.innerHTML = "𖦹  Já Assisti";
-            btn.classList.remove('active');
+            imgAssistido.src = "pinkie-assistido-off.png"; // Imagem desligada
+            imgAssistido.className = "ast-off";
+            if(textoAssistido) {
+                textoAssistido.textContent = "Marcar Assistido"; // Volta o texto
+                textoAssistido.classList.remove('texto-brilhando'); // Remove o brilho
+            }
         } else {
             assistidos.push(epID);
-            btn.innerHTML = "✔  Assistido";
-            btn.classList.add('active');
+            imgAssistido.src = "pinkie-assistido-on.png"; // Imagem ligada
+            imgAssistido.className = "ast-on";
+            if(textoAssistido) {
+                textoAssistido.textContent = "Assistido  ▶︎"; // Muda o texto
+                textoAssistido.classList.add('texto-brilhando'); // Adiciona brilho
+            }
+            mostrarPopupAssistido(); // Chama o Popup
         }
         localStorage.setItem('ponies_assistidos', JSON.stringify(assistidos));
     }
 
-    // --- FUNÇÃO COMPARTILHAR ---
-    function abrirCompartilhar() {
-        const comunidadeStatus = "🚧 Em construção pela Twilight Sparkle...";
-        alert(`A Comunidade PonyVerse está chegando! \n\nVocê está prestes a compartilhar: "${epID}"\nStatus: ${comunidadeStatus}`);
+    // ✨ NOVA FUNÇÃO DE COMPARTILHAR ✨
+    // (Esta função não salva no LocalStorage porque compartilhar é uma ação única, não um "estado" do episódio)
+    function alternarCompartilhar() {
+        const imgCompartilhar = document.getElementById('img-compartilhar');
+        const textoCompartilhar = document.getElementById('texto-compartilhar');
+        
+        // Muda para o estado "ligado" (Compartilhado)
+        imgCompartilhar.src = "mlp-compartilhado.png"; 
+        imgCompartilhar.className = "comp-on";
+        if(textoCompartilhar) {
+            textoCompartilhar.textContent = "Compartilhado  ✔︎";
+            textoCompartilhar.classList.add('texto-brilhando');
+        }
+        
+        mostrarPopupCompartilhar(); // Mostra o aviso que o link foi copiado
+        
+        // Simula a cópia da URL do episódio para a área de transferência do usuário
+        navigator.clipboard.writeText(window.location.href).catch(err => {
+            console.log('Falha ao copiar o link', err);
+        });
+
+        // Opcional: Volta ao estado normal depois de 4 segundos
+        setTimeout(() => {
+            imgCompartilhar.src = "mlp-compartilhar.png"; 
+            imgCompartilhar.className = "comp-off";
+            if(textoCompartilhar) {
+                textoCompartilhar.textContent = "Compartilhar";
+                textoCompartilhar.classList.remove('texto-brilhando');
+            }
+        }, 4000);
     }
 
-    // ✨ INICIALIZAÇÃO AO CARREGAR A PÁGINA
-    window.onload = function() {
-        // Preenche o player
-        document.getElementById('ep-title').textContent = epID;
-        document.getElementById('video-source').src = caminhoVideo;
-        document.getElementById('video-player').load();
 
-        // Verifica estados salvos
+    // ✨ INICIALIZAÇÃO CORRIGIDA ✨
+    window.addEventListener('load', function() {
+        const videoPlayer = document.getElementById('video-player');
+        const titleElement = document.getElementById('ep-title');
+
+        if (epID) titleElement.textContent = epID;
+
+        if (caminhoVideo) {
+            let caminhoCorrigido = caminhoVideo;
+            
+            if (caminhoVideo.startsWith('/media')) {
+                caminhoCorrigido = "http://localhost:3000" + caminhoVideo;
+            } else if (caminhoVideo.startsWith('media')) {
+                caminhoCorrigido = "http://localhost:3000/" + caminhoVideo;
+            }
+
+            console.log("Tentando carregar o vídeo de:", caminhoCorrigido);
+
+            videoPlayer.src = caminhoCorrigido; 
+            videoPlayer.load(); 
+        }
+
+        // Verifica estados salvos (Favoritos/Assistidos)
         const favoritos = JSON.parse(localStorage.getItem('ponies_favoritos')) || [];
         const assistidos = JSON.parse(localStorage.getItem('ponies_assistidos')) || [];
 
-        if (favoritos.includes(epID)) {
-            const btn = document.querySelector('.btn-action.favorite');
-            btn.innerHTML = "❤︎  Na Minha Lista";
-            btn.classList.add('active');
-        }
-        if (assistidos.includes(epID)) {
-            const btn = document.querySelector('.btn-action.watched');
-            btn.innerHTML = "✔  Assistido";
-            btn.classList.add('active');
-        }
+        // Inicialização Favorito
+        const imgFav = document.getElementById('img-favorito');
+        const textoFav = document.getElementById('texto-favorito');
         
+        if (favoritos.includes(epID)) {
+            imgFav.src = "fluttershy-fav-on.png"; 
+            imgFav.className = "fav-on"; 
+            if(textoFav) {
+                textoFav.textContent = "Favoritado  ❤︎";
+                textoFav.classList.add('texto-brilhando');
+            }
+        } else {
+            imgFav.src = "fluttershy-fav-2.png"; 
+            imgFav.className = "fav-off";
+            if(textoFav) {
+                textoFav.textContent = "Favoritar";
+                textoFav.classList.remove('texto-brilhando');
+            }
+        }
+
+        // Inicialização Assistido
+        const imgAssistido = document.getElementById('img-assistido');
+        const textoAssistido = document.getElementById('texto-assistido');
+        
+        if (assistidos.includes(epID)) {
+            imgAssistido.src = "pinkie-assistido-on.png";
+            imgAssistido.className = "ast-on";
+            if(textoAssistido) {
+                textoAssistido.textContent = "Assistido  ▶︎";
+                textoAssistido.classList.add('texto-brilhando');
+            }
+        } else {
+            imgAssistido.src = "pinkie-assistido-off.png";
+            imgAssistido.className = "ast-off";
+            if(textoAssistido) {
+                textoAssistido.textContent = "Marcar Assistido";
+                textoAssistido.classList.remove('texto-brilhando');
+            }
+        }
+
         buscarSinopse(); 
-    }
+    });
 </script>
 </body>
 </html>
