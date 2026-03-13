@@ -249,52 +249,73 @@ function voltarAoCatalogo() {
 }
 
 // ✨ FUNÇÃO PARA CONTROLAR A MÚSICA (Trocando a Imagem) ✨
+// ✨ FUNÇÃO PARA CONTROLAR A MÚSICA (COM MEMÓRIA) ✨
+// ✨ FUNÇÃO PARA CONTROLAR A MÚSICA ✨
 function toggleMusica() {
     const musica = document.getElementById('musica-fundo');
-    const icone = document.getElementById('icone-som-img'); // Pegamos a tag da imagem
+    const icone = document.getElementById('icone-som-img'); 
+    const btn = document.getElementById('btn-musica');
 
     if (musica.paused) {
         musica.play();
-        // ✨ Coloque aqui o nome da sua imagem de SOM LIGADO ✨
         icone.src = 'som-on.png'; 
-        
-        // (Opcional) Adiciona a classe para dar o brilho rosa que fizemos no CSS
-        document.getElementById('btn-musica').classList.add('tocando'); 
+        btn.classList.add('tocando'); 
+        localStorage.setItem('musica_tocando', 'true'); // Grava a preferência
     } else {
         musica.pause();
-        // ✨ Coloque aqui o nome da sua imagem de SOM DESLIGADO ✨
         icone.src = 'som-off.png'; 
-        
-        // Remove o brilho rosa
-        document.getElementById('btn-musica').classList.remove('tocando'); 
+        btn.classList.remove('tocando'); 
+        localStorage.setItem('musica_tocando', 'false'); // Grava a preferência
     }
 }
-// ✨ TENTATIVA DE AUTOPLAY INTELIGENTE (Substitui o ajuste de volume antigo) ✨
+
+// ✨ AUTOPLAY COM DETECÇÃO DE F5 E NAVEGAÇÃO ✨
 window.addEventListener('load', () => {
     const musica = document.getElementById('musica-fundo');
     const icone = document.getElementById('icone-som-img');
     const btn = document.getElementById('btn-musica');
 
     if (musica) {
-        musica.volume = 0.1; // Mantive o seu volume em 0.1 (10%) que você escolheu!
+        musica.volume = 0.1; 
 
-        // O navegador retorna uma "Promessa" ao tentar tocar o áudio
-        let playPromise = musica.play();
+        const tocando = localStorage.getItem('musica_tocando') === 'true';
+        
+        // Sensor que descobre como a página foi carregada
+        const navegacao = performance.getEntriesByType("navigation")[0];
+        const ehF5 = navegacao ? (navegacao.type === "reload") : false;
 
-        if (playPromise !== undefined) {
-            playPromise.then(() => {
-                // Sucesso! O navegador deixou tocar sozinho.
-                icone.src = 'som-on.png'; // Usando a sua imagem de ligado
-                btn.classList.add('tocando');
-            }).catch(error => {
-                // Bloqueado! O navegador barrou o som automático.
-                console.log("O navegador bloqueou o áudio automático. Aguardando interação.");
-                // Corrige o ícone para desligado, já que não está tocando
-                icone.src = 'som-off.png'; // Usando a sua imagem de desligado
-                btn.classList.remove('tocando');
-            });
+        let tempoSalvo = 0;
+        
+        // Se NÃO for F5 e existir um tempo salvo nesta aba, a música continua
+        if (!ehF5 && sessionStorage.getItem('musica_tempo')) {
+            tempoSalvo = parseFloat(sessionStorage.getItem('musica_tempo'));
+        }
+
+        musica.currentTime = tempoSalvo;
+
+        // Fica salvando o segundo atual na memória da aba
+        setInterval(() => {
+            if(!musica.paused) {
+                sessionStorage.setItem('musica_tempo', musica.currentTime);
+            }
+        }, 500);
+
+        if (tocando) {
+            let playPromise = musica.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    icone.src = 'som-on.png';
+                    btn.classList.add('tocando');
+                }).catch(error => {
+                    icone.src = 'som-off.png'; 
+                    btn.classList.remove('tocando');
+                });
+            }
+        } else {
+             icone.src = 'som-off.png';
         }
     }
 });
+
 // Inicia o sistema
 carregarEpisodios();

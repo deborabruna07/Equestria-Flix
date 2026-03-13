@@ -225,6 +225,7 @@ body::before {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    z-index: 99999 !important; /* Prioridade máxima */
     background: transparent !important; /* Sem fundo */
     border: none !important;            /* Sem borda */
     padding: 0;

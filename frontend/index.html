@@ -139,22 +139,23 @@
 
             <a href="galeria.html" class="link-ver-mais">Ver mais ❯</a>
         </div>
+    </aside> <script src="app.js"></script>
+    
+    <audio id="musica-fundo" loop autoplay>
+        <source src="tema-ponyverse.mp3" type="audio/mpeg">
+    </audio>
 
-    <script src="app.js"></script>
-<audio id="musica-fundo" loop autoplay>
-    <source src="tema-ponyverse.mp3" type="audio/mpeg">
-</audio>
-
-<button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
-    <img src="som-ligado.png" alt="Som" id="icone-som-img">
-</button>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        // Se a URL terminar com #principal, ele pula a tela de início
-        if(window.location.hash === '#principal') {
-            abrirPrincipal(); 
-        }
-    });
-</script>
+    <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+        <img src="som-ligado.png" alt="Som" id="icone-som-img">
+    </button>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            // Se a URL terminar com #principal, ele pula a tela de início
+            if(window.location.hash === '#principal') {
+                abrirPrincipal(); 
+            }
+        });
+    </script>
 </body>
 </html>

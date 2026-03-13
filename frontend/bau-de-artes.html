@@ -192,5 +192,77 @@
             }
         }
     </script>
+
+<audio id="musica-fundo" loop>
+        <source src="tema-ponyverse.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+        <img src="som-on.png" alt="Som" id="icone-som-img">
+    </button>
+
+    <script>
+        function toggleMusica() {
+            const musica = document.getElementById('musica-fundo');
+            const icone = document.getElementById('icone-som-img');
+            const btn = document.getElementById('btn-musica');
+
+            if (musica.paused) {
+                musica.play();
+                icone.src = 'som-on.png'; 
+                btn.classList.add('tocando');
+                localStorage.setItem('musica_tocando', 'true');
+            } else {
+                musica.pause();
+                icone.src = 'som-off.png'; 
+                btn.classList.remove('tocando');
+                localStorage.setItem('musica_tocando', 'false');
+            }
+        }
+
+        window.addEventListener('load', () => {
+            const musica = document.getElementById('musica-fundo');
+            const icone = document.getElementById('icone-som-img');
+            const btn = document.getElementById('btn-musica');
+
+            if (musica) {
+                musica.volume = 0.1;
+                
+                const tocando = localStorage.getItem('musica_tocando') === 'true';
+                
+                const navegacao = performance.getEntriesByType("navigation")[0];
+                const ehF5 = navegacao ? (navegacao.type === "reload") : false;
+
+                let tempoSalvo = 0;
+                
+                if (!ehF5 && sessionStorage.getItem('musica_tempo')) {
+                    tempoSalvo = parseFloat(sessionStorage.getItem('musica_tempo'));
+                }
+
+                musica.currentTime = tempoSalvo;
+
+                setInterval(() => {
+                    if(!musica.paused) {
+                        sessionStorage.setItem('musica_tempo', musica.currentTime);
+                    }
+                }, 500);
+
+                if (tocando) {
+                    let playPromise = musica.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            icone.src = 'som-on.png'; 
+                            btn.classList.add('tocando');
+                        }).catch(error => {
+                            icone.src = 'som-off.png'; 
+                            btn.classList.remove('tocando');
+                        });
+                    }
+                } else {
+                    icone.src = 'som-off.png';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
