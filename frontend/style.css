@@ -728,6 +728,47 @@ body::before {
 .fanart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
 .art-placeholder { height: 80px; background: rgba(255,255,255,0.2); border-radius: 10px; }
 
+/* ✨ ESTILOS DAS PRÉVIAS DA GALERIA NO PAINEL ✨ */
+
+/* Ajusta as caixinhas para receberem a imagem sem vazar */
+.art-placeholder { 
+    height: 80px; 
+    background: rgba(255,255,255,0.2); 
+    border-radius: 10px; 
+    overflow: hidden; /* Corta as pontas quadradas da imagem */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeitinho de zoom ao passar o mouse na miniatura */
+.art-placeholder:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 154, 255, 0.4);
+}
+
+/* Faz a imagem preencher todo o quadrado certinho */
+.art-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* O link "Ver mais" embaixo da grade */
+.link-ver-mais {
+    display: block;
+    text-align: center;
+    margin-top: 1.2rem;
+    color: #ff9aff; /* Rosa da paleta */
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-ver-mais:hover {
+    color: #ffffff; /* Fica branco ao passar o mouse */
+}
+
 /* ✨ ESTILOS DO POPUP (Usado para Favorito, Assistido e Compartilhar) ✨ */
 .popup-magico {
     position: fixed;
