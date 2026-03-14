@@ -48,10 +48,11 @@ body::before {
    PÁGINA INICIAL (A Mágica Acontece Aqui)
    ========================================== */
 #pagina-inicial {
+    width: 100vw; 
     height: 100vh;
     
     /* Puxa a imagem da mesma pasta. Mude 'fundo.jpg' para o nome do seu arquivo */
-    background-image: url('fundo.png');
+    background-image: url('background-page.png');
     background-size: cover; /* Faz a imagem esticar para cobrir a tela inteira sem distorcer */
     background-position: center; /* Mantém a imagem centralizada */
     background-repeat: no-repeat; /* Evita que a imagem se repita como um mosaico */
@@ -71,59 +72,139 @@ body::before {
     align-items: center;
 }
 
-.logo-inicial { text-align: center; margin-bottom: 3rem; }
-.logo-inicial h1 {
-    color: #4A235A;
-    font-size: 4.5rem;
-    font-weight: 900;
-    text-shadow: 3px 3px 0px white, 5px 5px 15px rgba(0,0,0,0.1);
-    letter-spacing: 2px;
-}
-.logo-inicial p {
-    color: #ff6b81;
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    background: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.nav-icones { display: flex; gap: 3rem; }
-.nav-item {
-    background: transparent;
-    border: none;
+.logo-inicial {
+    position: absolute; /* Altera para absoluto */
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s;
+    text-align: center;
+    margin-bottom: 0; /* Mantém um espaço de respiro até os botões */
 }
-.nav-item:hover { transform: translateY(-10px); filter: brightness(1.1); }
 
-.nav-item .icone {
-    font-size: 2.5rem;
-    background: rgba(255, 255, 255, 0.8);
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border: 4px solid white;
+.img-logo-oficial {
+    max-width: 650px; /* Altere este número se a imagem ficar muito grande ou pequena */
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0.5rem auto;
+    
+    /* Brilho suave no fundo da imagem */
+    filter: drop-shadow(0 4px 15px rgba(174, 104, 231, 0.4));
+    
+    /* 🪄 Chama a animação 'flutuarMagico' para rodar infinitamente */
+    animation: flutuarMagico 4s ease-in-out infinite;
 }
+
+/* ✨ KEYFRAMES: Criando o movimento de subir e descer ✨ */
+@keyframes flutuarMagico {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); } /* Faz a imagem subir 12 pixels */
+    100% { transform: translateY(0px); }  /* Faz a imagem voltar ao ponto inicial */
+}
+
+/* ✨ NAVIGATION CONTAINER ✨ */
+.nav-icones {
+    position: absolute; /* Agora os botões também flutuam na camada certa */
+    top: 45%;
+    display: flex;
+    gap: 3rem; /* Good space between floating icons */
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* ✨ THE COMPLETE NAV ITEM (Image + Label) ✨ */
+.nav-item {
+    background: transparent; /* Remove button background */
+    border: none; /* Remove standard button borders */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Overall interaction: slight playful float when hovering over item */
+.nav-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Old standard icon style reset - needed if HTML wasn't perfectly cleaned */
+.nav-item .icone { display: none !important; }
+
+/* Agora isso só vai afetar as imagens, o texto fica parado! */
+.img-ep { width: 130px; }
+.img-lista { width: 108px; }
+.img-comu { width: 150px; }
+.img-magia { width: 130px; }
+
+/* Mantenha a regra geral para garantir que a altura se ajuste sozinha */
+.img-nav-icone {
+    height: auto; 
+    object-fit: contain;
+    margin-bottom: 0.8rem; /* Space above text pill */
+    transition: all 0.3s ease;
+    
+    /* Standard subtle drop shadow to pop against background art */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    
+    /* 🪄 ANIMATION: Raw images now apply a continuous magic animation, like the logo! */
+    animation: navIconFloat 5s ease-in-out infinite;
+}
+
+/* Hover effects applied to the image raw icon */
+.nav-item:hover .img-nav-icone {
+    transform: scale(1.1) rotate(5deg); /* Slight playful tilt on hover */
+    /* Intense purple magic glow */
+    filter: drop-shadow(0 0 15px rgba(255, 85, 190, 0.8));
+}
+
+/* Offset animation timing so they don't all float in unison */
+.nav-item:nth-child(2) .img-nav-icone { animation-delay: 0.5s; }
+.nav-item:nth-child(3) .img-nav-icone { animation-delay: 1s; }
+.nav-item:nth-child(4) .img-nav-icone { animation-delay: 1.5s; }
+
+/* ✨ Continuous floating keyframes for nav icons ✨ */
+@keyframes navIconFloat {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); } /* Subtle up and slight turn */
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* ✨ ESTILO DO TEXTO COM LUZ ROSA ✨ */
 .nav-item span {
-    color: #4A235A;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    
+    color: #ffffff; 
     font-weight: 800;
     font-size: 1.1rem;
-    background: rgba(255,255,255,0.6);
-    padding: 4px 12px;
-    border-radius: 15px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    
+    /* ✨ A LUZ ROSA: Criamos camadas de brilho ✨ */
+    text-shadow: 
+        0 0 10px rgba(255, 0, 179, 0.7), /* Brilho rosa próximo */
+        0 0 20px rgba(255, 0, 179, 0.4), /* Luz expandida */
+        2px 2px 4px rgba(0, 0, 0, 0.5);   /* Sombra preta no fundo para dar leitura */
+        
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+/* ✨ LUZ INTENSA QUANDO PASSA O MOUSE ✨ */
+.nav-item:hover span {
+    color: #ffffff;
+    /* Aqui aumentamos o "glow" para parecer que a luz ficou mais forte */
+    text-shadow: 
+        0 0 15px rgba(255, 0, 179, 1),    /* Brilho rosa forte */
+        0 0 30px rgba(255, 0, 179, 0.8),  /* Luz rosa gigante */
+        0 0 45px rgba(255, 0, 179, 0.6);  /* Aura mágica */
+    
+    transform: scale(1.05); /* Um pequeno aumento para destacar */
 }
 
 .ilustracao-fundo {
@@ -139,35 +220,85 @@ body::before {
     z-index: 1;
 }
 
+/* ✨ ÍCONE DE MÚSICA SOLTO E FLUTUANTE ✨ */
+.btn-musica-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: transparent !important; /* Sem fundo */
+    border: none !important;            /* Sem borda */
+    padding: 0;
+    cursor: pointer;
+    z-index: 9999;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+/* O tamanho e o brilho da imagem em si */
+#icone-som-img {
+    width: 90px;  /* Ajuste este valor para deixar do tamanho ideal */
+    height: 90px;
+    object-fit: contain;
+    /* Brilho roxo suave padrão (desligado) */
+    filter: drop-shadow(0 4px 6px rgba(174, 104, 231, 0.6)); 
+    transition: all 0.3s ease;
+}
+
+/* Efeitinho de aumentar ao passar o mouse */
+.btn-musica-flutuante:hover {
+    transform: scale(1.1);
+}
+
+/* ✨ MÁGICA: Quando a música estiver tocando ✨ */
+.btn-musica-flutuante.tocando #icone-som-img {
+    /* Muda o brilho para rosa choque quando ligado */
+    filter: drop-shadow(0 0 15px rgba(255, 0, 127, 0.8)); 
+    animation: pulsarSom 2s infinite alternate;
+}
+
+@keyframes pulsarSom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
 /* ==========================================
    PÁGINA PRINCIPAL E PAINEL DIREITO
    ========================================== */
 #pagina-principal { min-height: 100vh; padding: 2rem; max-width: 1200px; margin: 0 auto; }
 
-.top-bar { display: flex; justify-content: space-between; margin-bottom: 2rem; }
+/* ✨ A SOLUÇÃO DO ESTICAMENTO ✨ */
+.top-bar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* ✨ Adicione esta linha! Ela impede os botões de esticarem ✨ */
+    margin-bottom: 2rem; 
+}
 .btn-icone {
     background: rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(10px);
     color: white !important;
-    border: 2px solid rgba(255, 255, 255, 0.438) !important;
-    padding: 0.6rem 1.5rem !important; /* Tamanho levemente menor para o topo */
-    border-radius: 12px !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    padding: 0.6rem 1.3rem !important;
+    border-radius: 15px !important;
     font-weight: bold !important;
-    font-size: 0.98rem !important;
+    font-size: 1.0rem !important;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     cursor: pointer;
     text-decoration: none;
 }
-
 .btn-icone:hover {
     background: rgba(255, 255, 255, 0.4) !important;
-    transform: translateY(-3px); /* Pulinho para cima, estilo catálogo */
+    border-color: white !important;
+    transform: translateY(-2px);
 }
-.top-icons { display: flex; gap: 1rem; }
+.top-icons { 
+    display: flex; 
+    align-items: center; /* Garante que o Perfil não estique junto com o sino */
+    gap: 1.5rem; 
+}
 
 .hero-banner {
     height: 400px;
@@ -184,13 +315,91 @@ body::before {
     background-position: center 20%; /* Controla a "câmera" (tente 10%, 20% ou 30% para focar no rosto delas) */
     background-repeat: no-repeat;
 }
-.banner-text h2 { font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-.banner-text p { color: var(--purple-primary); font-weight: bold; background: white; padding: 5px 15px; border-radius: 15px; display: inline-block; margin-top: 10px;}
+/* ✨ TÍTULO DO BANNER COM SOMBRA FORTE ✨ */
+.banner-text h2 { 
+    font-size: 3rem; 
+    color: white; 
+    /* Criamos 3 camadas de sombra: uma perto, uma média e uma esfumaçada no fundo */
+    text-shadow: 
+        2px 2px 5px rgba(127, 11, 150, 0.9),
+        0 0 15px rgba(164, 14, 184, 0.7),
+        0 0 30px rgba(205, 16, 223, 0.5); 
+}
+
+/* ✨ SUBTÍTULO DO BANNER (Pílula com sombra) ✨ */
+.banner-text p { 
+    color: var(--purple-primary); 
+    font-weight: bold; 
+    background: white; 
+    padding: 6px 18px; 
+    border-radius: 15px; 
+    display: inline-block; 
+    margin-top: 10px;
+    /* Sombra ao redor da caixinha branca */
+    box-shadow: 0 5px 15px rgba(192, 14, 228, 0.61);
+}
 
 .explore-section h3 { margin-bottom: 1rem; color: white; }
 .season-tabs { display: flex; gap: 0.5rem; margin-bottom: 2rem; overflow-x: auto; padding-bottom: 10px; }
 .btn-season { background: var(--bg-panel); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 0.8rem 1.5rem; border-radius: 15px; cursor: pointer; font-weight: bold; white-space: nowrap; }
-.btn-season:hover, .btn-season.active { background: #c856fd; }
+.btn-season:hover, .btn-season.active { background: #a940ffce; }
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    border-radius: 20px;
+    overflow: hidden; /* Mantém o que está fora escondido */
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%; /* Mude de 300% para 100% aqui */
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-banner {
+    /* ✨ ESTA É A LINHA MÁGICA ✨ */
+    flex: 0 0 100%; 
+    
+    height: 400px;
+    background-size: cover;
+    background-position: center 20%;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.4) !important; 
+    border-color: white !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.1); 
+}
+
+.carousel-btn.prev { left: 20px; }
+.carousel-btn.next { right: 20px; }
 
 /* --- GRADE E CARDS DE EPISÓDIOS --- */
 .episode-grid { 
@@ -214,7 +423,7 @@ body::before {
 .card-episodio:hover { 
     transform: translateY(-8px); 
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    border: 2px solid #ff9a9e; /* Bordinha rosa mágica no hover */
+    border: 2px solid #c074ff; /* Bordinha rosa mágica no hover */
 }
 
 /* Área da Imagem com Efeito Hover */
@@ -289,6 +498,7 @@ body::before {
     margin-bottom: 1rem; 
     display: -webkit-box; 
     -webkit-line-clamp: 3; 
+    line-clamp: 3;
     -webkit-box-orient: vertical; 
     overflow: hidden; 
 }
@@ -309,6 +519,218 @@ body::before {
     background: var(--pink-accent); 
 }
 
+/* ✨ SELO DE EPISÓDIO ASSISTIDO ✨ */
+.badge-assistido {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(185, 99, 255, 0.9); /* Roxo elegante */
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* ✨ Estilo do container de ícones do topo ✨ */
+.top-icons {
+    display: flex;
+    align-items: center; /* Alinhamento vertical central */
+    gap: 1.5rem; /* ✨ Adiciona um bom espaçamento entre o sino e o perfil ✨ */
+}
+
+/* ✨ ESTILO DO BOTÃO RESTAURADO (Sem o quadrado fantasma) ✨ */
+/* ✨ BLINDAGEM MÁXIMA PARA O BOTÃO (Fim do quadrado fantasma) ✨ */
+/* ✨ BOTÃO VIDRO FOSCO (Resetado e à prova de bugs) ✨ */
+.btn-icone {
+    /* 1. Arranca qualquer visual padrão de botão do Windows/Chrome */
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    outline: none !important;
+    
+    /* 2. O seu efeito de vidro */
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* 3. Formato e texto */
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 1.5rem !important;
+    font-weight: bold !important;
+    font-size: 0.98rem !important;
+    
+    /* ✨ 4. REMOVEMOS A SOMBRA TEMPORARIAMENTE PARA TESTAR ✨ */
+    box-shadow: none !important; 
+    
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-icone:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-3px);
+}
+/* ✨ O novo estilo para o sino de notificação "SOLTO" ✨ */
+.icon-notification {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0; /* Importante para não ter borda */
+    border: none; /* Importante para não ter borda */
+    background: transparent; /* Importante para não ter fundo */
+}
+
+#notif-bell {
+    width: 100px; /* ✨ Tamanho do sino maior e "solto" ✨ */
+    height: 100px;
+    object-fit: contain;
+    /* ✨ Dá um brilho mágico roxo para destacar do fundo ✨ */
+    transition: all 0.3s ease;
+}
+
+/* ✨ A MÁGICA: A animação de wobble no hover ✨ */
+.icon-notification:hover {
+    transform: scale(1.1); /* Um pequeno zoom no hover */
+}
+.icon-notification:hover #notif-bell {
+    /* Aplica a animação infinitamente enquanto o mouse estiver sobre o elemento */
+    animation: wobble 0.8s ease-in-out infinite;
+    filter: drop-shadow(0 4px 6px rgba(204, 75, 255, 0.877));
+}
+
+/* ✨ KEYFRAMES DA ANIMAÇÃO WOBBLE ✨ */
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(-15deg); } /* Gira para a esquerda */
+    30% { transform: rotate(10deg); } /* Gira para a direita */
+    45% { transform: rotate(-7deg); } /* Gira menos para a esquerda */
+    60% { transform: rotate(5deg); } /* Gira menos para a direita */
+    75% { transform: rotate(-3deg); } /* Gira bem pouco para a esquerda */
+    100% { transform: rotate(0deg); }
+}
+
+/* ✨ ESTILO DAS IMAGENS SOLTAS (Sem fundo ou borda) ✨ */
+.btn-imagem-solta {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    padding: 0;
+    
+    /* ✨ ADICIONADO: Flex para empilhar a imagem e o texto ✨ */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço entre imagem e texto */
+    
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-imagem-solta:hover {
+    transform: scale(1.1); /* Pulinho no hover */
+    
+}
+
+.btn-imagem-solta img {
+    height: 130px; /* ✨ Altura máxima fixa para igualar todas as pôneis ✨ */
+    object-fit: contain; /* Impede a imagem de esticar ou amassar */
+    object-position: bottom; /* Faz a pônei "sentar" exatamente em cima da pílula */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); 
+    transition: all 0.3s ease;
+}
+
+/* ✨ NOVOS ESTILOS: TEXTO EM FORMATO DE PÍLULA FOFA ✨ */
+.texto-btn-img {
+    background: #ffe6f9; /* Fundo rosinha pastel no hover */
+    color: #bb2e80; /* Letra rosa forte */
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 6px 10px; /* Ajuste no preenchimento */
+    border-radius: 25px; 
+    box-shadow: 0 4px 15px rgba(255, 190, 250, 0.781); 
+    border: 2px solid;
+    border-color: #ffa7d3; /* Bordinha rosa mágica */
+    transition: all 0.3s ease;
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+    margin-top: 2px; 
+    
+    /* ✨ A MÁGICA DA LARGURA: Tamanho igual para todas as bolhinhas ✨ */
+    min-width: 165px; /* Tamanho suficiente para caber "Marcar Assistido" */
+    text-align: center; /* Centraliza a palavra dentro da bolhinha */
+    box-sizing: border-box;
+}
+/* Efeitinho na pílula quando passa o mouse em cima da imagem */
+.btn-imagem-solta:hover .texto-btn-img {
+    background: #ffe6f9; /* Fundo rosinha pastel no hover */
+    color: #bb2e80; /* Letra rosa forte */
+    border-color: #ffa7d3; /* Bordinha rosa mágica */
+    transform: translateY(-3px); /* A bolhinha dá um pulinho pra cima */
+    box-shadow: 0 6px 20px rgba(255, 146, 237, 0.712);
+}
+
+/* ✨ ESTADO LIGADO (Quando já está Favoritado/Assistido) ✨ */
+.texto-brilhando {
+    /* Troca o fundo para um degradê lindo de rosa e roxo */
+    background: linear-gradient(135deg, #e47cb0, #ad56cf) !important; 
+    color: #ffffff !important; /* Letra fica branquinha e limpa */
+    border-color: transparent !important;
+    box-shadow: 0 6px 20px rgba(255, 144, 199, 0.664) !important; /* Brilho rosa em volta */
+    text-shadow: none !important; /* Tira aquele brilho direto na letra pra ficar mais sofisticado */
+}
+
+/* ✨ NOVOS ESTILOS: TAMANHOS INDIVIDUAIS E BRILHO DO FAVORITO ✨ */
+#img-favorito.fav-off {
+    width: 135px;  /* Tamanho quando DESLIGADO */
+}
+
+#img-favorito.fav-on {
+    width: 110px; /* Tamanho quando LIGADO */
+    /* ✨ O BRILHO ROSA NA IMAGEM ✨ */
+    filter: drop-shadow(0 0 15px rgba(255, 136, 197, 0.9));
+}
+
+/* ✨ NOVOS ESTILOS: TAMANHOS INDIVIDUAIS E BRILHO DO ASSISTIDO ✨ */
+#img-assistido.ast-off {
+    width: 130px;  /* Tamanho quando DESLIGADO */
+}
+
+#img-assistido.ast-on {
+    width: 126px; /* Tamanho quando LIGADO */
+    /* ✨ O BRILHO ROSA NA IMAGEM ✨ */
+    filter: drop-shadow(0 0 15px rgba(255, 136, 197, 0.9));
+}
+
+/* ✨ NOVOS ESTILOS: TAMANHOS INDIVIDUAIS E BRILHO DE COMPARTILHAR ✨ */
+#img-compartilhar.comp-off {
+    width: 150px; /* Tamanho quando DESLIGADO */
+}
+
+#img-compartilhar.comp-on {
+    width: 190px; /* Tamanho quando LIGADO (Se quiser q diminua) */
+    /* ✨ O BRILHO ROSA NA IMAGEM ✨ */
+    filter: drop-shadow(0 0 15px rgba(255, 136, 197, 0.9));
+}
+
+
 /* ==========================================
    PAINEL DIREITO (GAVETA FLUTUANTE)
    ========================================== */
@@ -326,3 +748,38 @@ body::before {
 .avatar { width: 60px; height: 60px; background: #f8e9a1; border-radius: 50%; }
 .fanart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
 .art-placeholder { height: 80px; background: rgba(255,255,255,0.2); border-radius: 10px; }
+
+/* ✨ ESTILOS DO POPUP (Usado para Favorito, Assistido e Compartilhar) ✨ */
+.popup-magico {
+    position: fixed;
+    top: -100px; /* Começa escondido fora da tela, em cima */
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff007f, #9b59b6);
+    color: white;
+    padding: 10px 20px; 
+    font-size: 0.9rem;  
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 10px 25px rgba(255, 0, 127, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação suave com "quique" */
+}
+
+/* Classe ativada pelo JS para mostrar o popup */
+.popup-magico.mostrar {
+    top: 40px; /* Desce para a tela */
+}
+
+.icone-popup {
+    font-size: 1.1rem;
+    animation: pulso-coracao 1s infinite alternate;
+}
+
+@keyframes pulso-coracao {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}

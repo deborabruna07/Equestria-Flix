@@ -12,60 +12,94 @@
     <section id="pagina-inicial" class="tela-ativa">
         <div class="conteudo-inicial">
             <div class="logo-inicial">
-                <h1>✨ PonyVerse</h1>
-                <p>Friendship Central</p>
+                <img src="PonyVerse-logo.png" alt="Logo PonyVerse" class="img-logo-oficial">  
             </div>
             
             <nav class="nav-icones">
-                <button class="nav-item" onclick="abrirPrincipal()">
-                    <div class="icone">📺</div>
-                    <span>Episódios</span>
-                </button>
-                
-                <button class="nav-item" onclick="alert('⭐ A magia está sendo preparada! Em breve você poderá salvar seus episódios favoritos aqui.')">
-                    <div class="icone">⭐</div>
-                    <span>Minha Lista</span>
-                </button>
-                
-                <button class="nav-item" onclick="alert('👥 O fórum de amizade de Ponyville abrirá em breve!')">
-                    <div class="icone">👥</div>
-                    <span>Comunidade</span>
-                </button>
-                
-                <button class="nav-item" onclick="alert('🪄 Magic Corner: Em breve você poderá criar a sua própria Cutie Mark aqui!')">
-                    <div class="icone">🪄</div>
-                    <span>Magic Corner</span>
-                </button>
-            </nav>
+    <button class="nav-item" onclick="abrirPrincipal()">
+        <img src="botao-eps.png" alt="Episódios" class="img-nav-icone img-ep">
+        <span>Episódios</span>
+    </button>
+    
+    <button class="nav-item" onclick="abrirPrincipal(); abrirFavoritos();">
+        <img src="botao-fav.png" alt="Minha Lista" class="img-nav-icone img-lista">
+        <span>Minha Lista</span>
+    </button>
+    
+    <button class="nav-item" onclick="alert('👥 Comunidade em breve!')">
+        <img src="botao-comunidade.png" alt="Comunidade" class="img-nav-icone img-comu">
+        <span>Comunidade</span>
+    </button>
+    
+    <button class="nav-item" onclick="window.location.href='marca-magica.html'">
+        <img src="botao-cutiemark.png" alt="Magic Corner" class="img-nav-icone img-magia">
+        <span>Magic Corner</span>
+    </button>
+</nav>
         </div>
 
         <div class="ilustracao-fundo"></div>
     </section>
 
-
     <section id="pagina-principal" class="tela-oculta">
         <header class="top-bar">
             <button class="btn-icone" onclick="voltarInicial()">Início</button>
             <div class="top-icons">
-                <span class="btn-icone">🔔</span> 
-                <span class="btn-icone" onclick="abrirPainelDireito()"> Meu Perfil</span> 
+                <a href="#" class="icon-notification" aria-label="Notificações">
+                    <img src="sino-icon.png" alt="Notificações" id="notif-bell">
+                </a>
+
+                <button class="btn-icone" onclick="abrirPainelDireito()">Meu Perfil</button> 
             </div>
         </header>
 
-        <div class="hero-banner">
-            <div class="banner-text">
-                <h2>A Magia da Amizade</h2>
-                <p>Todas as Temporadas</p>
+        <div id="conteudo-catalogo">
+            <div class="carousel-container">
+                <div class="carousel-track" id="track">
+                    <div class="hero-banner" style="background-image: url('531176.jpg');">
+                        <div class="banner-text">
+                            <h2>A Magia da Amizade</h2>
+                            <p>Todas as Temporadas</p>
+                        </div>
+                    </div>
+                    <div class="hero-banner" style="background-image: url('531150.jpg');">
+                        <div class="banner-text">
+                            <h2>Faça novos amigos</h2>
+                            <p>Junte-se a comunidade</p>
+                        </div>
+                    </div>
+                    <div class="hero-banner" style="background-image: url('5311545.jpg');">
+                        <div class="banner-text">
+                            <h2>Descubra a sua marca</h2>
+                            <p>Personalize o seu pônei! </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev" onclick="mudarBanner(-1)">❮</button>
+                <button class="carousel-btn next" onclick="mudarBanner(1)">❯</button>
             </div>
+
+            <div class="explore-section">
+                <h3>Explore Todas as Temporadas</h3>
+                <div class="season-tabs" id="season-selector"></div>
+            </div>
+
+            <h3 id="titulo-temporada-atual" style="color: white; margin-bottom: 1rem;">Temporada 1</h3>
+            <div class="episode-grid" id="episode-grid"></div>
         </div>
 
-        <div class="explore-section">
-            <h3>Explore Episodes</h3>
-            <div class="season-tabs" id="season-selector"></div>
-        </div>
+        <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem; position: relative;">
+            
+            <button onclick="voltarAoCatalogo()" class="btn-icone" style="position: absolute; top: -102px; left: -110px;">Voltar</button>
+            
+            <div style="margin-bottom: 2rem;">
+                <h2 style="color: white; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin: 0;">Minha Lista  ❤︎</h2>
+            </div>
+            
+            <div class="episode-grid" id="grid-favoritos"></div>
+        </section>
 
-        <h3 id="titulo-temporada-atual" style="color: white; margin-bottom: 1rem;">Temporada 1</h3>
-        <div class="episode-grid" id="episode-grid"></div>
     </section>
 
     <aside id="painel-direito" class="painel-fechado">
@@ -77,6 +111,11 @@
                 <div class="avatar"></div>
                 <p>Criar seu Pônei<br><small>Customize sua cutie mark</small></p>
             </div>
+        </div>
+
+        <div class="widget">
+            <h4>Menu Mágico</h4>
+            <button class="btn-assistir" onclick="abrirFavoritos()">❤︎  Minha Lista</button>
         </div>
 
         <div class="widget tip-widget">
@@ -98,5 +137,12 @@
     </aside>
 
     <script src="app.js"></script>
+<audio id="musica-fundo" loop autoplay>
+    <source src="tema-ponyverse.mp3" type="audio/mpeg">
+</audio>
+
+<button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+    <img src="som-ligado.png" alt="Som" id="icone-som-img">
+</button>
 </body>
 </html>
