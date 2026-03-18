@@ -388,7 +388,7 @@
     </div>
 
     <script>
-        // ✨ Variável para lembrar qual arte está aberta no momento
+        // Variável para lembrar qual arte está aberta no momento
         let arteAtiva = { src: '', titulo: '', artista: '' };
 
         function abrirArte(caminhoImagem, titulo, artista) {
@@ -405,7 +405,7 @@
             // Salva as informações da arte atual na variável
             arteAtiva = { src: caminhoImagem, titulo: titulo, artista: artista };
 
-            // ✨ VERIFICA SE JÁ ESTÁ NO BAÚ DE ARTES ✨
+            // VERIFICA SE JÁ ESTÁ NO BAÚ DE ARTES
             let bau = JSON.parse(localStorage.getItem('bau_artes')) || [];
             
             // Checa se a imagem atual já está salva lá
@@ -432,7 +432,7 @@
             if (e.target === this) { fecharArte(); }
         });
 
-        // ✨ FUNÇÃO DE CURTIR E SALVAR NO BAÚ ✨
+        // FUNÇÃO DE CURTIR E SALVAR NO BAÚ
         function curtirArte() {
             const btn = document.getElementById('btn-curtir');
             let bau = JSON.parse(localStorage.getItem('bau_artes')) || [];
@@ -464,7 +464,7 @@
             localStorage.setItem('bau_artes', JSON.stringify(bau));
         }
 
-        // ✨ FUNÇÃO DE DOWNLOAD PREPARADA PARA QUANDO O SITE FOR PARA O AR ✨
+        // FUNÇÃO DE DOWNLOAD PREPARADA PARA QUANDO O SITE FOR PARA O AR
         function baixarArte() {
             const imagem = document.getElementById('img-tamanho-real');
             let nomeArquivo = imagem.src.split('/').pop() || 'fanart-ponyverse.jpg';

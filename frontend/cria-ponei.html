@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu Pônei Mágico ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- ESTILOS DO CABEÇALHO --- */
+        .header-galeria {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .titulo-galeria {
+            color: white;
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 0 4px 15px rgba(255, 0, 127, 0.5);
+        }
+
+        /* --- ESTILOS ESPECÍFICOS DO LABORATÓRIO --- */
+        .maker-container {
+            max-width: 1000px;
+            margin: 0 auto 2rem auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 2rem;
+            display: flex;
+            gap: 2rem;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+        }
+
+        /* ✨ PALCO COM SISTEMA DE CAMADAS ✨ */
+        .pony-stage {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.5); 
+            border-radius: 20px;
+            height: 500px; 
+            position: relative; /* O palco é a base de tudo */
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* ✨ REGRA PARA TODAS AS PARTES DO CORPO ✨ */
+        .camada-ponei {
+            position: absolute; /* Tira as imagens da fila e coloca flutuando */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Faz a imagem caber inteira sem distorcer */
+            transition: all 0.3s ease;
+        }
+
+        /* Z-INDEX: A ordem do sanduíche (quem fica na frente de quem) */
+        #pony-base-img { z-index: 1; }
+        #pony-eyes-img { z-index: 3; } /* Olhos ficam por cima do corpo */
+        /* #pony-mane-img { z-index: 4; }  <-- Para quando tiver crina */
+        /* #pony-tail-img { z-index: 0; }  <-- Rabo geralmente fica atrás (z-index 0) */
+
+
+        /* --- ÁREA DOS CONTROLES --- */
+        .controls-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-height: 500px;
+            overflow-y: auto; /* Adiciona rolagem se tiver muitos itens */
+            padding-right: 10px;
+        }
+
+        .control-section {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+        }
+
+        .control-section h3 {
+            color: white;
+            margin-bottom: 0.8rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 5px;
+        }
+
+        .color-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Botões de cor */
+        .color-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .color-btn:hover {
+            transform: scale(1.1);
+            border-color: white;
+        }
+
+        .btn-branco { background-color: #ffffff; }
+        .btn-preto { background-color: #333333; }
+        .btn-rosa { background-color: #ff99cc; }
+        .btn-amarelo { background-color: #ffe680; }
+        .btn-verde { background-color: #99e699; }
+        .btn-azul { background-color: #99ccff; }
+        .btn-roxo { background-color: #cc99ff; }
+
+        /* ✨ ESTILO DO SELECT DOS OLHOS ✨ */
+        .select-magico {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.8);
+            color: #4A235A;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .select-magico:hover {
+            background: #ffffff;
+            border-color: #ff99cc;
+        }
+
+        @media (max-width: 768px) {
+            .maker-container { flex-direction: column; }
+            .pony-stage { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-galeria">
+        <a href="index.html#principal" class="btn-icone" style="text-decoration: none;">Voltar</a>
+        <h2 class="titulo-galeria">Laboratório Mágico 🪄</h2>
+    </header>
+
+    <main class="maker-container">
+        
+        <div class="pony-stage">
+            <img id="pony-base-img" class="camada-ponei" src="base-ponei-branco.png" alt="Corpo">
+            
+            <img id="pony-eyes-img" class="camada-ponei" src="olho-redondo-azul.png" alt="Olhos">
+        </div>
+
+        <div class="controls-panel">
+            
+            <div class="control-section">
+                <h3>1. Cor do Corpo</h3>
+                <div class="color-options">
+                    <button class="color-btn btn-branco" onclick="mudarCor('branco')" title="Branco"></button>
+                    <button class="color-btn btn-preto" onclick="mudarCor('preto')" title="Preto"></button>
+                    <button class="color-btn btn-rosa" onclick="mudarCor('rosa')" title="Rosa"></button>
+                    <button class="color-btn btn-amarelo" onclick="mudarCor('amarelo')" title="Amarelo"></button>
+                    <button class="color-btn btn-verde" onclick="mudarCor('verde')" title="Verde"></button>
+                    <button class="color-btn btn-azul" onclick="mudarCor('azul')" title="Azul"></button>
+                    <button class="color-btn btn-roxo" onclick="mudarCor('roxo')" title="Roxo"></button>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <h3>2. Estilo dos Olhos</h3>
+                <select id="seletor-olhos" class="select-magico" onchange="mudarOlho(this.value)">
+                    <option value="">(Nenhum)</option>
+                    
+                    <optgroup label="Olhos Redondos">
+                        <option value="olho-redondo-azul" selected>Azul Clássico</option>
+                        <option value="olho-redondo-verde">Verde</option>
+                        <option value="olho-redondo-castanho">Castanho</option>
+                        <option value="olho-redondo-rosa">Rosa</option>
+                        <option value="olho-redondo-roxo">Roxo</option>
+                        <option value="olho-redondo-vermelho">Vermelho</option>
+                        <option value="olho-redondo-dourado">Dourado</option>
+
+                    </optgroup>
+
+                    <optgroup label="Olhos Elegantes">
+                        <option value="olho-elegante-azul">Azul</option>
+                        <option value="olho-elegante-rosa">Rosa</option>
+                        <option value="olho-elegante-roxo">Roxo</option>
+                        <option value="olho-elegante-amarelo">Amarelo</option>
+                        <option value="olho-elegante-castanho">Castanho</option>
+                        <option value="olho-elegante-vermelho">Vermelho</option>
+                        <option value="olho-elegante-arcoiris">Arco-íris Mágico</option>
+                    </optgroup>
+
+                    <optgroup label="Olhos Caídos">
+                        <option value="olho-caido-azul">Azul</option>
+                        <option value="olho-caido-azulado">Azulado</option>
+                        <option value="olho-caido-verde">Verde</option>
+                        <option value="olho-caido-rosa">Rosa</option>
+                        <option value="olho-caido-roxo">Roxo</option>
+                        <option value="olho-caido-amarelo">Amarelo</option>
+                        <option value="olho-caido-castanho">Castanho</option>
+                        <option value="olho-caido-vermelho">Vermelho</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="control-section" style="opacity: 0.5; pointer-events: none;">
+                <h3>3. Crina e Rabo (Em breve)</h3>
+                <div class="color-options">
+                    <button class="color-btn" style="background: #ddd;"></button>
+                    <button class="color-btn" style="background: #ddd;"></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Função do Corpo (Igual a de antes)
+        function mudarCor(cor) {
+            const imagemBase = document.getElementById('pony-base-img');
+            imagemBase.src = `base-ponei-${cor}.png`;
+            
+            imagemBase.style.transform = 'scale(0.95)';
+            setTimeout(() => { imagemBase.style.transform = 'scale(1)'; }, 150);
+        }
+
+        // ✨ NOVA FUNÇÃO DOS OLHOS ✨
+        function mudarOlho(nomeArquivo) {
+            const imagemOlho = document.getElementById('pony-eyes-img');
+            
+            if (nomeArquivo === "") {
+                // Se escolher (Nenhum), esconde a camada
+                imagemOlho.style.display = "none"; 
+            } else {
+                // Monta o link da imagem com o .png e mostra na tela
+                imagemOlho.src = `${nomeArquivo}.png`;
+                imagemOlho.style.display = "block";
+                
+                // Animação de piscada leve ao trocar
+                imagemOlho.style.opacity = '0.5';
+                setTimeout(() => { imagemOlho.style.opacity = '1'; }, 150);
+            }
+        }
+    </script>
+
+</body>
+</html>
