@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baú de Artes ❤ PonyVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Aproveita os mesmos estilos da galeria */
+        .header-galeria { padding: 2rem; display: flex; align-items: center; gap: 2rem; }
+        .titulo-galeria { color: white; font-size: 2.5rem; margin: 0; text-shadow: 0 4px 15px rgba(255, 0, 127, 0.5); margin-left: 40px; }
+        .galeria-container { max-width: 1200px; margin: 0 auto 3rem auto; padding: 2rem; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); border: 2px solid rgba(255, 255, 255, 0.2); border-radius: 25px; box-shadow: 0 15px 50px rgba(0,0,0,0.2); min-height: 400px; }
+        .texto-intro { text-align: center; color: white; font-size: 1.2rem; margin-bottom: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+        .grid-artes { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; }
+        .cartao-arte { background: rgba(255, 255, 255, 0.95); border-radius: 20px; overflow: hidden; border: 2px solid transparent; box-shadow: 0 10px 25px rgba(0,0,0,0.15); transition: all 0.4s ease; cursor: pointer; display: flex; flex-direction: column; }
+        .cartao-arte:hover { transform: translateY(-10px); border-color: #ff9aff; box-shadow: 0 15px 35px rgba(255, 154, 255, 0.4); }
+        .area-imagem { width: 100%; height: 250px; overflow: hidden; }
+        .area-imagem img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .cartao-arte:hover .area-imagem img { transform: scale(1.1); }
+        .info-arte { padding: 1.2rem; text-align: center; background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0.9)); }
+        .nome-arte { color: #4A235A; font-weight: 900; font-size: 1.1rem; margin-bottom: 0.3rem; }
+        .nome-artista { color: #d1008b; font-weight: 600; font-size: 0.9rem; }
+
+        /* Estilos do Modal */
+        #modal-arte { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px); z-index: 9999; align-items: center; justify-content: center; animation: fadeIn 0.3s ease; }
+        .modal-centro { display: flex; flex-direction: column; align-items: center; max-width: 90%; }
+        #img-tamanho-real { max-width: 100%; max-height: 75vh; border-radius: 15px; box-shadow: 0 0 40px rgba(0,0,0,0.5); border: 3px solid rgba(255,255,255,0.2); object-fit: contain; }
+        .barra-acoes-arte { display: flex; justify-content: space-between; width: 100%; margin-top: 15px; padding: 0 5px; }
+        .btn-acao-arte { background: transparent; border: none; color: white; font-size: 2.2rem; cursor: pointer; transition: all 0.2s ease; text-shadow: 0 2px 5px rgba(0,0,0,0.5); padding: 0; line-height: 1; }
+        .btn-acao-arte:hover { transform: scale(1.15) translateY(-2px); color: #ff9aff; }
+        .btn-acao-arte.curtido { color: #ff007f; text-shadow: 0 0 15px rgba(255, 0, 127, 0.6); }
+        #legenda-modal { margin-top: 1rem; color: white; text-align: center; }
+        #legenda-modal h3 { margin: 0 0 0.5rem 0; font-size: 1.8rem; text-shadow: 0 2px 10px rgba(255, 0, 127, 0.8); }
+        #legenda-modal p { margin: 0; font-size: 1.1rem; color: #ffbaf0; }
+        .btn-fechar-modal { position: absolute; top: 30px; right: 40px; background: transparent; color: white; border: none; font-size: 3rem; font-weight: bold; cursor: pointer; transition: transform 0.2s; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        .btn-fechar-modal:hover { transform: scale(1.2); color: #ff9aff; }
+
+        /* Estilo para quando o baú está vazio */
+        .bau-vazio {
+        grid-column: 1 / -1;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        font-size: 1.3rem; 
+        font-weight: 600;
+}
+    </style>
+</head>
+<body>
+
+    <header class="header-galeria">
+        <a href="galeria.html" class="btn-icone" style="text-decoration: none;">Voltar</a>
+        <h2 class="titulo-galeria">Baú de Artes  ❤</h2>
+    </header>
+
+    <main class="galeria-container">
+        <p class="texto-intro">Suas inspirações e artes favoritas estão guardadas aqui!</p>
+
+        <div class="grid-artes" id="grid-bau">
+            </div>
+    </main>
+
+    <div id="modal-arte">
+        <button class="btn-fechar-modal" onclick="fecharArte()">×</button>
+        <div class="modal-centro">
+            <img id="img-tamanho-real" src="" alt="Arte em tamanho real">
+            <div class="barra-acoes-arte">
+                <button class="btn-acao-arte" id="btn-curtir" onclick="curtirArte()" title="Remover do Baú">♡</button>
+                <button class="btn-acao-arte" onclick="baixarArte()" title="Baixar Arte">♠</button>
+            </div>
+            <div id="legenda-modal">
+                <h3 id="modal-titulo">Título</h3>
+                <p id="modal-artista">Artista</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let arteAtiva = { src: '', titulo: '', artista: '' };
+
+        // ✨ CARREGA O BAÚ AO ABRIR A PÁGINA ✨
+        window.onload = function() {
+            carregarBau();
+        };
+
+        function carregarBau() {
+            const gridBau = document.getElementById('grid-bau');
+            let bau = JSON.parse(localStorage.getItem('bau_artes')) || [];
+
+            // Limpa o grid antes de carregar
+            gridBau.innerHTML = '';
+
+            if (bau.length === 0) {
+                // Se estiver vazio, mostra uma mensagem fofa
+                gridBau.innerHTML = `<div class="bau-vazio">Seu baú está vazio! Vá até a Galeria e adicione suas artes favoritas aqui. ❤</div>`;
+            } else {
+                // Se tiver artes, cria os cartões um por um
+                bau.forEach(arte => {
+                    const cartao = `
+                        <div class="cartao-arte" onclick="abrirArte('${arte.src}', '${arte.titulo}', '${arte.artista}')">
+                            <div class="area-imagem"><img src="${arte.src}"></div>
+                            <div class="info-arte">
+                                <div class="nome-arte">${arte.titulo}</div>
+                                <div class="nome-artista">${arte.artista}</div>
+                            </div>
+                        </div>
+                    `;
+                    gridBau.innerHTML += cartao;
+                });
+            }
+        }
+
+        function abrirArte(caminhoImagem, titulo, artista) {
+            const modal = document.getElementById('modal-arte');
+            const imagemReal = document.getElementById('img-tamanho-real');
+            const tituloModal = document.getElementById('modal-titulo');
+            const artistaModal = document.getElementById('modal-artista');
+            const btnCurtir = document.getElementById('btn-curtir');
+
+            imagemReal.src = caminhoImagem;
+            tituloModal.textContent = titulo;
+            artistaModal.textContent = artista;
+            arteAtiva = { src: caminhoImagem, titulo: titulo, artista: artista };
+
+            // Como estamos no baú, todas as artes aqui JÁ SÃO favoritadas
+            btnCurtir.textContent = '♥';
+            btnCurtir.classList.add('curtido');
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fecharArte() {
+            document.getElementById('modal-arte').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            // Recarrega o baú quando fecha a imagem, caso a pessoa tenha descurtido
+            carregarBau();
+        }
+
+        document.getElementById('modal-arte').addEventListener('click', function(e) {
+            if (e.target === this) { fecharArte(); }
+        });
+
+        function curtirArte() {
+            const btn = document.getElementById('btn-curtir');
+            let bau = JSON.parse(localStorage.getItem('bau_artes')) || [];
+            let index = bau.findIndex(arte => arte.src.includes(arteAtiva.src));
+
+            if (btn.textContent === '♡') {
+                btn.textContent = '♥'; 
+                btn.classList.add('curtido');
+                btn.style.transform = 'scale(1.4)';
+                setTimeout(() => { btn.style.transform = 'scale(1)'; }, 200);
+                
+                if (index === -1) bau.push(arteAtiva);
+            } else {
+                btn.textContent = '♡'; 
+                btn.classList.remove('curtido');
+                
+                if (index !== -1) bau.splice(index, 1);
+            }
+            
+            localStorage.setItem('bau_artes', JSON.stringify(bau));
+        }
+
+        // Função de Download Robusta
+        async function baixarArte() {
+            const imagem = document.getElementById('img-tamanho-real');
+            const url = imagem.src;
+            const nomeArquivo = url.split('/').pop() || 'fanart-ponyverse.jpg';
+            
+            try {
+                const response = await fetch(url);
+                const blob = await response.blob();
+                const urlBlob = window.URL.createObjectURL(blob);
+                
+                const linkDownload = document.createElement('a');
+                linkDownload.href = urlBlob;
+                linkDownload.download = nomeArquivo;
+                document.body.appendChild(linkDownload);
+                linkDownload.click();
+                
+                document.body.removeChild(linkDownload);
+                window.URL.revokeObjectURL(urlBlob);
+            } catch (error) {
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = nomeArquivo;
+                link.click();
+            }
+        }
+    </script>
+
+<audio id="musica-fundo" loop>
+        <source src="tema-ponyverse.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+        <img src="som-on.png" alt="Som" id="icone-som-img">
+    </button>
+
+    <script>
+        function toggleMusica() {
+            const musica = document.getElementById('musica-fundo');
+            const icone = document.getElementById('icone-som-img');
+            const btn = document.getElementById('btn-musica');
+
+            if (musica.paused) {
+                musica.play();
+                icone.src = 'som-on.png'; 
+                btn.classList.add('tocando');
+                localStorage.setItem('musica_tocando', 'true');
+            } else {
+                musica.pause();
+                icone.src = 'som-off.png'; 
+                btn.classList.remove('tocando');
+                localStorage.setItem('musica_tocando', 'false');
+            }
+        }
+
+        window.addEventListener('load', () => {
+            const musica = document.getElementById('musica-fundo');
+            const icone = document.getElementById('icone-som-img');
+            const btn = document.getElementById('btn-musica');
+
+            if (musica) {
+                musica.volume = 0.1;
+                
+                const tocando = localStorage.getItem('musica_tocando') === 'true';
+                
+                const navegacao = performance.getEntriesByType("navigation")[0];
+                const ehF5 = navegacao ? (navegacao.type === "reload") : false;
+
+                let tempoSalvo = 0;
+                
+                if (!ehF5 && sessionStorage.getItem('musica_tempo')) {
+                    tempoSalvo = parseFloat(sessionStorage.getItem('musica_tempo'));
+                }
+
+                musica.currentTime = tempoSalvo;
+
+                setInterval(() => {
+                    if(!musica.paused) {
+                        sessionStorage.setItem('musica_tempo', musica.currentTime);
+                    }
+                }, 500);
+
+                if (tocando) {
+                    let playPromise = musica.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            icone.src = 'som-on.png'; 
+                            btn.classList.add('tocando');
+                        }).catch(error => {
+                            icone.src = 'som-off.png'; 
+                            btn.classList.remove('tocando');
+                        });
+                    }
+                } else {
+                    icone.src = 'som-off.png';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
