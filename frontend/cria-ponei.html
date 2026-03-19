@@ -7,7 +7,93 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        /* --- ESTILOS DO CABEÇALHO --- */
+
+        .painel-visual {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .painel-visual h4 {
+            color: white;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 15px 0 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 5px;
+        }
+
+        .painel-visual h4:first-child {
+            margin-top: 0;
+        }
+
+        .grade-olhos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 8px;
+        }
+
+        .btn-olho {
+            background: rgba(255, 255, 255, 0.5);
+            border: 2px solid transparent;
+            border-radius: 10px;
+            height: 60px;
+            cursor: pointer;
+            transition: all 0.2s;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .btn-olho:hover {
+            background: rgba(255, 255, 255, 0.9);
+            border-color: #ff99cc;
+            transform: scale(1.05);
+        }
+
+        .btn-olho img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform-origin: 22% 12%; 
+            transform: scale(6); 
+            pointer-events: none;
+        }
+
+        .btn-olho img[src*="olho-redondo"] {
+            transform-origin: 23% 11%; 
+            transform: scale(6);
+
+        }
+
+        .btn-olho img[src="olho-redondo-azul.png"],
+        .btn-olho img[src="olho-redondo-castanho.png"],
+        .btn-olho img[src="olho-redondo-vermelho.png"] {
+            transform-origin: 23% 13%; 
+        }
+
+        /*CÂMERA PARA AS ASAS: Foca nas costas do pônei*/
+        .btn-olho img[src*="asa"] {
+            transform-origin: 55% 27%; 
+            transform: scale(3.5);
+        }
+
+        /*CÂMERA PARA AS ASAS FECHADAS*/
+        .btn-olho img[src*="asa-fechada"] {
+            transform-origin: 50% 50%; 
+            transform: scale(4.5); /* Talvez precise de um zoom um pouquinho maior */
+        }
+
+        /*CÂMERA PARA AS ASAS DE ALICÓRNIO*/
+        .btn-olho img[src*="asa-alicornio"] {
+            transform-origin: 60% 20%; 
+            transform: scale(3.5);
+        }
+
         .header-galeria {
             padding: 2rem;
             display: flex;
@@ -22,43 +108,41 @@
             text-shadow: 0 4px 15px rgba(255, 0, 127, 0.5);
         }
 
-        /* --- ESTILOS ESPECÍFICOS DO LABORATÓRIO --- */
         .maker-container {
-            max-width: 1000px;
+            max-width: 1060px;
             margin: 0 auto 2rem auto;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(15px);
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 25px;
-            padding: 2rem;
+            padding: 3rem;
             display: flex;
             gap: 2rem;
             box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            align-items: stretch; /* Faz o palco e os controles crescerem juntos */
         }
 
-        /* ✨ PALCO COM SISTEMA DE CAMADAS ✨ */
         .pony-stage {
             flex: 1;
             background: rgba(255, 255, 255, 0.5); 
             border-radius: 20px;
-            height: 500px; 
-            position: relative; /* O palco é a base de tudo */
+            min-height: 500px;
+            position: relative; 
             overflow: hidden;
             border: 3px solid rgba(255, 255, 255, 0.3);
         }
 
-        /* ✨ REGRA PARA TODAS AS PARTES DO CORPO ✨ */
         .camada-ponei {
-            position: absolute; /* Tira as imagens da fila e coloca flutuando */
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Faz a imagem caber inteira sem distorcer */
+            object-fit: contain;
             transition: all 0.3s ease;
         }
 
-        /* Z-INDEX: A ordem do sanduíche (quem fica na frente de quem) */
+
         #pony-base-img { z-index: 1; }
         #pony-eyes-img { z-index: 3; } /* Olhos ficam por cima do corpo */
         /* #pony-mane-img { z-index: 4; }  <-- Para quando tiver crina */
@@ -120,7 +204,7 @@
         .btn-azul { background-color: #99ccff; }
         .btn-roxo { background-color: #cc99ff; }
 
-        /* ✨ ESTILO DO SELECT DOS OLHOS ✨ */
+        /* ESTILO DO SELECT DOS OLHOS */
         .select-magico {
             width: 100%;
             padding: 10px 15px;
@@ -151,7 +235,7 @@
 
     <header class="header-galeria">
         <a href="index.html#principal" class="btn-icone" style="text-decoration: none;">Voltar</a>
-        <h2 class="titulo-galeria">Laboratório Mágico 🪄</h2>
+        <h2 class="titulo-galeria">Criação de pônei</h2>
     </header>
 
     <main class="maker-container">
@@ -159,9 +243,10 @@
         <div class="pony-stage">
             <img id="pony-base-img" class="camada-ponei" src="base-ponei-branco.png" alt="Corpo">
             
+            <img id="pony-wings-img" class="camada-ponei" src="" alt="Asas" style="display: none; z-index: 2;">
+            
             <img id="pony-eyes-img" class="camada-ponei" src="olho-redondo-azul.png" alt="Olhos">
         </div>
-
         <div class="controls-panel">
             
             <div class="control-section">
@@ -178,42 +263,83 @@
             </div>
 
             <div class="control-section">
-                <h3>2. Estilo dos Olhos</h3>
-                <select id="seletor-olhos" class="select-magico" onchange="mudarOlho(this.value)">
-                    <option value="">(Nenhum)</option>
+                <h3>3. Asas Mágicas</h3>
+                <div class="painel-visual">
+                    <button class="btn-olho" onclick="mudarAsa('')" title="Sem Asas" style="width: 60px; font-size: 20px;">✖️</button>
+
+                    <h4>Asas Pegasus</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-branco')"><img src="asa-pegasus-branco.png" alt="Branco"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-preto')"><img src="asa-pegasus-preto.png" alt="Preto"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-rosa')"><img src="asa-pegasus-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-amarelo')"><img src="asa-pegasus-amarelo.png" alt="Amarelo"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-verde')"><img src="asa-pegasus-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-azul')"><img src="asa-pegasus-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-pegasus-roxo')"><img src="asa-pegasus-roxo.png" alt="Roxo"></button>
+
+                        </div> <h4>Asas Fechadas</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-branco')"><img src="asa-fechada-branco.png" alt="Branco"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-preto')"><img src="asa-fechada-preto.png" alt="Preto"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-rosa')"><img src="asa-fechada-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-azul')"><img src="asa-fechada-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-verde')"><img src="asa-fechada-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-roxo')"><img src="asa-fechada-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-fechada-amarelo')"><img src="asa-fechada-amarelo.png" alt="Amarelo"></button>
+
+                        </div> <h4>Asas de Alicórnio</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-branco')"><img src="asa-alicornio-branco.png" alt="Branco"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-preto')"><img src="asa-alicornio-preto.png" alt="Preto"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-rosa')"><img src="asa-alicornio-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-azul')"><img src="asa-alicornio-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-verde')"><img src="asa-alicornio-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-roxo')"><img src="asa-alicornio-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarAsa('asa-alicornio-amarelo')"><img src="asa-alicornio-amarelo.png" alt="Amarelo"></button>
+                    </div>
+                    </div>
                     
-                    <optgroup label="Olhos Redondos">
-                        <option value="olho-redondo-azul" selected>Azul Clássico</option>
-                        <option value="olho-redondo-verde">Verde</option>
-                        <option value="olho-redondo-castanho">Castanho</option>
-                        <option value="olho-redondo-rosa">Rosa</option>
-                        <option value="olho-redondo-roxo">Roxo</option>
-                        <option value="olho-redondo-vermelho">Vermelho</option>
-                        <option value="olho-redondo-dourado">Dourado</option>
+            </div>
 
-                    </optgroup>
+            <div class="control-section">
+                <h3>2. Estilo dos Olhos</h3>
+                <div class="painel-visual">
+                    <button class="btn-olho" onclick="mudarOlho('')" title="Sem Olho" style="width: 60px; font-size: 20px;">✖️</button>
 
-                    <optgroup label="Olhos Elegantes">
-                        <option value="olho-elegante-azul">Azul</option>
-                        <option value="olho-elegante-rosa">Rosa</option>
-                        <option value="olho-elegante-roxo">Roxo</option>
-                        <option value="olho-elegante-amarelo">Amarelo</option>
-                        <option value="olho-elegante-castanho">Castanho</option>
-                        <option value="olho-elegante-vermelho">Vermelho</option>
-                        <option value="olho-elegante-arcoiris">Arco-íris Mágico</option>
-                    </optgroup>
+                    <h4>Olhos Redondos</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-azul')"><img src="olho-redondo-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-verde')"><img src="olho-redondo-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-castanho')"><img src="olho-redondo-castanho.png" alt="Castanho"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-rosa')"><img src="olho-redondo-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-roxo')"><img src="olho-redondo-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-vermelho')"><img src="olho-redondo-vermelho.png" alt="Vermelho"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-redondo-dourado')"><img src="olho-redondo-dourado.png" alt="Dourado"></button>
+                    </div>
 
-                    <optgroup label="Olhos Caídos">
-                        <option value="olho-caido-azul">Azul</option>
-                        <option value="olho-caido-azulado">Azulado</option>
-                        <option value="olho-caido-verde">Verde</option>
-                        <option value="olho-caido-rosa">Rosa</option>
-                        <option value="olho-caido-roxo">Roxo</option>
-                        <option value="olho-caido-amarelo">Amarelo</option>
-                        <option value="olho-caido-castanho">Castanho</option>
-                        <option value="olho-caido-vermelho">Vermelho</option>
-                    </optgroup>
-                </select>
+                    <h4>Olhos Elegantes</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-azul')"><img src="olho-elegante-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-rosa')"><img src="olho-elegante-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-roxo')"><img src="olho-elegante-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-amarelo')"><img src="olho-elegante-amarelo.png" alt="Amarelo"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-castanho')"><img src="olho-elegante-castanho.png" alt="Castanho"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-vermelho')"><img src="olho-elegante-vermelho.png" alt="Vermelho"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-elegante-arcoiris')"><img src="olho-elegante-arcoiris.png" alt="Arco-íris"></button>
+                    </div>
+
+                    <h4>Olhos Caídos</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-azul')"><img src="olho-caido-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-azulado')"><img src="olho-caido-azulado.png" alt="Azulado"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-verde')"><img src="olho-caido-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-rosa')"><img src="olho-caido-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-roxo')"><img src="olho-caido-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-amarelo')"><img src="olho-caido-amarelo.png" alt="Amarelo"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-castanho')"><img src="olho-caido-castanho.png" alt="Castanho"></button>
+                        <button class="btn-olho" onclick="mudarOlho('olho-caido-vermelho')"><img src="olho-caido-vermelho.png" alt="Vermelho"></button>
+                    </div>
+                </div>
             </div>
 
             <div class="control-section" style="opacity: 0.5; pointer-events: none;">
@@ -228,7 +354,7 @@
     </main>
 
     <script>
-        // Função do Corpo (Igual a de antes)
+        // Função do Corpo
         function mudarCor(cor) {
             const imagemBase = document.getElementById('pony-base-img');
             imagemBase.src = `base-ponei-${cor}.png`;
@@ -237,7 +363,22 @@
             setTimeout(() => { imagemBase.style.transform = 'scale(1)'; }, 150);
         }
 
-        // ✨ NOVA FUNÇÃO DOS OLHOS ✨
+        // FUNÇÃO DAS ASAS
+        function mudarAsa(nomeArquivo) {
+            const imagemAsa = document.getElementById('pony-wings-img');
+            
+            if (nomeArquivo === "") {
+                imagemAsa.style.display = "none"; 
+            } else {
+                imagemAsa.src = `${nomeArquivo}.png`;
+                imagemAsa.style.display = "block";
+                
+                imagemAsa.style.opacity = '0.5';
+                setTimeout(() => { imagemAsa.style.opacity = '1'; }, 150);
+            }
+        }
+
+        // FUNÇÃO DOS OLHOS
         function mudarOlho(nomeArquivo) {
             const imagemOlho = document.getElementById('pony-eyes-img');
             
@@ -245,11 +386,10 @@
                 // Se escolher (Nenhum), esconde a camada
                 imagemOlho.style.display = "none"; 
             } else {
-                // Monta o link da imagem com o .png e mostra na tela
                 imagemOlho.src = `${nomeArquivo}.png`;
                 imagemOlho.style.display = "block";
                 
-                // Animação de piscada leve ao trocar
+                // Animação de piscada ao trocar
                 imagemOlho.style.opacity = '0.5';
                 setTimeout(() => { imagemOlho.style.opacity = '1'; }, 150);
             }
