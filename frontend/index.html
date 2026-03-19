@@ -25,13 +25,11 @@
         <img src="botao-fav.png" alt="Minha Lista" class="img-nav-icone img-lista">
         <span>Minha Lista</span>
     </button>
-    
     <button class="nav-item" onclick="alert('✿ Comunidade em breve!')">
         <img src="botao-comunidade.png" alt="Comunidade" class="img-nav-icone img-comu">
         <span>Comunidade</span>
     </button>
-    
-    <button class="nav-item" onclick="alert('🪄 Laboratório de marcas mágicas está sendo construído')">
+    <button class="nav-item" onclick="alert('✿ Laboratório de marcas mágicas está sendo construído')">
         <img src="botao-cutiemark.png" alt="Marca Mágica" class="img-nav-icone img-magia">
         <span>Marca Mágica</span>
     </button>
@@ -88,11 +86,12 @@
             <h3 id="titulo-temporada-atual" style="color: white; margin-bottom: 1rem;">Temporada 1</h3>
             <div class="episode-grid" id="episode-grid"></div>
         </div>
-
-        <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem;">
-            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
-                <button onclick="voltarAoCatalogo()" class="btn-icone"> Voltar ao Catálogo</button>
-                <h2 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Minha Lista  ❤︎</h2>
+        <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem; position: relative;">
+            
+            <button onclick="voltarAoCatalogo()" class="btn-icone" style="position: absolute; top: -102px; left: -110px;">Voltar</button>
+            
+            <div style="margin-bottom: 2rem;">
+                <h2 style="color: white; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin: 0;">Minha Lista  ❤︎</h2>
             </div>
             
             <div class="episode-grid" id="grid-favoritos"></div>
@@ -109,6 +108,13 @@
                 <div class="widget profile-widget" onclick="window.location.href='cria-ponei.html'" style="cursor: pointer;">
     </div>
                 <p>Criar seu Pônei<br><small>Customize sua cutie mark</small></p>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h4>🌸 Daily Kindness Tip</h4>
+            <div class="tip-content">
+                Remember to be kind to everyone! 🌸
             </div>
         </div>
 
@@ -137,7 +143,6 @@
                     <img src="arte4.jpg" alt="Prévia 4">
                 </div>
             </div>
-
             <a href="galeria.html" class="link-ver-mais">Ver mais ❯</a>
         </div>
     </aside> <script src="app.js"></script>

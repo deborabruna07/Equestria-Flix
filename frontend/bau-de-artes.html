@@ -39,12 +39,14 @@
 
         /* Estilo para quando o baú está vazio */
         .bau-vazio {
-            text-align: center;
-            color: rgba(255,255,255,0.7);
-            padding: 4rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+        grid-column: 1 / -1;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        font-size: 1.3rem; 
+        font-weight: 600;
+}
     </style>
 </head>
 <body>
@@ -67,7 +69,7 @@
             <img id="img-tamanho-real" src="" alt="Arte em tamanho real">
             <div class="barra-acoes-arte">
                 <button class="btn-acao-arte" id="btn-curtir" onclick="curtirArte()" title="Remover do Baú">♡</button>
-                <button class="btn-acao-arte" onclick="baixarArte()" title="Baixar Arte">𖦹</button>
+                <button class="btn-acao-arte" onclick="baixarArte()" title="Baixar Arte">♠</button>
             </div>
             <div id="legenda-modal">
                 <h3 id="modal-titulo">Título</h3>
@@ -93,7 +95,7 @@
 
             if (bau.length === 0) {
                 // Se estiver vazio, mostra uma mensagem fofa
-                gridBau.innerHTML = `<div class="bau-vazio">Seu baú está vazio! Vá até a Galeria e clique no coração para guardar suas artes favoritas aqui. ✨</div>`;
+                gridBau.innerHTML = `<div class="bau-vazio">Seu baú está vazio! Vá até a Galeria e adicione suas artes favoritas aqui. ❤</div>`;
             } else {
                 // Se tiver artes, cria os cartões um por um
                 bau.forEach(arte => {
