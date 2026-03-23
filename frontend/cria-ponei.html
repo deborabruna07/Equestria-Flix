@@ -76,6 +76,14 @@
             transform-origin: 23% 13%; 
         }
 
+        /* CÂMERA PARA AS BOCAS */
+        .btn-olho img[src*="boca"] {
+            object-position: 15% 35%; 
+            transform-origin: 15% 29%; 
+            transform: scale(15); 
+            padding: 0;
+        }
+
         /*CÂMERA PARA AS ASAS: Foca nas costas do pônei*/
         .btn-olho img[src*="asa"] {
             transform-origin: 55% 27%; 
@@ -92,6 +100,30 @@
         .btn-olho img[src*="asa-alicornio"] {
             transform-origin: 60% 20%; 
             transform: scale(3.5);
+        }
+
+        /* Empurra para cima SOMENTE se a imagem tiver "alicornio" no nome */
+        #pony-horn-img[src*="alicornio"] { 
+            transform: translateY(-23px); 
+        }
+
+                #pony-horn-img[src*="pontudo"] { 
+            transform: translateY(-8px); 
+        }
+
+        /* CÂMERA PARA OS CHIFRES */
+        .btn-olho img[src*="chifre"] {
+            object-position: 35% 0%; 
+            transform-origin: 16% 0.01%; 
+            transform: scale(6); 
+            padding: 0; 
+        }
+
+        /* CÂMERA PARA OS CHIFRES ALICÓRNIO*/
+        .btn-olho img[src*="chifre-alicornio"] {
+            transform-origin: 16% 2%; 
+            transform: scale(6); 
+            padding: 0; 
         }
 
         .header-galeria {
@@ -246,6 +278,10 @@
             <img id="pony-wings-img" class="camada-ponei" src="" alt="Asas" style="display: none; z-index: 2;">
             
             <img id="pony-eyes-img" class="camada-ponei" src="olho-redondo-azul.png" alt="Olhos">
+
+            <img id="pony-horn-img" class="camada-ponei" src="" alt="Chifre" style="display: none; z-index: 4;">
+
+            <img id="pony-mouth-img" class="camada-ponei" src="" alt="Boca" style="display: none; z-index: 3;">
         </div>
         <div class="controls-panel">
             
@@ -287,7 +323,7 @@
                         <button class="btn-olho" onclick="mudarAsa('asa-fechada-roxo')"><img src="asa-fechada-roxo.png" alt="Roxo"></button>
                         <button class="btn-olho" onclick="mudarAsa('asa-fechada-amarelo')"><img src="asa-fechada-amarelo.png" alt="Amarelo"></button>
 
-                        </div> <h4>Asas de Alicórnio</h4>
+                        </div> <h4>Asas Alicórnio</h4>
                     <div class="grade-olhos">
                         <button class="btn-olho" onclick="mudarAsa('asa-alicornio-branco')"><img src="asa-alicornio-branco.png" alt="Branco"></button>
                         <button class="btn-olho" onclick="mudarAsa('asa-alicornio-preto')"><img src="asa-alicornio-preto.png" alt="Preto"></button>
@@ -299,6 +335,39 @@
                     </div>
                     </div>
                     
+            </div>
+
+            <div class="control-section">
+                <h3>4. Chifre Mágico</h3>
+                <div class="painel-visual">
+                    <button class="btn-olho" onclick="mudarChifre('')" title="Sem Chifre" style="width: 60px; font-size: 20px;">✖️</button>
+
+                    <h4>Chifre Unicórnio</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-branco')"><img src="chifre-unicornio-branco.png" alt="Branco"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-preto')"><img src="chifre-unicornio-preto.png" alt="Preto"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-rosa')"><img src="chifre-unicornio-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-azul')"><img src="chifre-unicornio-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-verde')"><img src="chifre-unicornio-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-roxo')"><img src="chifre-unicornio-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-unicornio-amarelo')"><img src="chifre-unicornio-amarelo.png" alt="Amarelo"></button>
+
+                        </div> <h4>Chifre Alicórnio</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-branco')"><img src="chifre-alicornio-branco.png" alt="Branco"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-preto')"><img src="chifre-alicornio-preto.png" alt="Preto"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-rosa')"><img src="chifre-alicornio-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-azul')"><img src="chifre-alicornio-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-verde')"><img src="chifre-alicornio-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-roxo')"><img src="chifre-alicornio-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarChifre('chifre-alicornio-amarelo')"><img src="chifre-alicornio-amarelo.png" alt="Amarelo"></button>
+                        
+                        </div> <h4>Chifre Pontudo</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarChifre('chifre-pontudo-preto')"><img src="chifre-pontudo-preto.png" alt="Preto"></button>
+                        
+                    </div>
+                </div>
             </div>
 
             <div class="control-section">
@@ -342,6 +411,28 @@
                 </div>
             </div>
 
+            <div class="control-section">
+                <h3>Expressão da Boca</h3>
+                <div class="painel-visual">
+                    <button class="btn-olho" onclick="mudarBoca('')" title="Sem Boca" style="width: 60px; font-size: 20px;">✖️</button>
+
+                    <h4>Calma</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-branco')"><img src="boca-calma-branco.png" alt="Branco"></button>
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-preto')"><img src="boca-calma-preto.png" alt="Preto"></button>
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-rosa')"><img src="boca-calma-rosa.png" alt="Rosa"></button>
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-azul')"><img src="boca-calma-azul.png" alt="Azul"></button>
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-verde')"><img src="boca-calma-verde.png" alt="Verde"></button>
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-roxo')"><img src="boca-calma-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarBoca('boca-calma-amarelo')"><img src="boca-calma-amarelo.png" alt="Amarelo"></button>
+                    </div>
+
+                    <h4>Sorriso</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarBoca('boca-sorriso-roxo')"><img src="boca-sorriso-roxo.png" alt="Roxo"></button>
+                </div>
+            </div>
+
             <div class="control-section" style="opacity: 0.5; pointer-events: none;">
                 <h3>3. Crina e Rabo (Em breve)</h3>
                 <div class="color-options">
@@ -378,6 +469,21 @@
             }
         }
 
+        // ✨ NOVA FUNÇÃO DOS CHIFRES ✨
+        function mudarChifre(nomeArquivo) {
+            const imagemChifre = document.getElementById('pony-horn-img');
+            
+            if (nomeArquivo === "") {
+                imagemChifre.style.display = "none"; 
+            } else {
+                imagemChifre.src = `${nomeArquivo}.png`;
+                imagemChifre.style.display = "block";
+                
+                imagemChifre.style.opacity = '0.5';
+                setTimeout(() => { imagemChifre.style.opacity = '1'; }, 150);
+            }
+        }
+
         // FUNÇÃO DOS OLHOS
         function mudarOlho(nomeArquivo) {
             const imagemOlho = document.getElementById('pony-eyes-img');
@@ -394,6 +500,23 @@
                 setTimeout(() => { imagemOlho.style.opacity = '1'; }, 150);
             }
         }
+
+        // ✨ NOVA FUNÇÃO DAS BOCAS ✨
+        function mudarBoca(nomeArquivo) {
+            const imagemBoca = document.getElementById('pony-mouth-img');
+            
+            if (nomeArquivo === "") {
+                imagemBoca.style.display = "none"; 
+            } else {
+                imagemBoca.src = `${nomeArquivo}.png`;
+                imagemBoca.style.display = "block";
+                
+                // Animação fofa
+                imagemBoca.style.opacity = '0.5';
+                setTimeout(() => { imagemBoca.style.opacity = '1'; }, 150);
+            }
+        }
+
     </script>
 
 </body>
