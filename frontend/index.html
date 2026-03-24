@@ -25,15 +25,13 @@
         <img src="botao-fav.png" alt="Minha Lista" class="img-nav-icone img-lista">
         <span>Minha Lista</span>
     </button>
-    
-    <button class="nav-item" onclick="alert('👥 Comunidade em breve!')">
+    <button class="nav-item" onclick="alert('✿ Comunidade em breve!')">
         <img src="botao-comunidade.png" alt="Comunidade" class="img-nav-icone img-comu">
         <span>Comunidade</span>
     </button>
-    
-    <button class="nav-item" onclick="alert('🪄 Magic Corner em breve!')">
-        <img src="botao-cutiemark.png" alt="Magic Corner" class="img-nav-icone img-magia">
-        <span>Magic Corner</span>
+    <button class="nav-item" onclick="alert('✿ Laboratório de marcas mágicas está sendo construído')">
+        <img src="botao-cutiemark.png" alt="Marca Mágica" class="img-nav-icone img-magia">
+        <span>Marca Mágica</span>
     </button>
 </nav>
         </div>
@@ -88,11 +86,12 @@
             <h3 id="titulo-temporada-atual" style="color: white; margin-bottom: 1rem;">Temporada 1</h3>
             <div class="episode-grid" id="episode-grid"></div>
         </div>
-
-        <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem;">
-            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
-                <button onclick="voltarAoCatalogo()" class="btn-icone"> Voltar ao Catálogo</button>
-                <h2 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Minha Lista  ❤︎</h2>
+        <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem; position: relative;">
+            
+            <button onclick="voltarAoCatalogo()" class="btn-icone" style="position: absolute; top: -102px; left: -110px;">Voltar</button>
+            
+            <div style="margin-bottom: 2rem;">
+                <h2 style="color: white; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin: 0;">Minha Lista  ❤︎</h2>
             </div>
             
             <div class="episode-grid" id="grid-favoritos"></div>
@@ -106,41 +105,63 @@
         <div class="widget profile-widget">
             <h4>⭐ Meu Perfil Mágico</h4>
             <div class="profile-info">
-                <div class="avatar"></div>
+                <div class="widget profile-widget" onclick="window.location.href='cria-ponei.html'" style="cursor: pointer;">
+    </div>
                 <p>Criar seu Pônei<br><small>Customize sua cutie mark</small></p>
             </div>
         </div>
 
         <div class="widget">
-            <h4>Menu Mágico</h4>
-            <button class="btn-assistir" onclick="abrirFavoritos()">❤︎  Minha Lista</button>
-        </div>
-
-        <div class="widget tip-widget">
             <h4>🌸 Daily Kindness Tip</h4>
             <div class="tip-content">
                 Remember to be kind to everyone! 🌸
             </div>
         </div>
 
-        <div class="widget fanart-widget">
-            <h4>🎨 Fan Art Gallery</h4>
-            <div class="fanart-grid">
-                <div class="art-placeholder"></div>
-                <div class="art-placeholder"></div>
-                <div class="art-placeholder"></div>
-                <div class="art-placeholder"></div>
+        <div class="widget">
+            <h4>🧸 Menu Mágico</h4>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <button class="btn-assistir" onclick="abrirFavoritos()">Minha Lista</button>
+                <button class="btn-assistir" onclick="window.location.href='bau-de-artes.html'">Baú de Artes</button>
             </div>
         </div>
-    </aside>
 
-    <script src="app.js"></script>
-<audio id="musica-fundo" loop autoplay>
-    <source src="tema-ponyverse.mp3" type="audio/mpeg">
-</audio>
+        <div class="widget fanart-widget">
+            <h4>🎨 Galeria de Artes</h4>
+            
+            <div class="fanart-grid">
+                <div class="art-placeholder" onclick="window.location.href='galeria.html'">
+                    <img src="arte1.jpg" alt="Prévia 1">
+                </div>
+                <div class="art-placeholder" onclick="window.location.href='galeria.html'">
+                    <img src="arte2.jpg" alt="Prévia 2">
+                </div>
+                <div class="art-placeholder" onclick="window.location.href='galeria.html'">
+                    <img src="arte3.jpg" alt="Prévia 3">
+                </div>
+                <div class="art-placeholder" onclick="window.location.href='galeria.html'">
+                    <img src="arte4.jpg" alt="Prévia 4">
+                </div>
+            </div>
+            <a href="galeria.html" class="link-ver-mais">Ver mais ❯</a>
+        </div>
+    </aside> <script src="app.js"></script>
+    
+    <audio id="musica-fundo" loop autoplay>
+        <source src="tema-ponyverse.mp3" type="audio/mpeg">
+    </audio>
 
-<button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
-    <img src="som-ligado.png" alt="Som" id="icone-som-img">
-</button>
+    <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+        <img src="som-ligado.png" alt="Som" id="icone-som-img">
+    </button>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            // Se a URL terminar com #principal, ele pula a tela de início
+            if(window.location.hash === '#principal') {
+                abrirPrincipal(); 
+            }
+        });
+    </script>
 </body>
 </html>

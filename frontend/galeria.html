@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Artes PonyVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ESTILOS EXCLUSIVOS DA GALERIA --- */
+        .header-galeria {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .titulo-galeria {
+            color: white;
+            font-size: 2.5rem;
+            margin: 0;
+            margin-left: 30px;
+            text-shadow: 0 4px 15px rgba(255, 0, 127, 0.5);
+        }
+
+        .galeria-container {
+            max-width: 1200px;
+            margin: 0 auto 3rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+        }
+
+        .texto-intro {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* ✨ A GRADE DE ARTES ✨ */
+        .grid-artes {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        /* ✨ O CARTÃO DE CADA ARTE ✨ */
+        .cartao-arte {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cartao-arte:hover {
+            transform: translateY(-10px);
+            border-color: #ff9aff;
+            box-shadow: 0 15px 35px rgba(255, 154, 255, 0.4);
+        }
+
+        .area-imagem {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .area-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition: transform 0.5s ease;
+        }
+
+        .cartao-arte:hover .area-imagem img {
+            transform: scale(1.1); 
+        }
+
+        .info-arte {
+            padding: 1.2rem;
+            text-align: center;
+            background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0.9));
+        }
+
+        .nome-arte {
+            color: #4A235A;
+            font-weight: 900;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .nome-artista {
+            color: #d1008b;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* ✨ ESTILOS DO MODAL E ÍCONES ✨ */
+        #modal-arte {
+            display: none; 
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background-color: rgba(0, 0, 0, 0.85); 
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+            align-items: center; justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-centro {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Mantém tudo centralizado */
+            max-width: 90%;
+        }
+
+        #img-tamanho-real {
+            max-width: 100%;
+            max-height: 75vh; 
+            border-radius: 15px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            border: 3px solid rgba(255,255,255,0.2);
+            object-fit: contain;
+        }
+
+        .barra-acoes-arte {
+            display: flex;
+            justify-content: space-between; /* Mantém os botões nas extremidades */
+            width: 100%;
+            margin-top: 15px;
+            padding: 0 5px; 
+        }
+
+        .btn-acao-arte {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 2.2rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            padding: 0;
+            line-height: 1;
+        }
+
+        .btn-acao-arte:hover {
+            transform: scale(1.15) translateY(-2px);
+            color: #ff9aff;
+        }
+
+        .btn-acao-arte.curtido {
+            color: #ff007f;
+            text-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
+        }
+
+        #legenda-modal {
+            margin-top: 1rem;
+            color: white;
+            text-align: center; /* Mantém o título no centro */
+            width: 100%;
+        }
+
+        #legenda-modal h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.8rem;
+            text-shadow: 0 2px 10px rgba(255, 0, 127, 0.8);
+        }
+
+        #legenda-modal p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #ffbaf0;
+        }
+
+        .btn-fechar-modal {
+            position: absolute; top: 30px; right: 40px;
+            background: transparent; color: white; border: none;
+            font-size: 3rem; font-weight: bold; cursor: pointer;
+            transition: transform 0.2s; text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .btn-fechar-modal:hover { transform: scale(1.2); color: #ff9aff; }
+    </style>
+</head>
+<body>
+
+    <header class="header-galeria">
+        <a href="index.html#principal" class="btn-icone" style="text-decoration: none;">Voltar</a>
+        <h2 class="titulo-galeria">Galeria de Artes</h2>
+        
+        <a href="bau-de-artes.html" class="btn-icone" style="text-decoration: none; margin-left: auto; background: #9b59b6 !important; border-color: #ff9aff !important; box-shadow: 0 4px 15px rgba(255, 0, 127, 0.4);">Baú de Artes  ❤</a>
+    </header>
+
+    <main class="galeria-container">
+        <p class="texto-intro">Galeria das artes mágicas de PonyVille.</p>
+
+        <div class="grid-artes">
+            
+            <div class="cartao-arte" onclick="abrirArte('arte1.jpg', 'Magia dos Unicórnios', 'Por: @SambaNeko')">
+                <div class="area-imagem"><img src="arte1.jpg" alt="Fanart 1"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Magia dos Unicórnios</div>
+                    <div class="nome-artista">Por: @SambaNeko</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte2.jpg', 'Amizade é Mágica', 'Por: @Lummh')">
+                <div class="area-imagem"><img src="arte2.jpg" alt="Fanart 2"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Amizade é Mágica</div>
+                    <div class="nome-artista">Por: @Lummh</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte3.jpg', 'My Little Pony, o Filme', 'Por: Comic Oficial MLP')">
+                <div class="area-imagem"><img src="arte3.jpg" alt="Fanart 3"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">My Little Pony, o Filme</div>
+                    <div class="nome-artista">Por: Comic Oficial MLP</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte4.jpg', 'Garotas Equestria', 'Por: @Kelkilou')">
+                <div class="area-imagem"><img src="arte4.jpg" alt="Fanart 4"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Garotas Equestria</div>
+                    <div class="nome-artista">Por: @Kelkilou</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte5.jpg', 'Vitral dos 6 Elementos', 'Por: @Wanderwingpegasus')">
+                <div class="area-imagem"><img src="arte5.jpg" alt="Fanart 5"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Vitral dos 6 Elementos</div>
+                    <div class="nome-artista">Por: @Wanderwingpegasus</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte6.jpg', 'Abraço Coletivo', 'Por: My Little Pony, Filme')">
+                <div class="area-imagem"><img src="arte6.jpg" alt="Fanart 6"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Abraço Coletivo</div>
+                    <div class="nome-artista">Por: My Little Pony, Filme</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte7.jpg', 'Gravidade Zero', 'Por: 千雲九枭')">
+                <div class="area-imagem"><img src="arte7.jpg" alt="Fanart 7"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Gravidade Zero</div>
+                    <div class="nome-artista">Por: 千雲九枭</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte8.jpg', 'Piquenique dos pôneis', 'Por: @Takatma_paint')">
+                <div class="area-imagem"><img src="arte8.jpg" alt="Fanart 8"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Piquenique dos pôneis</div>
+                    <div class="nome-artista">Por: @Takatma_paint</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte9.jpg', 'Pôneis Sereias', 'Por: MLP, Filme (2017)')">
+                <div class="area-imagem"><img src="arte9.jpg" alt="Fanart 9"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Pôneis Sereias</div>
+                    <div class="nome-artista">Por: MLP, Filme (2017)</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte10.jpg', 'Luna Noite Estrelada', 'Por: @Janegumball')">
+                <div class="area-imagem"><img src="arte10.jpg" alt="Fanart 10"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Luna Noite Estrelada</div>
+                    <div class="nome-artista">Por: @Janegumball</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte11.jpg', 'A Poderosa, Trixie', 'Por: @Bl4zen (Pinterest)')">
+                <div class="area-imagem"><img src="arte11.jpg" alt="Fanart 11"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">A Poderosa, Trixie </div>
+                    <div class="nome-artista">Por: @Bl4zen (Pinterest)</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte12.jpg', 'Luna, Princesa da Noite', 'Por: @Toastiestroodle (Tumblr)')">
+                <div class="area-imagem"><img src="arte12.jpg" alt="Fanart 12"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Luna, Princesa da Noite</div>
+                    <div class="nome-artista">Por: @Toastiestroodle (Tumblr)</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte13.jpg', 'Celestia Sol Ardente', 'Por: @Janegumball')">
+                <div class="area-imagem"><img src="arte13.jpg" alt="Fanart 13"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Celestia Sol Ardente</div>
+                    <div class="nome-artista">Por: @Janegumball</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte14.jpg', 'A Floresta Encantada', 'Por: Quadrinho MLP, nº 31')">
+                <div class="area-imagem"><img src="arte14.jpg" alt="Fanart 14"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">A Floresta Encantada</div>
+                    <div class="nome-artista">Por: Quadrinho MLP, nº 31</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte15.jpg', 'Princesas de Equestria', 'Por: @Firestiart')">
+                <div class="area-imagem"><img src="arte15.jpg" alt="Fanart 15"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Princesas de Equestria</div>
+                    <div class="nome-artista">Por: @Firestiart</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte16.jpg', 'A Esfera Mágica', 'Por: @Lumic')">
+                <div class="area-imagem"><img src="arte16.jpg" alt="Fanart 16"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">A Esfera Mágica</div>
+                    <div class="nome-artista">Por: @Lumic</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte17.jpg', 'Mane Six Angels', 'Por: @Fleebites')">
+                <div class="area-imagem"><img src="arte17.jpg" alt="Fanart 17"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Mane Six Angels</div>
+                    <div class="nome-artista">Por: @Fleebites</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte18.jpg', 'Corrida de Pegasus', 'Por: @Sethisto')">
+                <div class="area-imagem"><img src="arte18.jpg" alt="Fanart 18"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Corrida de Pegasus</div>
+                    <div class="nome-artista">Por: @Sethisto</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte19.jpg', 'Sunset Shimmer', 'Por: @Imalou')">
+                <div class="area-imagem"><img src="arte19.jpg" alt="Fanart 19"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Sunset Shimmer</div>
+                    <div class="nome-artista">Por: @Imalou</div>
+                </div>
+            </div>
+
+            <div class="cartao-arte" onclick="abrirArte('arte20.jpeg', 'Sol & Lua', 'Por: @Zymaani')">
+                <div class="area-imagem"><img src="arte20.jpeg" alt="Fanart 20"></div>
+                <div class="info-arte">
+                    <div class="nome-arte">Sol & Lua</div>
+                    <div class="nome-artista">Por: @Zymaani</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modal-arte">
+        <button class="btn-fechar-modal" onclick="fecharArte()">×</button>
+        
+        <div class="modal-centro">
+            <img id="img-tamanho-real" src="" alt="Arte em tamanho real">
+            
+            <div class="barra-acoes-arte">
+                <button class="btn-acao-arte" id="btn-curtir" onclick="curtirArte()" title="Favoritar Arte">♡</button>
+                <button class="btn-acao-arte" onclick="baixarArte()" title="Baixar Arte">♠</button>
+            </div>
+
+            <div id="legenda-modal">
+                <h3 id="modal-titulo">Título</h3>
+                <p id="modal-artista">Artista</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variável para lembrar qual arte está aberta no momento
+        let arteAtiva = { src: '', titulo: '', artista: '' };
+
+        function abrirArte(caminhoImagem, titulo, artista) {
+            const modal = document.getElementById('modal-arte');
+            const imagemReal = document.getElementById('img-tamanho-real');
+            const tituloModal = document.getElementById('modal-titulo');
+            const artistaModal = document.getElementById('modal-artista');
+            const btnCurtir = document.getElementById('btn-curtir');
+
+            imagemReal.src = caminhoImagem;
+            tituloModal.textContent = titulo;
+            artistaModal.textContent = artista;
+            
+            // Salva as informações da arte atual na variável
+            arteAtiva = { src: caminhoImagem, titulo: titulo, artista: artista };
+
+            // VERIFICA SE JÁ ESTÁ NO BAÚ DE ARTES
+            let bau = JSON.parse(localStorage.getItem('bau_artes')) || [];
+            
+            // Checa se a imagem atual já está salva lá
+            let jaFavoritou = bau.some(arte => arte.src.includes(caminhoImagem));
+
+            if (jaFavoritou) {
+                btnCurtir.textContent = '♥';
+                btnCurtir.classList.add('curtido');
+            } else {
+                btnCurtir.textContent = '♡';
+                btnCurtir.classList.remove('curtido');
+            }
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fecharArte() {
+            document.getElementById('modal-arte').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        document.getElementById('modal-arte').addEventListener('click', function(e) {
+            if (e.target === this) { fecharArte(); }
+        });
+
+        // FUNÇÃO DE CURTIR E SALVAR NO BAÚ
+        function curtirArte() {
+            const btn = document.getElementById('btn-curtir');
+            let bau = JSON.parse(localStorage.getItem('bau_artes')) || [];
+            
+            // Procura se a arte já está no baú
+            let index = bau.findIndex(arte => arte.src.includes(arteAtiva.src));
+
+            if (btn.textContent === '♡') {
+                // Adiciona a arte
+                btn.textContent = '♥'; 
+                btn.classList.add('curtido');
+                btn.style.transform = 'scale(1.4)';
+                setTimeout(() => { btn.style.transform = 'scale(1)'; }, 200);
+                
+                if (index === -1) {
+                    bau.push(arteAtiva);
+                }
+            } else {
+                // Remove a arte
+                btn.textContent = '♡'; 
+                btn.classList.remove('curtido');
+                
+                if (index !== -1) {
+                    bau.splice(index, 1);
+                }
+            }
+            
+            // Grava a lista atualizada no navegador
+            localStorage.setItem('bau_artes', JSON.stringify(bau));
+        }
+
+        // FUNÇÃO DE DOWNLOAD PREPARADA PARA QUANDO O SITE FOR PARA O AR
+        function baixarArte() {
+            const imagem = document.getElementById('img-tamanho-real');
+            let nomeArquivo = imagem.src.split('/').pop() || 'fanart-ponyverse.jpg';
+            
+            // Garante que tenha a extensão .jpg
+            if (!nomeArquivo.includes('.')) nomeArquivo += '.jpg';
+
+            try {
+                // Tenta forçar o navegador a desenhar a imagem e empacotar para baixar
+                const canvas = document.createElement('canvas');
+                canvas.width = imagem.naturalWidth || imagem.width;
+                canvas.height = imagem.naturalHeight || imagem.height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(imagem, 0, 0);
+                
+                const dataURL = canvas.toDataURL('image/jpeg', 1.0);
+                
+                const linkDownload = document.createElement('a');
+                linkDownload.href = dataURL;
+                linkDownload.download = nomeArquivo;
+                document.body.appendChild(linkDownload);
+                linkDownload.click();
+                document.body.removeChild(linkDownload);
+
+            } catch (error) {
+                // TRAVA LOCAL: Se o Chrome barrar o download porque você está no C:/
+                alert('Como você está testando o site offline no seu PC, o navegador bloqueia downloads automáticos por segurança. \n\nPara salvar agora: Clique com o botão direito na imagem e escolha "Salvar imagem como...". \n\n(Quando o site estiver no ar, o botão funcionará automaticamente!)');
+                window.open(imagem.src, '_blank');
+            }
+        }
+    </script>
+
+
+    <audio id="musica-fundo" loop>
+        <source src="tema-ponyverse.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+        <img src="som-on.png" alt="Som" id="icone-som-img">
+    </button>
+
+    <script>
+        function toggleMusica() {
+            const musica = document.getElementById('musica-fundo');
+            const icone = document.getElementById('icone-som-img');
+            const btn = document.getElementById('btn-musica');
+
+            if (musica.paused) {
+                musica.play();
+                icone.src = 'som-on.png'; 
+                btn.classList.add('tocando');
+                localStorage.setItem('musica_tocando', 'true');
+            } else {
+                musica.pause();
+                icone.src = 'som-off.png'; 
+                btn.classList.remove('tocando');
+                localStorage.setItem('musica_tocando', 'false');
+            }
+        }
+
+        window.addEventListener('load', () => {
+            const musica = document.getElementById('musica-fundo');
+            const icone = document.getElementById('icone-som-img');
+            const btn = document.getElementById('btn-musica');
+
+            if (musica) {
+                musica.volume = 0.1;
+                
+                const tocando = localStorage.getItem('musica_tocando') === 'true';
+                
+                const navegacao = performance.getEntriesByType("navigation")[0];
+                const ehF5 = navegacao ? (navegacao.type === "reload") : false;
+
+                let tempoSalvo = 0;
+                
+                if (!ehF5 && sessionStorage.getItem('musica_tempo')) {
+                    tempoSalvo = parseFloat(sessionStorage.getItem('musica_tempo'));
+                }
+
+                musica.currentTime = tempoSalvo;
+
+                setInterval(() => {
+                    if(!musica.paused) {
+                        sessionStorage.setItem('musica_tempo', musica.currentTime);
+                    }
+                }, 500);
+
+                if (tocando) {
+                    let playPromise = musica.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            icone.src = 'som-on.png'; 
+                            btn.classList.add('tocando');
+                        }).catch(error => {
+                            icone.src = 'som-off.png'; 
+                            btn.classList.remove('tocando');
+                        });
+                    }
+                } else {
+                    icone.src = 'som-off.png';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
