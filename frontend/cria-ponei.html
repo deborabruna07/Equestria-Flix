@@ -126,6 +126,14 @@
             padding: 0; 
         }
 
+        /* CÂMERA PARA AS CRINAS */
+        .btn-olho img[src*="crina"] {
+            object-position: 25% 15%; 
+            transform-origin: 15% 8%; 
+            transform: scale(2);
+            padding: 0;
+        }
+
         .header-galeria {
             padding: 2rem;
             display: flex;
@@ -282,6 +290,8 @@
             <img id="pony-horn-img" class="camada-ponei" src="" alt="Chifre" style="display: none; z-index: 4;">
 
             <img id="pony-mouth-img" class="camada-ponei" src="" alt="Boca" style="display: none; z-index: 3;">
+
+            <img id="pony-mane-img" class="camada-ponei" src="" alt="Crina" style="display: none; z-index: 5;">
         </div>
         <div class="controls-panel">
             
@@ -415,43 +425,49 @@
                 <h3>Expressão da Boca</h3>
                 <div class="painel-visual">
                     <button class="btn-olho" onclick="mudarBoca('')" title="Sem Boca" style="width: 60px; font-size: 20px;">✖️</button>
-
-                    <h4>Calma</h4>
+                        <h4>Sorrisos e Expressões</h4>
                     <div class="grade-olhos">
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-branco')"><img src="boca-calma-branco.png" alt="Branco"></button>
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-preto')"><img src="boca-calma-preto.png" alt="Preto"></button>
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-rosa')"><img src="boca-calma-rosa.png" alt="Rosa"></button>
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-azul')"><img src="boca-calma-azul.png" alt="Azul"></button>
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-verde')"><img src="boca-calma-verde.png" alt="Verde"></button>
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-roxo')"><img src="boca-calma-roxo.png" alt="Roxo"></button>
-                        <button class="btn-olho" onclick="mudarBoca('boca-calma-amarelo')"><img src="boca-calma-amarelo.png" alt="Amarelo"></button>
+                        <button class="btn-olho" onclick="mudarBoca('calma')"><img src="boca-calma-preto.png" alt="Calma"></button>
+                        <button class="btn-olho" onclick="mudarBoca('sorriso')"><img src="boca-sorriso-preto.png" alt="Sorriso"></button>
+                        <button class="btn-olho" onclick="mudarBoca('baixo')"><img src="boca-baixo-preto.png" alt="Baixo"></button>
+                        <button class="btn-olho" onclick="mudarBoca('triste')"><img src="boca-triste-preto.png" alt="Triste"></button>
+                        <button class="btn-olho" onclick="mudarBoca('alegre')"><img src="boca-alegre-preto.png" alt="Alegre"></button>
                     </div>
+                </div>
+            </div>
+            
+            <div class="control-section">
+                <h3>3. Crina e Rabo</h3>
+                <div class="painel-visual">
+                    <button class="btn-olho" onclick="mudarCrina('')" title="Sem Crina" style="width: 60px; font-size: 20px;">✖️</button>
 
-                    <h4>Sorriso</h4>
+                    <h4>Estilos Clássicos</h4>
                     <div class="grade-olhos">
-                        <button class="btn-olho" onclick="mudarBoca('boca-sorriso-roxo')"><img src="boca-sorriso-roxo.png" alt="Roxo"></button>
+                        <button class="btn-olho" onclick="mudarCrina('crina-rainbowdash')">
+                            <img src="crina-rainbowdash.png" alt="Rainbow Dash">
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            <div class="control-section" style="opacity: 0.5; pointer-events: none;">
-                <h3>3. Crina e Rabo (Em breve)</h3>
-                <div class="color-options">
-                    <button class="color-btn" style="background: #ddd;"></button>
-                    <button class="color-btn" style="background: #ddd;"></button>
-                </div>
-            </div>
-
-        </div>
     </main>
 
     <script>
-        // Função do Corpo
+        let corAtual = 'branco';
+        let estiloBocaAtual = '';
+
+        // FUNÇÃO DO CORPO
         function mudarCor(cor) {
+            corAtual = cor; // Guarda nova cor na memória
             const imagemBase = document.getElementById('pony-base-img');
             imagemBase.src = `base-ponei-${cor}.png`;
             
             imagemBase.style.transform = 'scale(0.95)';
             setTimeout(() => { imagemBase.style.transform = 'scale(1)'; }, 150);
+
+            // Se tiver uma boca desenhada, atualiza a cor dela automaticamente
+            if (estiloBocaAtual !== '') {
+                mudarBoca(estiloBocaAtual);
+            }
         }
 
         // FUNÇÃO DAS ASAS
@@ -469,7 +485,7 @@
             }
         }
 
-        // ✨ NOVA FUNÇÃO DOS CHIFRES ✨
+        // NOVA FUNÇÃO DOS CHIFRES
         function mudarChifre(nomeArquivo) {
             const imagemChifre = document.getElementById('pony-horn-img');
             
@@ -501,19 +517,35 @@
             }
         }
 
-        // ✨ NOVA FUNÇÃO DAS BOCAS ✨
-        function mudarBoca(nomeArquivo) {
+        // NOVA FUNÇÃO DAS BOCAS
+        function mudarBoca(estilo) {
+            estiloBocaAtual = estilo; // Guarda o estilo na memória!
             const imagemBoca = document.getElementById('pony-mouth-img');
             
-            if (nomeArquivo === "") {
+            if (estilo === "") {
                 imagemBoca.style.display = "none"; 
             } else {
-                imagemBoca.src = `${nomeArquivo}.png`;
+                // Junta as peças: "boca-" + "calma" + "-" + "azul" + ".png"
+                imagemBoca.src = `boca-${estilo}-${corAtual}.png`;
                 imagemBoca.style.display = "block";
                 
-                // Animação fofa
                 imagemBoca.style.opacity = '0.5';
                 setTimeout(() => { imagemBoca.style.opacity = '1'; }, 150);
+            }
+        }
+
+        // FUNÇÃO DAS CRINAS
+        function mudarCrina(nomeArquivo) {
+            const imagemCrina = document.getElementById('pony-mane-img');
+            
+            if (nomeArquivo === "") {
+                imagemCrina.style.display = "none"; 
+            } else {
+                imagemCrina.src = `${nomeArquivo}.png`;
+                imagemCrina.style.display = "block";
+                
+                imagemCrina.style.opacity = '0.5';
+                setTimeout(() => { imagemCrina.style.opacity = '1'; }, 150);
             }
         }
 
