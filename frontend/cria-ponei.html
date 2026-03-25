@@ -285,7 +285,7 @@
             
             <img id="pony-wings-img" class="camada-ponei" src="" alt="Asas" style="display: none; z-index: 2;">
             
-            <img id="pony-eyes-img" class="camada-ponei" src="olho-redondo-azul.png" alt="Olhos">
+            <img id="pony-eyes-img" class="camada-ponei" src="" alt="Olhos" style="display: none; z-index: 4;">
 
             <img id="pony-horn-img" class="camada-ponei" src="" alt="Chifre" style="display: none; z-index: 4;">
 
@@ -447,6 +447,12 @@
                             <img src="crina-rainbowdash.png" alt="Rainbow Dash">
                         </button>
                     </div>
+                    <h4>Longos</h4>
+                    <div class="grade-olhos">
+                        <button class="btn-olho" onclick="mudarCrina('crina-longa')">
+                            <img src="crina-longa.png" alt="Crina Longa">
+                        </button>
+                    </div>
                 </div>
             </div>
     </main>
@@ -517,15 +523,14 @@
             }
         }
 
-        // NOVA FUNÇÃO DAS BOCAS
+        // FUNÇÃO DAS BOCAS
         function mudarBoca(estilo) {
-            estiloBocaAtual = estilo; // Guarda o estilo na memória!
+            estiloBocaAtual = estilo; // Guarda o estilo na memória
             const imagemBoca = document.getElementById('pony-mouth-img');
             
             if (estilo === "") {
                 imagemBoca.style.display = "none"; 
             } else {
-                // Junta as peças: "boca-" + "calma" + "-" + "azul" + ".png"
                 imagemBoca.src = `boca-${estilo}-${corAtual}.png`;
                 imagemBoca.style.display = "block";
                 
