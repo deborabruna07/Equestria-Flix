@@ -46,6 +46,8 @@ async function carregarEpisodios() {
         
         // Garante que não vai quebrar se o JSON estiver vazio
         todasTemporadas = dados.temporadas || [];
+
+        configurarEpisodioDoDia();
         
         gerarBotoesTemporada();
         
@@ -157,23 +159,81 @@ window.addEventListener('load', () => {
 
 let indexAtual = 0;
 
+// ==========================================
+// 6. CARROSSEL INFINITO (Sem Rebobinar)
+// ==========================================
 function mudarBanner(direcao) {
     const track = document.getElementById('track');
-    const banners = document.querySelectorAll('.hero-banner');
-    const totalBanners = banners.length;
+    
+    // Animação suave ativada (para que o deslize seja bonito)
+    track.style.transition = 'transform 0.5s ease-in-out';
 
-    indexAtual += direcao;
+    if (direcao === 1) {
+        // Clicou para a DIREITA (Próximo)
+        track.style.transform = `translateX(-100%)`; // Desliza 1 banner para a esquerda
+        
+        // Espera a animação terminar (0.5s) e faz a mágica acontecer
+        setTimeout(() => {
+            track.style.transition = 'none'; // Desliga a animação por um milissegundo
+            // Pega o primeiro banner e joga lá pro final da fila!
+            track.appendChild(track.firstElementChild); 
+            track.style.transform = `translateX(0)`; // Volta a posição do trilho pro zero
+        }, 500); 
 
-    if (indexAtual >= totalBanners) indexAtual = 0;
-    if (indexAtual < 0) indexAtual = totalBanners - 1;
-
-    // Move exatamente o equivalente a 1 banner (100%)
-    const deslocamento = indexAtual * -100;
-    track.style.transform = `translateX(${deslocamento}%)`;
+    } else if (direcao === -1) {
+        // Clicou para a ESQUERDA (Anterior)
+        // Primeiro, pega o último banner da fila e joga lá pro começo, escondido!
+        track.prepend(track.lastElementChild);
+        
+        // Dá um "pulo" invisível para -100% (para que o banner que acabamos de mover fique escondido)
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-100%)`;
+        
+        // Agora sim, liga a animação e desliza para a posição 0 (trazendo o banner pro meio)
+        setTimeout(() => {
+            track.style.transition = 'transform 0.5s ease-in-out';
+            track.style.transform = `translateX(0)`;
+        }, 10); 
+    }
 }
 
-// Opcional: Auto-play a cada 6 segundos
-setInterval(() => mudarBanner(1), 6000);
+// Opcional: Auto-play a cada 6 segundos (continua funcionando normal!)
+setInterval(() => mudarBanner(1), 4000);
+
+// ==========================================
+// 7. SISTEMA DO EPISÓDIO DO DIA (Automático)
+// ==========================================
+function configurarEpisodioDoDia() {
+    let listaCompletaEpisodios = [];
+    todasTemporadas.forEach(temporada => {
+        if(temporada.episodios) {
+            listaCompletaEpisodios.push(...temporada.episodios);
+        }
+    });
+
+    if (listaCompletaEpisodios.length === 0) return;
+
+    const dataHoje = new Date();
+    const diasPassados = Math.floor(dataHoje.getTime() / (1000 * 60 * 60 * 24));
+    const indiceDoDia = diasPassados % listaCompletaEpisodios.length;
+    
+    const episodioEscolhido = listaCompletaEpisodios[indiceDoDia];
+
+    const banner = document.getElementById('banner-ep-dia');
+    const titulo = document.getElementById('titulo-ep-dia');
+    const descricao = document.getElementById('desc-ep-dia');
+
+    if (banner && episodioEscolhido) {
+        // ✨ MÁGICA NOVA: Apenas atualizamos o texto para ficar chique!
+        titulo.innerText = episodioEscolhido.titulo;
+        
+        // Pega o número do episódio para colocar na descrição
+        const numeroEp = episodioEscolhido.id.includes('E') ? episodioEscolhido.id.split('E')[1] : episodioEscolhido.id;
+        descricao.innerText = `Episódio ${numeroEp} • Clique para assistir!`;
+
+        banner.onclick = () => assistir(episodioEscolhido.caminho_video, episodioEscolhido.titulo);
+    }
+}
 
 // ==========================================
 // 5. SISTEMA DE PÁGINA DE FAVORITOS
@@ -248,9 +308,6 @@ function voltarAoCatalogo() {
     document.getElementById('conteudo-catalogo').style.display = 'block';
 }
 
-// ✨ FUNÇÃO PARA CONTROLAR A MÚSICA (Trocando a Imagem) ✨
-// ✨ FUNÇÃO PARA CONTROLAR A MÚSICA (COM MEMÓRIA) ✨
-// ✨ FUNÇÃO PARA CONTROLAR A MÚSICA ✨
 function toggleMusica() {
     const musica = document.getElementById('musica-fundo');
     const icone = document.getElementById('icone-som-img'); 
@@ -345,6 +402,121 @@ window.addEventListener('load', () => {
         }
     }
 });
+
+// ✨ ARRAY DE APRENDIZADOS MÁGICOS ✨
+        // Você pode adicionar quantas frases quiser aqui dentro!
+        const frasesDoDia = [
+            "Lembre-se de sempre ser gentil! 🌸",
+            "A amizade é a mágica mais poderosa! ✨",
+            "Acredite em si mesma, mesmo quando for difícil. 🦄",
+            "Um sorriso pode iluminar o dia mais nublado. ☀️",
+            "Pequenos gestos de bondade criam grandes ondas. 🌊",
+            "Nunca tenha medo de mostrar suas verdadeiras cores. 🌈",
+            "Ajudar um amigo é o melhor tipo de aventura! 🗺️",
+            "Até os menores pôneis podem fazer a maior diferença. 🦋",
+            "A verdadeira magia está em aceitar as diferenças de cada um. 🌟",
+            "Sua voz é única, não tenha medo de usá-la para o bem! 🎶",
+            "Mesmo na noite mais escura, as estrelas continuam a brilhar. ✨",
+            "Um coração generoso é o tesouro mais valioso de todos. 💎",
+            "A lealdade fortalece os laços que o tempo não pode quebrar. 🤝",
+            "Rir com os amigos é o melhor remédio para qualquer tristeza. 😂",
+            "A honestidade constrói pontes de confiança que duram para sempre. 🌉",
+            "Cada novo dia é uma página em branco para escrevermos nossa história. 📖",
+            "O perdão é uma mágica que cura quem dá e quem recebe. 💖",
+            "Estudar e aprender nos dá asas para voar cada vez mais alto! 📚",
+            "Trabalhar em equipe torna o fardo mais leve e a diversão maior. 🍎",
+            "Nunca subestime o poder de um abraço apertado num momento difícil. 🤗",
+            "A paciência é a sementinha de onde brotam as mais belas flores. 🌱",
+            "Celebrar a vitória de um amigo é como vencer duas vezes! 🎉",
+            "Quando não souber o caminho, siga a bússola da bondade. 🧭",
+            "A coragem não é não ter medo, mas sim agir apesar dele. 🛡️",
+            "O talento de cada um forma o arco-íris perfeito quando estamos juntos. 🌈",
+            "Sempre há tempo para parar e fazer a coisa certa. ⏳",
+            "Os pequenos erros de hoje são as suas lições de mágica do amanhã. 🔮",
+            "Compartilhar sua alegria faz ela se multiplicar por toda Equestria! 🎈",
+            "Os melhores conselhos às vezes vêm de quem fala baixinho. 🦋",
+            "Juntos, nós somos uma tempestade imparável de coisas boas! ⚡",
+            "Um elogio sincero pode mudar completamente o dia de alguém. 💝",
+            "Acredite nos seus sonhos, mesmo que pareçam estar nas nuvens! ☁️",
+            "A criatividade é a mágica de transformar ideias em realidade. 🎨",
+            "Ouvir com carinho é o abraço invisível que a alma precisa. 👂",
+            "Ser diferente é o que torna o nosso mundo tão maravilhoso. 🌍",
+            "A coragem cresce um pouquinho a cada vez que tentamos algo novo. 🌱",
+            "O amor e o cuidado que damos sempre voltam para nós. 💖",
+            "Até os obstáculos mais difíceis nos ensinam grandes lições. 🧗‍♀️",
+            "A gratidão transforma o que temos em mais do que o suficiente. 🙏",
+            "Um amigo de verdade conhece todas as suas falhas e te ama mesmo assim. 💕",
+            "Pequenos passos todos os dias levam a grandes jornadas. 🛤️",
+            "A luz que você espalha nunca diminui a sua própria luz. 🕯️",
+            "Às vezes, a melhor solução é apenas dar boas risadas! 😆",
+            "Ser gentil com os animais é uma forma pura de amor. 🐾",
+            "O trabalho em equipe faz o sonho se realizar mais rápido. 🤝",
+            "Mantenha a mente aberta: a magia acontece onde menos esperamos. 🪄",
+            "Não tenha pressa de crescer, aproveite a doçura de cada momento. 🍭",
+            "Sua felicidade é uma escolha que você pode fazer todos os dias. ☀️",
+            "Palavras doces são como mel para a alma e colírio para os ouvidos. 🍯",
+            "O medo é só um degrau na escada da sua coragem. 🪜",
+            "Seja a luz no dia nublado de alguém. 🌥️",
+            "A verdadeira força está na capacidade de perdoar a si mesmo. 💪",
+            "Cada pôr do sol é a prova de que finais podem ser lindos. 🌅",
+            "O respeito é a chave mágica que abre todas as portas. 🔑",
+            "Acreditar em si mesma é o primeiro passo para voar. 🦋",
+            "A amizade é como um jardim: precisa de cuidado e carinho para florescer. 🌻",
+            "Seja corajosa o suficiente para ser quem você realmente é. 🛡️",
+            "Um sorriso é a linguagem universal da gentileza. 😊",
+            "As estrelas só brilham quando a noite está escura. ✨",
+            "Você é capaz de fazer coisas incríveis, apenas tente! 🌟",
+            "A harmonia começa quando aprendemos a ouvir com o coração. 🎵",
+            "Cair faz parte da aventura; levantar é onde a verdadeira mágica acontece. 🎠",
+            "Suas imperfeições são exatamente o que te torna especial e único. 💎",
+            "Compartilhar um doce é bom, mas compartilhar momentos é inesquecível. 🧁",
+            "A jornada é tão importante quanto o destino final. 🛤️",
+            "Nunca é tarde demais para descobrir um novo talento escondido. 🎯",
+            "Uma palavra de incentivo pode dar asas a quem perdeu a esperança. 🕊️",
+            "A natureza tem seu próprio ritmo; respire fundo e aprecie a paisagem. 🌲",
+            "Quando a tempestade passar, lembre-se de procurar o arco-íris. 🌦️",
+            "Ser um bom líder significa saber a hora de escutar seus amigos. 👑",
+            "A imaginação é o único limite para o que podemos construir juntos. 🏰",
+            "Dizer 'eu não sei' é o primeiro e mais corajoso passo para aprender. 🧭",
+            "As melhores memórias são feitas das pequenas aventuras do dia a dia. 🏕️",
+            "Toda grande floresta começou com uma pequena e corajosa semente. 🌳",
+            "Não compare o seu começo com a metade do caminho de outra pessoa. 📖",
+            "Descansar também é uma forma de cuidar da sua própria magia. 💤",
+            "A curiosidade abre portas que a gente nem sabia que existiam. 🚪",
+            "Mostre gratidão por quem caminha ao seu lado nos momentos difíceis. 🐾",
+            "O mundo fica mais colorido quando você compartilha seu brilho. 🖍️",
+            "Ninguém precisa ser perfeito para ser um amigo maravilhoso. 🍎",
+            "A empatia é o superpoder de entender o coração do outro. ❤️",
+            "Cante a sua própria música, mesmo que os outros não saibam a letra. 🎤",
+            "Promessas cumpridas são os tijolos que constroem a confiança. 🧱",
+            "Olhe para as nuvens: sempre há algo novo para descobrir. ☁️",
+            "A paciência transforma pequenos esforços em grandes conquistas. 🏆",
+            "Deixe as tristezas voarem como balões e abrace a alegria do agora. 🎈",
+            "Todo pônei tem uma faísca esperando o momento certo para reluzir. 🌟",
+            "A sabedoria não vem de não errar, mas de aprender com cada tropeço. 🦉",
+            "Um bom amigo é o melhor espelho que você pode ter. 🪞",
+            "Você é muito mais forte e capaz do que imagina! 🦸‍♀️"
+        ];
+
+        // 🧠 FUNÇÃO QUE DESCOBRE A FRASE DO DIA
+        function carregarAprendizado() {
+            const dataHoje = new Date();
+            
+            // Um truque matemático para transformar a data de hoje num número contínuo
+            const diasPassados = Math.floor(dataHoje.getTime() / (1000 * 60 * 60 * 24));
+            
+            // Esse símbolo "%" faz a lista "dar a volta" e recomeçar quando chegar no fim!
+            const indiceEscolhido = diasPassados % frasesDoDia.length;
+            
+            // Pega a frase selecionada e injeta no HTML
+            const espacoTexto = document.getElementById('texto-aprendizado');
+            if (espacoTexto) {
+                espacoTexto.innerText = frasesDoDia[indiceEscolhido];
+            }
+        }
+
+        // 🚀 Faz a função rodar assim que a página abre!
+        carregarAprendizado();
 
 // Inicia o sistema
 carregarEpisodios();

@@ -41,7 +41,7 @@
 
     <section id="pagina-principal" class="tela-oculta">
         <header class="top-bar">
-            <button class="btn-icone" onclick="voltarInicial()">Início</button>
+            <button class="btn-icone" onclick="voltarInicial(); fecharPainelDireito();">Início</button>
             <div class="top-icons">
                 <a href="#" class="icon-notification" aria-label="Notificações">
                     <img src="sino-icon.png" alt="Notificações" id="notif-bell">
@@ -54,7 +54,7 @@
         <div id="conteudo-catalogo">
             <div class="carousel-container">
                 <div class="carousel-track" id="track">
-                    <div class="hero-banner" style="background-image: url('531176.jpg');">
+                        <div class="hero-banner" style="background-image: url('531176.jpg'); cursor: pointer;" onclick="document.getElementById('secao-temporadas').scrollIntoView({ behavior: 'smooth' });">
                         <div class="banner-text">
                             <h2>A Magia da Amizade</h2>
                             <p>Todas as Temporadas</p>
@@ -66,10 +66,27 @@
                             <p>Junte-se a comunidade</p>
                         </div>
                     </div>
-                    <div class="hero-banner" style="background-image: url('5311545.jpg');">
+                    <div class="hero-banner" style="background-image: url('5311545.jpg'); cursor: pointer;" onclick="window.location.href='cria-ponei.html'">
                         <div class="banner-text">
                             <h2>Descubra a sua marca</h2>
                             <p>Personalize o seu pônei! </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-banner" style="background-image: url('imagem-arte-banner.jpg'); cursor: pointer;" onclick="window.location.href='galeria.html'">
+                        <div class="banner-text">
+                            <h2>Galeria de Artes</h2>
+                            <p>Inspire-se com a Galeria Mágica!</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-banner" id="banner-ep-dia" style="background-image: url('ep-do-dia.jpg'); cursor: pointer;">
+                        <div class="banner-text">
+                            <h2 style="font-size: 1.2rem; color: #ffd700; margin-bottom: 5px;">📺 Sorteio do Dia</h2>
+                            
+                            <h2 id="titulo-ep-dia">Sorteando magia...</h2>
+                            
+                            <p id="desc-ep-dia">Aguarde...</p>
                         </div>
                     </div>
                 </div>
@@ -78,7 +95,7 @@
                 <button class="carousel-btn next" onclick="mudarBanner(1)">❯</button>
             </div>
 
-            <div class="explore-section">
+            <div class="explore-section" id="secao-temporadas">
                 <h3>Explore Todas as Temporadas</h3>
                 <div class="season-tabs" id="season-selector"></div>
             </div>
@@ -112,10 +129,11 @@
         </div>
 
         <div class="widget">
-            <h4>🌸 Daily Kindness Tip</h4>
-            <div class="tip-content">
-                Remember to be kind to everyone! 🌸
+            <h4>🌸 Aprendizado do Dia</h4>
+            <div class="tip-content" id="texto-aprendizado">
+                Lembre-se de sempre ser gentil! 🌸
             </div>
+        </div>
         </div>
 
         <div class="widget">
