@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - PonyVerse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="twitter-body">
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-horse-head"></i> PonyVerse
+            </div>
+            <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="#" class="nav-link active"><i class="fa-solid fa-hashtag"></i> Explorar</a>
+            <a href="#" class="nav-link"><i class="fa-solid fa-bell"></i> Notificações</a>
+            <a href="#" class="nav-link"><i class="fa-solid fa-envelope"></i> Mensagens</a>
+            <a href="#" class="nav-link"><i class="fa-solid fa-user"></i> Perfil</a>
+            
+            <button class="btn-postar-grande">Relinchar</button>
+            
+            <div class="minha-conta-mini">
+                <img src="https://ui-avatars.com/api/?name=Meu+Pônei&background=d500f9&color=fff" alt="Avatar" class="avatar">
+                <div class="conta-info">
+                    <strong>Meu Pônei</strong>
+                    <span>@meuponei</span>
+                </div>
+            </div>
+        </nav>
+
+        <main class="feed">
+            <header class="feed-header">
+                <h2>Página Inicial</h2>
+            </header>
+
+            <div class="compose-post">
+                <img src="https://ui-avatars.com/api/?name=Meu+Pônei&background=d500f9&color=fff" alt="Avatar" class="avatar">
+                <div class="compose-form">
+                    <textarea id="texto-post" placeholder="O que está acontecendo em Equestria?"></textarea>
+                    
+                    <div id="preview-container" style="display: none; position: relative; margin-top: 10px;">
+                        <img id="img-preview" src="" style="max-width: 100%; border-radius: 15px; max-height: 300px; object-fit: cover;">
+                        <button onclick="removerPreview()" class="btn-fechar-preview"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="compose-actions">
+                        <div class="action-icons">
+                            <input type="file" id="input-imagem" accept="image/*" style="display: none;" onchange="previewImagem(event)">
+                            <i class="fa-solid fa-image" onclick="document.getElementById('input-imagem').click()"></i>
+                            
+                            <i class="fa-solid fa-face-smile" onclick="avisarEmBreve('Emojis Mágicos')"></i>
+                            <i class="fa-solid fa-calendar-days" onclick="avisarEmBreve('Agendar Relincho')"></i>
+                        </div>
+                        <button onclick="enviarPost()" class="btn-postar-pequeno">Relinchar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="lista-de-posts">
+                <div class="post">
+                    <div class="post-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Twilight+Sparkle&background=9c27b0&color=fff" alt="Twilight">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <strong>Twilight Sparkle</strong> 
+                            <span class="user-handle">@princesa_twilight</span> · <span>2h</span>
+                        </div>
+                        <p class="post-text">Acabei de terminar a organização da biblioteca! Alguém tem indicações de livros sobre magias esquecidas? 📚✨ #EstudosMágicos</p>
+                        
+                        <div class="post-interactions">
+                            <span onclick="toggleComentarios(this)"><i class="fa-regular fa-comment"></i> <b class="contador-comentarios">12</b></span>
+                            <span onclick="compartilharPost()"><i class="fa-solid fa-retweet"></i> 4</span>
+                            <span onclick="curtirPost(this)"><i class="fa-regular fa-heart"></i> <b class="contador-likes">143</b></span>
+                        </div>
+
+                        <div class="sessao-comentarios" style="display: none; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+                            <div class="comentarios-lista">
+                                <div class="comentario-item">
+                                    <img src="fundo.png" class="avatar-pequeno">
+                                    <div class="comentario-balao">
+                                        <strong>Spike</strong><br>
+                                        Eu posso ajudar a carregar os livros! 🐉📚
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="add-comentario">
+                                <img src="fundo.png" class="avatar-pequeno">
+                                <input type="text" placeholder="Responda a este relincho..." class="input-comentario">
+                                <button onclick="enviarComentario(this)" class="btn-enviar-comentario"><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar no PonyVerse">
+            </div>
+
+            <div class="trending-box">
+                <h3>O que está em alta</h3>
+                
+                <div class="trend-item">
+                    <span class="trend-category">Assunto do Momento em Ponyville</span>
+                    <strong>#FestaDaPinkie</strong>
+                    <span class="trend-stats">15.4K Relinchos</span>
+                </div>
+                
+                <div class="trend-item">
+                    <span class="trend-category">Esportes</span>
+                    <strong>Wonderbolts</strong>
+                    <span class="trend-stats">8.2K Relinchos</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    
+    <script src="comunidade.js"></script>
+
+</body>
+</html>

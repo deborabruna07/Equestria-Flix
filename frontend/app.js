@@ -160,36 +160,47 @@ window.addEventListener('load', () => {
 let indexAtual = 0;
 
 // ==========================================
-// 6. CARROSSEL INFINITO (Sem Rebobinar)
+// 6. CARROSSEL INFINITO (Com Timer Inteligente)
 // ==========================================
-function mudarBanner(direcao) {
+let timerCarrossel; // O "relógio" do carrossel
+
+// Função que faz o carrossel rodar sozinho a cada 4 segundos (4000ms)
+function iniciarTimer() {
+    timerCarrossel = setInterval(() => {
+        mudarBanner(1, false); // O "false" avisa que foi o sistema que mudou sozinho
+    }, 4000);
+}
+
+// ✨ A mágica acontece aqui: adicionamos um verificador de clique
+function mudarBanner(direcao, foiCliqueManual = true) {
+    
+    // Se a pessoa clicou na setinha, o cronômetro é cancelado e recomeça do zero!
+    if (foiCliqueManual) {
+        clearInterval(timerCarrossel);
+        iniciarTimer();
+    }
+
     const track = document.getElementById('track');
     
-    // Animação suave ativada (para que o deslize seja bonito)
+    // Animação suave
     track.style.transition = 'transform 0.5s ease-in-out';
 
     if (direcao === 1) {
         // Clicou para a DIREITA (Próximo)
-        track.style.transform = `translateX(-100%)`; // Desliza 1 banner para a esquerda
+        track.style.transform = `translateX(-100%)`; 
         
-        // Espera a animação terminar (0.5s) e faz a mágica acontecer
         setTimeout(() => {
-            track.style.transition = 'none'; // Desliga a animação por um milissegundo
-            // Pega o primeiro banner e joga lá pro final da fila!
+            track.style.transition = 'none'; 
             track.appendChild(track.firstElementChild); 
-            track.style.transform = `translateX(0)`; // Volta a posição do trilho pro zero
+            track.style.transform = `translateX(0)`; 
         }, 500); 
 
     } else if (direcao === -1) {
         // Clicou para a ESQUERDA (Anterior)
-        // Primeiro, pega o último banner da fila e joga lá pro começo, escondido!
         track.prepend(track.lastElementChild);
-        
-        // Dá um "pulo" invisível para -100% (para que o banner que acabamos de mover fique escondido)
         track.style.transition = 'none';
         track.style.transform = `translateX(-100%)`;
         
-        // Agora sim, liga a animação e desliza para a posição 0 (trazendo o banner pro meio)
         setTimeout(() => {
             track.style.transition = 'transform 0.5s ease-in-out';
             track.style.transform = `translateX(0)`;
@@ -197,8 +208,8 @@ function mudarBanner(direcao) {
     }
 }
 
-// Opcional: Auto-play a cada 6 segundos (continua funcionando normal!)
-setInterval(() => mudarBanner(1), 4000);
+// Liga o cronômetro pela primeira vez assim que a página carrega
+iniciarTimer();
 
 // ==========================================
 // 7. SISTEMA DO EPISÓDIO DO DIA (Automático)
