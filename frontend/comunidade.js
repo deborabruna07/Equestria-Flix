@@ -10,31 +10,28 @@ const firebaseConfig = {
     appId: "1:744701284561:web:2ffc66e7ca56ade12ab5f0"
 };
 
-// Inicializa o app e o banco de dados
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 // ==========================================
-// 🐦 MOTOR DA COMUNIDADE (PONYFEED INTERFACE)
+// 🐦 FUNÇÕES DA INTERFACE
 // ==========================================
-
 function mostrarNotificacao(mensagem, icone = 'fa-wand-magic-sparkles') {
     const toast = document.createElement('div');
-    toast.className = 'toast-magico';
+    // Adicionando o estilo mágico direto no JS para garantir que funcione
+    toast.style.cssText = "position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg, #ff007f, #9b59b6); color:white; padding:12px 25px; border-radius:30px; font-weight:bold; box-shadow:0 10px 25px rgba(255,0,127,0.5); z-index:9999; display:flex; align-items:center; gap:10px;";
     toast.innerHTML = `<i class="fa-solid ${icone}"></i> ${mensagem}`;
     document.body.appendChild(toast);
+    
     setTimeout(() => {
-        toast.classList.add('sumir');
+        toast.style.opacity = "0";
+        toast.style.transition = "opacity 0.3s";
         setTimeout(() => toast.remove(), 300);
     }, 3000);
 }
 
 function avisarEmBreve(recurso) {
     mostrarNotificacao(`A magia de <b>${recurso}</b> está sendo preparada! ✨`);
-}
-
-function compartilharPost() {
-    mostrarNotificacao("Relinchado com sucesso para o seu perfil! 🔄", "fa-retweet");
 }
 
 // ==========================================
@@ -75,17 +72,15 @@ function enviarPost() {
 
     mostrarNotificacao("Enviando relincho para a nuvem...", "fa-cloud-arrow-up");
 
-    // Salva no Banco de Dados!
     db.collection("relinchos").add({
         autor: "Meu Pônei",
         handle: "@meuponei",
         texto: texto,
-        imagem: imagemTemporaria, // Salva a imagem (base64)
+        imagem: imagemTemporaria, 
         likes: 0,
-        data: firebase.firestore.FieldValue.serverTimestamp() // Pega a hora exata da internet
+        data: firebase.firestore.FieldValue.serverTimestamp()
     })
     .then(() => {
-        // Limpa a tela depois de salvar com sucesso
         inputArea.value = '';
         removerPreview();
         mostrarNotificacao("Seu relincho foi enviado para toda Equestria!", "fa-paper-plane");
@@ -97,48 +92,49 @@ function enviarPost() {
 }
 
 // ==========================================
-// ☁️ FIREBASE: LENDO DADOS AO VIVO
+// ☁️ FIREBASE: LENDO DADOS AO VIVO (COM DESIGN NOVO)
 // ==========================================
-// Esta função fica "ouvindo" o banco de dados o tempo todo. 
-// Se alguém postar, a tela de todo mundo atualiza sozinha!
 db.collection("relinchos").orderBy("data", "desc").onSnapshot((snapshot) => {
     const feed = document.getElementById('lista-de-posts');
-    feed.innerHTML = ''; // Limpa o feed para não duplicar
+    feed.innerHTML = ''; 
 
     snapshot.forEach((doc) => {
         const post = doc.data();
-        const postId = doc.id; // ID único do post no banco
+        const postId = doc.id; 
         
         let imagemHTML = "";
         if (post.imagem && post.imagem !== "") {
-            imagemHTML = `<img src="${post.imagem}" style="max-width: 100%; border-radius: 15px; margin-top: 15px; border: 1px solid rgba(255,255,255,0.1);">`;
+            imagemHTML = `<img src="${post.imagem}" style="max-width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.1);">`;
         }
 
+        // ✨ O HTML NOVO INJETADO AQUI! ✨
         const novoPostHTML = `
-            <div class="post" id="${postId}">
-                <div class="post-avatar">
-                    <img src="https://ui-avatars.com/api/?name=${post.autor}&background=d500f9&color=fff" alt="Avatar" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
-                </div>
-                <div class="post-content">
-                    <div class="post-header">
-                        <strong>${post.autor}</strong> 
-                        <span class="user-handle">${post.handle}</span>
-                    </div>
-                    <p class="post-text">${post.texto}</p>
-                    ${imagemHTML} 
-                    <div class="post-interactions">
-                        <span onclick="toggleComentarios(this)"><i class="fa-regular fa-comment"></i> <b class="contador-comentarios">0</b></span>
-                        <span onclick="compartilharPost()"><i class="fa-solid fa-retweet"></i> 0</span>
-                        <span onclick="curtirPost('${postId}', ${post.likes})"><i class="fa-regular fa-heart"></i> <b class="contador-likes">${post.likes || 0}</b></span>
-                    </div>
-
-                    <div class="sessao-comentarios" style="display: none; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                        <div class="comentarios-lista"></div>
-                        <div class="add-comentario">
-                            <img src="fundo.png" class="avatar-pequeno">
-                            <input type="text" placeholder="Responda a este relincho..." class="input-comentario">
-                            <button onclick="avisarEmBreve('Comentários na Nuvem')" class="btn-enviar-comentario"><i class="fa-solid fa-paper-plane"></i></button>
+            <div class="glass-panel post-premium" id="${postId}">
+                <img src="https://ui-avatars.com/api/?name=${post.autor.replace(' ', '+')}&background=c756a7&color=fff" class="avatar-comunidade" alt="Avatar">
+                
+                <div class="post-conteudo">
+                    <div class="post-topo">
+                        <div>
+                            <strong class="post-autor">
+                                ${post.autor} 
+                                <i class="fa-solid fa-star" style="color: #c756a7; font-size: 0.9rem;"></i>
+                            </strong>
+                            <span class="post-tempo">${post.handle}</span>
                         </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #a491b8; cursor: pointer;" onclick="avisarEmBreve('Opções do Post')"></i>
+                    </div>
+                    
+                    <p class="post-texto">${post.texto}</p>
+                    
+                    ${imagemHTML}
+                    
+                    <div class="post-botoes">
+                        <button class="btn-interacao" onclick="curtirPost('${postId}', ${post.likes || 0})">
+                            <i class="fa-solid fa-heart"></i> ${post.likes || 0}
+                        </button>
+                        <button class="btn-interacao" onclick="avisarEmBreve('Comentários')">
+                            <i class="fa-solid fa-comment"></i> 0
+                        </button>
                     </div>
                 </div>
             </div>
@@ -148,21 +144,82 @@ db.collection("relinchos").orderBy("data", "desc").onSnapshot((snapshot) => {
 });
 
 // ==========================================
-// 3. SISTEMA DE COMENTÁRIOS E CURTIDAS (INTERFACE)
+// 3. SISTEMA DE CURTIDAS
 // ==========================================
-function toggleComentarios(botao) {
-    const post = botao.closest('.post'); 
-    const sessao = post.querySelector('.sessao-comentarios');
-    if (sessao.style.display === 'none' || sessao.style.display === '') {
-        sessao.style.display = 'block';
-    } else {
-        sessao.style.display = 'none';
-    }
-}
-
 function curtirPost(postId, likesAtuais) {
-    // Atualiza o número de likes direto no Banco de Dados!
     db.collection("relinchos").doc(postId).update({
         likes: (likesAtuais || 0) + 1
     });
 }
+
+// ==========================================
+// 🎵 CONTROLE DE MÚSICA E AUTOPLAY INTELIGENTE
+// ==========================================
+
+function toggleMusica() {
+    const musica = document.getElementById('musica-fundo');
+    const icone = document.getElementById('icone-som-img'); 
+    const btn = document.getElementById('btn-musica');
+
+    if (musica.paused) {
+        musica.play();
+        icone.src = 'som-on.png'; // Usando o seu ícone do app.js
+        btn.classList.add('tocando'); 
+        localStorage.setItem('musica_tocando', 'true'); // Grava a preferência
+    } else {
+        musica.pause();
+        icone.src = 'som-off.png'; 
+        btn.classList.remove('tocando'); 
+        localStorage.setItem('musica_tocando', 'false'); // Grava a preferência
+    }
+}
+
+// ✨ AUTOPLAY COM DETECÇÃO DE F5 E NAVEGAÇÃO ✨
+window.addEventListener('load', () => {
+    const musica = document.getElementById('musica-fundo');
+    const icone = document.getElementById('icone-som-img');
+    const btn = document.getElementById('btn-musica');
+
+    if (musica) {
+        musica.volume = 0.1; // Mantém o volume baixinho em 10%
+
+        const tocando = localStorage.getItem('musica_tocando') === 'true';
+        
+        // Sensor que descobre como a página foi carregada
+        const navegacao = performance.getEntriesByType("navigation")[0];
+        const ehF5 = navegacao ? (navegacao.type === "reload") : false;
+
+        let tempoSalvo = 0;
+        
+        // Se NÃO for F5 e existir um tempo salvo nesta aba, a música continua de onde parou!
+        if (!ehF5 && sessionStorage.getItem('musica_tempo')) {
+            tempoSalvo = parseFloat(sessionStorage.getItem('musica_tempo'));
+        }
+
+        musica.currentTime = tempoSalvo;
+
+        // Fica salvando o segundo atual na memória da aba
+        setInterval(() => {
+            if(!musica.paused) {
+                sessionStorage.setItem('musica_tempo', musica.currentTime);
+            }
+        }, 500);
+
+        if (tocando) {
+            let playPromise = musica.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    icone.src = 'som-on.png';
+                    btn.classList.add('tocando');
+                }).catch(error => {
+                    console.log("O navegador bloqueou o áudio automático. Aguardando interação.");
+                    icone.src = 'som-off.png'; 
+                    btn.classList.remove('tocando');
+                });
+            }
+        } else {
+             icone.src = 'som-off.png';
+             btn.classList.remove('tocando'); 
+        }       
+    }
+});

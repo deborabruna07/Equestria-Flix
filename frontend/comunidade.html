@@ -7,129 +7,136 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="twitter-body">
+<body class="comunidade-premium">
 
-    <div class="app-container">
-        <nav class="sidebar">
-            <div class="logo">
-                <i class="fa-solid fa-horse-head"></i> PonyVerse
-            </div>
-            <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Início</a>
-            <a href="#" class="nav-link active"><i class="fa-solid fa-hashtag"></i> Explorar</a>
-            <a href="#" class="nav-link"><i class="fa-solid fa-bell"></i> Notificações</a>
-            <a href="#" class="nav-link"><i class="fa-solid fa-envelope"></i> Mensagens</a>
-            <a href="#" class="nav-link"><i class="fa-solid fa-user"></i> Perfil</a>
+    <div class="top-bar" style="position: absolute; top: 30px; left: 50px; right: 50px; z-index: 100; margin-bottom: 0;">
+        
+        <a href="index.html" class="btn-icone" style="text-decoration: none;">Início</a>
+        
+        <div class="top-icons">
+            <a href="#" class="icon-notification" aria-label="Notificações">
+                <img src="sino-icon.png" alt="Notificações" id="notif-bell" style="height: 48px; width: auto;">
+            </a>
             
-            <button class="btn-postar-grande">Relinchar</button>
-            
-            <div class="minha-conta-mini">
-                <img src="https://ui-avatars.com/api/?name=Meu+Pônei&background=d500f9&color=fff" alt="Avatar" class="avatar">
-                <div class="conta-info">
-                    <strong>Meu Pônei</strong>
-                    <span>@meuponei</span>
-                </div>
-            </div>
-        </nav>
-
-        <main class="feed">
-            <header class="feed-header">
-                <h2>Página Inicial</h2>
-            </header>
-
-            <div class="compose-post">
-                <img src="https://ui-avatars.com/api/?name=Meu+Pônei&background=d500f9&color=fff" alt="Avatar" class="avatar">
-                <div class="compose-form">
-                    <textarea id="texto-post" placeholder="O que está acontecendo em Equestria?"></textarea>
-                    
-                    <div id="preview-container" style="display: none; position: relative; margin-top: 10px;">
-                        <img id="img-preview" src="" style="max-width: 100%; border-radius: 15px; max-height: 300px; object-fit: cover;">
-                        <button onclick="removerPreview()" class="btn-fechar-preview"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-
-                    <div class="compose-actions">
-                        <div class="action-icons">
-                            <input type="file" id="input-imagem" accept="image/*" style="display: none;" onchange="previewImagem(event)">
-                            <i class="fa-solid fa-image" onclick="document.getElementById('input-imagem').click()"></i>
-                            
-                            <i class="fa-solid fa-face-smile" onclick="avisarEmBreve('Emojis Mágicos')"></i>
-                            <i class="fa-solid fa-calendar-days" onclick="avisarEmBreve('Agendar Relincho')"></i>
-                        </div>
-                        <button onclick="enviarPost()" class="btn-postar-pequeno">Relinchar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div id="lista-de-posts">
-                <div class="post">
-                    <div class="post-avatar">
-                        <img src="https://ui-avatars.com/api/?name=Twilight+Sparkle&background=9c27b0&color=fff" alt="Twilight">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-header">
-                            <strong>Twilight Sparkle</strong> 
-                            <span class="user-handle">@princesa_twilight</span> · <span>2h</span>
-                        </div>
-                        <p class="post-text">Acabei de terminar a organização da biblioteca! Alguém tem indicações de livros sobre magias esquecidas? 📚✨ #EstudosMágicos</p>
-                        
-                        <div class="post-interactions">
-                            <span onclick="toggleComentarios(this)"><i class="fa-regular fa-comment"></i> <b class="contador-comentarios">12</b></span>
-                            <span onclick="compartilharPost()"><i class="fa-solid fa-retweet"></i> 4</span>
-                            <span onclick="curtirPost(this)"><i class="fa-regular fa-heart"></i> <b class="contador-likes">143</b></span>
-                        </div>
-
-                        <div class="sessao-comentarios" style="display: none; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                            <div class="comentarios-lista">
-                                <div class="comentario-item">
-                                    <img src="fundo.png" class="avatar-pequeno">
-                                    <div class="comentario-balao">
-                                        <strong>Spike</strong><br>
-                                        Eu posso ajudar a carregar os livros! 🐉📚
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="add-comentario">
-                                <img src="fundo.png" class="avatar-pequeno">
-                                <input type="text" placeholder="Responda a este relincho..." class="input-comentario">
-                                <button onclick="enviarComentario(this)" class="btn-enviar-comentario"><i class="fa-solid fa-paper-plane"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <aside class="right-sidebar">
-            <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Buscar no PonyVerse">
-            </div>
-
-            <div class="trending-box">
-                <h3>O que está em alta</h3>
-                
-                <div class="trend-item">
-                    <span class="trend-category">Assunto do Momento em Ponyville</span>
-                    <strong>#FestaDaPinkie</strong>
-                    <span class="trend-stats">15.4K Relinchos</span>
-                </div>
-                
-                <div class="trend-item">
-                    <span class="trend-category">Esportes</span>
-                    <strong>Wonderbolts</strong>
-                    <span class="trend-stats">8.2K Relinchos</span>
-                </div>
-            </div>
-        </aside>
+            <a href="#" class="btn-icone" style="text-decoration: none;">Meu Perfil</a>
+        </div>
+        
+    </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-    
-    <script src="comunidade.js"></script>
+    <div class="comunidade-container">
+        
+        <header class="hero-comunidade">
+            <div style="z-index: 2; margin-top: 40px; margin-bottom: 40px; display: flex; align-items: center; gap: 25px;">
+                
+                <div class="icone-balao-coracao" style="margin-bottom: 0;">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="margin-bottom: 5px; display: block;">Comunidade</h1>
+                    <p style="margin: 0; max-width: 400px;">Conecte-se com outros fãs, compartilhe sua paixão e faça novas amizades!</p>
+                </div>
 
+            </div>
+            
+            <div class="poneis-header-container">
+                <img src="poneis-header.png" alt="Pôneis">
+            </div>
+        </header>
+
+        <div class="layout-comunidade">
+            
+            <main>
+                <nav class="nav-pilulas">
+                    <button class="pilula active"><i class="fa-solid fa-comment-dots"></i> Feed</button>
+                    <button class="pilula" onclick="avisarEmBreve('Grupos')"><i class="fa-solid fa-users"></i> Grupos</button>
+                    <button class="pilula" onclick="avisarEmBreve('Eventos')"><i class="fa-regular fa-calendar"></i> Eventos</button>
+                    <button class="pilula" onclick="avisarEmBreve('Discussões')"><i class="fa-solid fa-comments"></i> Discussões</button>
+                    <button class="pilula" onclick="avisarEmBreve('Amigos')"><i class="fa-solid fa-heart"></i> Amigos</button>
+                </nav>
+
+                <div class="glass-panel caixa-postagem">
+                    <img src="https://ui-avatars.com/api/?name=Twilight+Sparkle&background=c756a7&color=fff" alt="Avatar" class="avatar-comunidade">
+                    
+                    <div class="area-input">
+                        <textarea id="texto-post" placeholder="No que você está pensando, fã de Pony?" rows="2"></textarea>
+                        
+                        <div id="preview-container" style="display: none; position: relative; margin-top: 10px; margin-bottom: 10px;">
+                            <img id="img-preview" src="" style="max-width: 100%; border-radius: 15px; max-height: 300px; object-fit: cover;">
+                            <button onclick="removerPreview()" class="btn-fechar-preview"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="acoes-postagem">
+                            <div class="icones-acao">
+                                <input type="file" id="input-imagem" accept="image/*" style="display: none;" onchange="previewImagem(event)">
+                                <span onclick="document.getElementById('input-imagem').click()">
+                                    <i class="fa-solid fa-image" style="color: #82b1ff;"></i> Imagem
+                                </span>
+                                <span onclick="avisarEmBreve('Sentimentos')">
+                                    <i class="fa-solid fa-face-smile" style="color: #ffd54f;"></i> Sentimento
+                                </span>
+                                <span onclick="avisarEmBreve('Eventos')">
+                                    <i class="fa-regular fa-calendar" style="color: #ffb74d;"></i> Evento
+                                </span>
+                            </div>
+                            <button onclick="enviarPost()" class="btn-publicar-ref">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lista-de-posts"></div>
+            </main>
+
+            <aside>
+                <div class="glass-panel widget-premium">
+                    <h3 class="widget-titulo"><i class="fa-solid fa-user-group" style="color:#ff80ff;"></i> Grupos em Destaque</h3>
+                    
+                    <div class="grupo-item">
+                        <img src="https://ui-avatars.com/api/?name=AE&background=ffd166&color=fff" class="grupo-icone" alt="Grupo">
+                        <div class="grupo-info">
+                            <strong>Amigos de Equestria</strong>
+                            <span>1.245 membros</span>
+                        </div>
+                        <button class="btn-ver-grupo" onclick="avisarEmBreve('Ver grupo')">Ver grupo</button>
+                    </div>
+
+                    <div class="grupo-item">
+                        <img src="https://ui-avatars.com/api/?name=AM&background=ffb74d&color=fff" class="grupo-icone" alt="Grupo">
+                        <div class="grupo-info">
+                            <strong>Aventuras & Missões</strong>
+                            <span>892 membros</span>
+                        </div>
+                        <button class="btn-ver-grupo" onclick="avisarEmBreve('Ver grupo')">Ver grupo</button>
+                    </div>
+
+                    <div class="grupo-item">
+                        <img src="https://ui-avatars.com/api/?name=CA&background=4fc3f7&color=fff" class="grupo-icone" alt="Grupo">
+                        <div class="grupo-info">
+                            <strong>Clube das Artes</strong>
+                            <span>567 membros</span>
+                        </div>
+                        <button class="btn-ver-grupo" onclick="avisarEmBreve('Ver grupo')">Ver grupo</button>
+                    </div>
+
+                    <button class="btn-ver-todos">Ver todos os grupos</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <audio id="musica-fundo" loop autoplay>
+        <source src="tema-ponyverse.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
+        <img src="som-ligado.png" alt="Som" id="icone-som-img">
+    </button>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="comunidade.js"></script>
+</body>
+</html>
 </body>
 </html>

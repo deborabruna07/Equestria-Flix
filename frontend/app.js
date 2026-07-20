@@ -414,6 +414,17 @@ window.addEventListener('load', () => {
     }
 });
 
+// ==========================================
+// 1. NAVEGAÇÃO ENTRE TELAS
+// ==========================================
+function abrirPrincipal() {
+    document.getElementById('pagina-inicial').classList.replace('tela-ativa', 'tela-oculta');
+    document.getElementById('pagina-principal').classList.replace('tela-oculta', 'tela-ativa');
+    
+    // ✨ O TRUQUE AQUI: Avisa o navegador que o usuário entrou no catálogo!
+    window.history.replaceState({}, document.title, window.location.pathname + '#principal');
+}
+
 // ✨ ARRAY DE APRENDIZADOS MÁGICOS ✨
         // Você pode adicionar quantas frases quiser aqui dentro!
         const frasesDoDia = [
