@@ -1,11 +1,12 @@
 :root {
-    --bg-main: #583c74; /* Roxo principal do catálogo */
+    --bg-main: #583c74;
     --bg-panel: rgba(255, 255, 255, 0.15);
     --bg-card: rgba(255, 255, 255, 0.85);
     --text-light: #ffffff;
     --text-dark: #4a4a4a;
     --purple-primary: #9b59b6;
     --pink-accent: #ae68e7;
+    --pink-neon: #ff007f; /* ✨ Nova variável para os brilhos */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Quicksand', sans-serif; }
@@ -624,7 +625,7 @@ body::before {
 
 .popup-magico {
     position: fixed; top: -100px; left: 50%; transform: translateX(-50%);
-    background: linear-gradient(135deg, #ff007f, #9b59b6);
+    background: linear-gradient(135deg, var(--pink-neon), var(--purple-primary));
     color: white; padding: 10px 20px; font-size: 0.9rem; border-radius: 30px;
     font-weight: bold; box-shadow: 0 10px 25px rgba(255, 0, 127, 0.5);
     z-index: 9999; display: flex; align-items: center; gap: 10px;

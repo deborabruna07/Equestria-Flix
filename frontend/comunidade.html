@@ -11,7 +11,7 @@
 
     <div class="top-bar" style="position: absolute; top: 30px; left: 50px; right: 50px; z-index: 100; margin-bottom: 0;">
         
-        <a href="index.html" class="btn-icone" style="text-decoration: none;">Início</a>
+        <a href="javascript:history.back()" class="btn-icone" style="text-decoration: none;">Voltar</a>
         
         <div class="top-icons">
             <a href="#" class="icon-notification" aria-label="Notificações">
@@ -21,7 +21,6 @@
             <a href="#" class="btn-icone" style="text-decoration: none;">Meu Perfil</a>
         </div>
         
-    </div>
     </div>
 
     <div class="comunidade-container">
@@ -125,18 +124,17 @@
         </div>
     </div>
 
-    <audio id="musica-fundo" loop autoplay>
+    <audio id="musica-fundo" loop>
         <source src="tema-ponyverse.mp3" type="audio/mpeg">
     </audio>
 
     <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
-        <img src="som-ligado.png" alt="Som" id="icone-som-img">
+        <img src="som-on.png" alt="Som" id="icone-som-img">
     </button>
 
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
     <script src="comunidade.js"></script>
-</body>
-</html>
+    <script src="musica.js"></script>
 </body>
 </html>

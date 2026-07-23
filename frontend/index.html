@@ -21,7 +21,7 @@
         <span>Episódios</span>
     </button>
     
-    <button class="nav-item" onclick="abrirPrincipal(); abrirFavoritos();">
+    <button class="nav-item" onclick="abrirFavoritos('inicial')">
         <img src="botao-fav.png" alt="Minha Lista" class="img-nav-icone img-lista">
         <span>Minha Lista</span>
     </button>
@@ -40,13 +40,14 @@
     </section>
 
     <section id="pagina-principal" class="tela-oculta">
+        
         <header class="top-bar">
             <button class="btn-icone" onclick="voltarInicial(); fecharPainelDireito();">Início</button>
+            
             <div class="top-icons">
                 <a href="#" class="icon-notification" aria-label="Notificações">
                     <img src="sino-icon.png" alt="Notificações" id="notif-bell">
                 </a>
-
                 <button class="btn-icone" onclick="abrirPainelDireito()">Meu Perfil</button> 
             </div>
         </header>
@@ -105,10 +106,19 @@
         </div>
         <section id="secao-favoritos" class="tela-oculta" style="padding-top: 2rem; position: relative;">
             
-            <button onclick="voltarAoCatalogo()" class="btn-icone" style="position: absolute; top: -102px; left: -110px;">Voltar</button>
+            <header class="top-bar" style="margin-bottom: 2rem;">
+                <button onclick="fecharFavoritos()" class="btn-icone">Voltar</button>
+                
+                <div class="top-icons">
+                    <a href="#" class="icon-notification" aria-label="Notificações">
+                        <img src="sino-icon.png" alt="Notificações" id="notif-bell-fav" style="height: 48px; width: auto;">
+                    </a>
+                    <button class="btn-icone" onclick="abrirPainelDireito()">Meu Perfil</button> 
+                </div>
+            </header>
             
-            <div style="margin-bottom: 2rem;">
-                <h2 style="color: white; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin: 0;">Minha Lista  ❤︎</h2>
+            <div style="margin-bottom: 2rem; padding-left: 20px;">
+                <h2 style="color: white; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin: 0;">Minha Lista  ❤︎</h2>
             </div>
             
             <div class="episode-grid" id="grid-favoritos"></div>
@@ -139,7 +149,7 @@
         <div class="widget">
             <h4>🧸 Menu Mágico</h4>
             <div style="display: flex; flex-direction: column; gap: 1rem;">
-                <button class="btn-assistir" onclick="abrirFavoritos()">Minha Lista</button>
+                <button class="btn-assistir" onclick="abrirFavoritos('catalogo')">Minha Lista</button>
                 <button class="btn-assistir" onclick="window.location.href='bau-de-artes.html'">Baú de Artes</button>
             </div>
         </div>
@@ -170,16 +180,18 @@
     </audio>
 
     <button id="btn-musica" class="btn-musica-flutuante" onclick="toggleMusica()">
-        <img src="som-ligado.png" alt="Som" id="icone-som-img">
+        <img src="som-on.png" alt="Som" id="icone-som-img">
     </button>
-    
+
+    <script src="musica.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            // Se a URL terminar com #principal, ele pula a tela de início
-            if(window.location.hash === '#principal') {
-                abrirPrincipal(); 
-            }
-        });
-    </script>
+    function verificarRota() {
+        if(window.location.hash === '#principal' || window.location.search.includes('view=catalogo')) {
+            abrirPrincipal(); 
+        }
+    }
+    window.addEventListener('DOMContentLoaded', verificarRota);
+    window.addEventListener('hashchange', verificarRota);
+</script>
 </body>
 </html>
